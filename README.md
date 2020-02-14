@@ -38,7 +38,7 @@ Você não tem que ser o mestre dos designers, MAS queremos devs que também sai
 - Swift (já falamos sobre isso, bebê)
 - RxSwift
 - Cocoapods
-- Clean Architecture ou MVVM
+- VIPER
 
 #### Como você será avaliado:
 
