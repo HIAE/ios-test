@@ -7,111 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A004711623FA15A6007EA160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004711523FA15A6007EA160 /* AppDelegate.swift */; };
-		A004711823FA15A6007EA160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004711723FA15A6007EA160 /* SceneDelegate.swift */; };
-		A004711A23FA15A6007EA160 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004711923FA15A6007EA160 /* ContentView.swift */; };
-		A004711C23FA15AA007EA160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A004711B23FA15AA007EA160 /* Assets.xcassets */; };
-		A004711F23FA15AA007EA160 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A004711E23FA15AA007EA160 /* Preview Assets.xcassets */; };
-		A004712223FA15AA007EA160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A004712023FA15AA007EA160 /* LaunchScreen.storyboard */; };
-		ED07A509D2F6D175CFCC0718 /* Pods_EinsteinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E41E622AC6775A30D96818 /* Pods_EinsteinTest.framework */; };
+		3A592127DECF9B4F5D5F8BAB /* Pods_EinsteinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */; };
+		A0F8F5B423FB8C95002AD169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5B323FB8C95002AD169 /* AppDelegate.swift */; };
+		A0F8F5B623FB8C95002AD169 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5B523FB8C95002AD169 /* SceneDelegate.swift */; };
+		A0F8F5B823FB8C95002AD169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5B723FB8C95002AD169 /* ViewController.swift */; };
+		A0F8F5BB23FB8C95002AD169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F5B923FB8C95002AD169 /* Main.storyboard */; };
+		A0F8F5BD23FB8C96002AD169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */; };
+		A0F8F5C023FB8C96002AD169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F5BE23FB8C96002AD169 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		385C150D83D0B7111932BFF8 /* Pods-EinsteinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.release.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.release.xcconfig"; sourceTree = "<group>"; };
-		4C489733EF32AFD34025F6A0 /* Pods-EinsteinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.debug.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.debug.xcconfig"; sourceTree = "<group>"; };
-		A004711223FA15A6007EA160 /* EinsteinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EinsteinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A004711523FA15A6007EA160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A004711723FA15A6007EA160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A004711923FA15A6007EA160 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A004711B23FA15AA007EA160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A004711E23FA15AA007EA160 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A004712123FA15AA007EA160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A004712323FA15AA007EA160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8E41E622AC6775A30D96818 /* Pods_EinsteinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EinsteinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDB35D452F74FC72564B0AD /* Pods-EinsteinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.release.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.release.xcconfig"; sourceTree = "<group>"; };
+		A0F8F5B023FB8C95002AD169 /* EinsteinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EinsteinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F8F5B323FB8C95002AD169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0F8F5B523FB8C95002AD169 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0F8F5B723FB8C95002AD169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0F8F5BA23FB8C95002AD169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F8F5BF23FB8C96002AD169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0F8F5C123FB8C96002AD169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EinsteinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.debug.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A004710F23FA15A6007EA160 /* Frameworks */ = {
+		A0F8F5AD23FB8C95002AD169 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED07A509D2F6D175CFCC0718 /* Pods_EinsteinTest.framework in Frameworks */,
+				3A592127DECF9B4F5D5F8BAB /* Pods_EinsteinTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A46DE1B3710D9A993F4AF33 /* Frameworks */ = {
+		3A302066FE9C0F8D0BED6667 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A8E41E622AC6775A30D96818 /* Pods_EinsteinTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5739C29DF982A1EAB6DCFC4A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4C489733EF32AFD34025F6A0 /* Pods-EinsteinTest.debug.xcconfig */,
-				385C150D83D0B7111932BFF8 /* Pods-EinsteinTest.release.xcconfig */,
+				D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */,
+				4FDB35D452F74FC72564B0AD /* Pods-EinsteinTest.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A004710923FA15A5007EA160 = {
+		3B3A1D8E896D0C997BC3B0DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A004711423FA15A6007EA160 /* EinsteinTest */,
-				A004711323FA15A6007EA160 /* Products */,
-				5739C29DF982A1EAB6DCFC4A /* Pods */,
-				3A46DE1B3710D9A993F4AF33 /* Frameworks */,
+				A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0F8F5A723FB8C95002AD169 = {
+			isa = PBXGroup;
+			children = (
+				A0F8F5B223FB8C95002AD169 /* EinsteinTest */,
+				A0F8F5B123FB8C95002AD169 /* Products */,
+				3A302066FE9C0F8D0BED6667 /* Pods */,
+				3B3A1D8E896D0C997BC3B0DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A004711323FA15A6007EA160 /* Products */ = {
+		A0F8F5B123FB8C95002AD169 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A004711223FA15A6007EA160 /* EinsteinTest.app */,
+				A0F8F5B023FB8C95002AD169 /* EinsteinTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A004711423FA15A6007EA160 /* EinsteinTest */ = {
+		A0F8F5B223FB8C95002AD169 /* EinsteinTest */ = {
 			isa = PBXGroup;
 			children = (
-				A004711523FA15A6007EA160 /* AppDelegate.swift */,
-				A004711723FA15A6007EA160 /* SceneDelegate.swift */,
-				A004711923FA15A6007EA160 /* ContentView.swift */,
-				A004711B23FA15AA007EA160 /* Assets.xcassets */,
-				A004712023FA15AA007EA160 /* LaunchScreen.storyboard */,
-				A004712323FA15AA007EA160 /* Info.plist */,
-				A004711D23FA15AA007EA160 /* Preview Content */,
+				A0F8F5B323FB8C95002AD169 /* AppDelegate.swift */,
+				A0F8F5B523FB8C95002AD169 /* SceneDelegate.swift */,
+				A0F8F5B723FB8C95002AD169 /* ViewController.swift */,
+				A0F8F5B923FB8C95002AD169 /* Main.storyboard */,
+				A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */,
+				A0F8F5BE23FB8C96002AD169 /* LaunchScreen.storyboard */,
+				A0F8F5C123FB8C96002AD169 /* Info.plist */,
 			);
 			path = EinsteinTest;
-			sourceTree = "<group>";
-		};
-		A004711D23FA15AA007EA160 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A004711E23FA15AA007EA160 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A004711123FA15A6007EA160 /* EinsteinTest */ = {
+		A0F8F5AF23FB8C95002AD169 /* EinsteinTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A004712623FA15AA007EA160 /* Build configuration list for PBXNativeTarget "EinsteinTest" */;
+			buildConfigurationList = A0F8F5C423FB8C96002AD169 /* Build configuration list for PBXNativeTarget "EinsteinTest" */;
 			buildPhases = (
-				A18E3A93EDDDDE3AF8B7E9DA /* [CP] Check Pods Manifest.lock */,
-				A004710E23FA15A6007EA160 /* Sources */,
-				A004710F23FA15A6007EA160 /* Frameworks */,
-				A004711023FA15A6007EA160 /* Resources */,
-				8BD69F001F6B09AE4E6B033F /* [CP] Embed Pods Frameworks */,
+				A7C662F14588534AAAF132F4 /* [CP] Check Pods Manifest.lock */,
+				A0F8F5AC23FB8C95002AD169 /* Sources */,
+				A0F8F5AD23FB8C95002AD169 /* Frameworks */,
+				A0F8F5AE23FB8C95002AD169 /* Resources */,
+				ADAEDC799C922B1DC406E5B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,25 +111,25 @@
 			);
 			name = EinsteinTest;
 			productName = EinsteinTest;
-			productReference = A004711223FA15A6007EA160 /* EinsteinTest.app */;
+			productReference = A0F8F5B023FB8C95002AD169 /* EinsteinTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A004710A23FA15A5007EA160 /* Project object */ = {
+		A0F8F5A823FB8C95002AD169 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Pedro Lopes";
 				TargetAttributes = {
-					A004711123FA15A6007EA160 = {
+					A0F8F5AF23FB8C95002AD169 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = A004710D23FA15A5007EA160 /* Build configuration list for PBXProject "EinsteinTest" */;
+			buildConfigurationList = A0F8F5AB23FB8C95002AD169 /* Build configuration list for PBXProject "EinsteinTest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,53 +137,31 @@
 				en,
 				Base,
 			);
-			mainGroup = A004710923FA15A5007EA160;
-			productRefGroup = A004711323FA15A6007EA160 /* Products */;
+			mainGroup = A0F8F5A723FB8C95002AD169;
+			productRefGroup = A0F8F5B123FB8C95002AD169 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A004711123FA15A6007EA160 /* EinsteinTest */,
+				A0F8F5AF23FB8C95002AD169 /* EinsteinTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A004711023FA15A6007EA160 /* Resources */ = {
+		A0F8F5AE23FB8C95002AD169 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A004712223FA15AA007EA160 /* LaunchScreen.storyboard in Resources */,
-				A004711F23FA15AA007EA160 /* Preview Assets.xcassets in Resources */,
-				A004711C23FA15AA007EA160 /* Assets.xcassets in Resources */,
+				A0F8F5C023FB8C96002AD169 /* LaunchScreen.storyboard in Resources */,
+				A0F8F5BD23FB8C96002AD169 /* Assets.xcassets in Resources */,
+				A0F8F5BB23FB8C95002AD169 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8BD69F001F6B09AE4E6B033F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A18E3A93EDDDDE3AF8B7E9DA /* [CP] Check Pods Manifest.lock */ = {
+		A7C662F14588534AAAF132F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,26 +183,56 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ADAEDC799C922B1DC406E5B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A004710E23FA15A6007EA160 /* Sources */ = {
+		A0F8F5AC23FB8C95002AD169 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A004711623FA15A6007EA160 /* AppDelegate.swift in Sources */,
-				A004711823FA15A6007EA160 /* SceneDelegate.swift in Sources */,
-				A004711A23FA15A6007EA160 /* ContentView.swift in Sources */,
+				A0F8F5B823FB8C95002AD169 /* ViewController.swift in Sources */,
+				A0F8F5B423FB8C95002AD169 /* AppDelegate.swift in Sources */,
+				A0F8F5B623FB8C95002AD169 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A004712023FA15AA007EA160 /* LaunchScreen.storyboard */ = {
+		A0F8F5B923FB8C95002AD169 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A004712123FA15AA007EA160 /* Base */,
+				A0F8F5BA23FB8C95002AD169 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0F8F5BE23FB8C96002AD169 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F8F5BF23FB8C96002AD169 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A004712423FA15AA007EA160 /* Debug */ = {
+		A0F8F5C223FB8C96002AD169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,7 +300,7 @@
 			};
 			name = Debug;
 		};
-		A004712523FA15AA007EA160 /* Release */ = {
+		A0F8F5C323FB8C96002AD169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,15 +354,13 @@
 			};
 			name = Release;
 		};
-		A004712723FA15AA007EA160 /* Debug */ = {
+		A0F8F5C523FB8C96002AD169 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C489733EF32AFD34025F6A0 /* Pods-EinsteinTest.debug.xcconfig */;
+			baseConfigurationReference = D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"EinsteinTest/Preview Content\"";
 				DEVELOPMENT_TEAM = Y8N79BENX2;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = EinsteinTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,15 +373,13 @@
 			};
 			name = Debug;
 		};
-		A004712823FA15AA007EA160 /* Release */ = {
+		A0F8F5C623FB8C96002AD169 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 385C150D83D0B7111932BFF8 /* Pods-EinsteinTest.release.xcconfig */;
+			baseConfigurationReference = 4FDB35D452F74FC72564B0AD /* Pods-EinsteinTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"EinsteinTest/Preview Content\"";
 				DEVELOPMENT_TEAM = Y8N79BENX2;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = EinsteinTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,25 +395,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A004710D23FA15A5007EA160 /* Build configuration list for PBXProject "EinsteinTest" */ = {
+		A0F8F5AB23FB8C95002AD169 /* Build configuration list for PBXProject "EinsteinTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A004712423FA15AA007EA160 /* Debug */,
-				A004712523FA15AA007EA160 /* Release */,
+				A0F8F5C223FB8C96002AD169 /* Debug */,
+				A0F8F5C323FB8C96002AD169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A004712623FA15AA007EA160 /* Build configuration list for PBXNativeTarget "EinsteinTest" */ = {
+		A0F8F5C423FB8C96002AD169 /* Build configuration list for PBXNativeTarget "EinsteinTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A004712723FA15AA007EA160 /* Debug */,
-				A004712823FA15AA007EA160 /* Release */,
+				A0F8F5C523FB8C96002AD169 /* Debug */,
+				A0F8F5C623FB8C96002AD169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A004710A23FA15A5007EA160 /* Project object */;
+	rootObject = A0F8F5A823FB8C95002AD169 /* Project object */;
 }

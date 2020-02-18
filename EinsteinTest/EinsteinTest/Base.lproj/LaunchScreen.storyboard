@@ -15,16 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChuckLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="6DR-Ep-ppH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-Gn-ihM">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6DR-Ep-ppH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CwG-vZ-HBY"/>
-                            <constraint firstItem="6DR-Ep-ppH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N8B-SL-5ZT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6DR-Ep-ppH" secondAttribute="trailing" id="kvR-4g-uTZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6DR-Ep-ppH" secondAttribute="bottom" id="sku-GK-hfz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LTt-Gn-ihM" secondAttribute="bottom" id="Gtv-6L-Cpg"/>
+                            <constraint firstItem="LTt-Gn-ihM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pc6-7C-Gny"/>
+                            <constraint firstItem="LTt-Gn-ihM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="df4-6z-Bza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LTt-Gn-ihM" secondAttribute="trailing" id="tYD-uF-GBW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ChuckLaunch" width="180" height="320"/>
+        <image name="Launch" width="180" height="320"/>
     </resources>
 </document>
