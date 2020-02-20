@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-class JokeListRouter {
+class JokeListRouter: JokeListRouterProtocol{
     
     static func setupModuleReferences(from listView: JokeListTableViewController) {
         
@@ -22,7 +23,9 @@ class JokeListRouter {
         interactor.presenter = presenter
     }
     
-    func openJoke() {
-        print("Joke to open")
+    func openJoke(from navController: UINavigationController, category: String) {
+      
+        let jokeDetailsView: JokeDetailsViewController = JokeDetailsRouter.setupModuleReferences()
+        navController.pushViewController(jokeDetailsView ,animated: true)
     }
 }

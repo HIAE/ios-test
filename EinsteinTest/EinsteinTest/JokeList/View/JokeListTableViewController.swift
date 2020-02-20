@@ -18,7 +18,7 @@ class JokeListTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Category List"
+        self.title = "categorias"
        
         JokeListRouter.setupModuleReferences(from: self)
         self.presenter?.fetchJokeCategories()
@@ -56,6 +56,11 @@ extension JokeListTableViewController: UITableViewDataSource, UITableViewDelegat
         categoryCell.categoryTitleLabel?.text = self.jokeList[indexPath.row]
         
         return categoryCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.presenter?.goToJoke(with: jokeList[indexPath.row], navController: self.navigationController!)
     }
 }
 

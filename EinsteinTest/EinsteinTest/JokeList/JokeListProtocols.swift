@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol JokeListViewProtocol: class {
-    
+        
     func showCategories(_ categories: [String])
     func showError(error: String)
 }
@@ -27,6 +28,7 @@ protocol JokeListPresenterProtocol: class {
     var router: JokeListRouter? {get set}
     
     func fetchJokeCategories()
+    func goToJoke(with category: String, navController: UINavigationController)
     
     func onFetchJokeSuccess(jokeList: [String])
     func onFetchJokeError(error: String)
@@ -35,5 +37,5 @@ protocol JokeListPresenterProtocol: class {
 protocol JokeListRouterProtocol: class {
     
     static func setupModuleReferences(from listView: JokeListTableViewController)
-    func openJoke()
+    func openJoke(from navController: UINavigationController, category: String)
 }

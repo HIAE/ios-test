@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 class JokeListPresenter: JokeListPresenterProtocol {
-      
+
     var view: JokeListViewProtocol?
     var interactor: JokeListInteractorProtocol?
     var router: JokeListRouter?
@@ -17,7 +18,6 @@ class JokeListPresenter: JokeListPresenterProtocol {
     func fetchJokeCategories() {
         
         self.interactor?.fetchCategories()
-        //print ("List Presenter: Fetching Movies")
     }
     
     func onFetchJokeSuccess(jokeList: [String]) {
@@ -26,5 +26,9 @@ class JokeListPresenter: JokeListPresenterProtocol {
        
     func onFetchJokeError(error: String) {
         print ("error list: \(error)")
+    }
+    
+    func goToJoke(with category: String, navController: UINavigationController) {
+        self.router?.openJoke(from: navController, category: category)
     }
 }
