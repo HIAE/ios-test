@@ -43,8 +43,9 @@ extension JokeDetailsViewController: JokeDetailsViewProtocol {
   
     func updateWith(joke: JokeDetailsModel) {
         self.jokeLabel.text = joke.value
-        print ("Joke: \(joke.value)")
-        print ("Icon: \(joke.icon_url)")
+        self.jokeIcon.load(urlString: joke.icon_url)
+//        print ("Joke: \(joke.value)")
+//        print ("Icon: \(joke.icon_url)")
         
         self.loadingIcon.stopAnimating()
     }

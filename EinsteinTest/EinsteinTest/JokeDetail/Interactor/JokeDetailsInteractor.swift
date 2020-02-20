@@ -18,7 +18,7 @@ class JokeDetailsInteractor: JokeDetailsInteractorProtocol {
         let _ = AF.request(self.getEndpoint(for: category))
             .validate()
             .responseDecodable(of: JokeDetailsModel.self) { (response) in
-              print(response)
+         
                 if response.response?.statusCode == 200 {
                     if let joke = response.value {
                         self.presenter?.onGetRandomJokeSuccess(joke: joke)

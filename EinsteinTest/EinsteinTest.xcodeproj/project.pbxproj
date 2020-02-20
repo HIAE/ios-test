@@ -26,6 +26,7 @@
 		A0F8F62323FE4A07002AD169 /* JokeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F62223FE4A07002AD169 /* JokeDetailsViewController.swift */; };
 		A0F8F62523FE51DA002AD169 /* JokeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F62423FE51DA002AD169 /* JokeDetailsPresenter.swift */; };
 		A0F8F62723FE51E6002AD169 /* JokeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F62623FE51E6002AD169 /* JokeDetailsInteractor.swift */; };
+		A0F8F62923FE6B14002AD169 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F62823FE6B14002AD169 /* ImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A0F8F62223FE4A07002AD169 /* JokeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailsViewController.swift; sourceTree = "<group>"; };
 		A0F8F62423FE51DA002AD169 /* JokeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailsPresenter.swift; sourceTree = "<group>"; };
 		A0F8F62623FE51E6002AD169 /* JokeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailsInteractor.swift; sourceTree = "<group>"; };
+		A0F8F62823FE6B14002AD169 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EinsteinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.debug.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				A0F8F5B923FB8C95002AD169 /* Main.storyboard */,
 				A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */,
 				A0F8F5BE23FB8C96002AD169 /* LaunchScreen.storyboard */,
+				A0F8F62823FE6B14002AD169 /* ImageViewExtension.swift */,
 			);
 			path = "Base App";
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				A0F8F62523FE51DA002AD169 /* JokeDetailsPresenter.swift in Sources */,
 				A0F8F62323FE4A07002AD169 /* JokeDetailsViewController.swift in Sources */,
 				A0F8F62723FE51E6002AD169 /* JokeDetailsInteractor.swift in Sources */,
+				A0F8F62923FE6B14002AD169 /* ImageViewExtension.swift in Sources */,
 				A0F8F5B623FB8C95002AD169 /* SceneDelegate.swift in Sources */,
 				A0F8F60F23FE16E6002AD169 /* JokeListRouter.swift in Sources */,
 				A0F8F62123FE48FB002AD169 /* JokeDetailsProtocols.swift in Sources */,
