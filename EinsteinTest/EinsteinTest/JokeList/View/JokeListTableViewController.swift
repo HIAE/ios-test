@@ -18,9 +18,9 @@ class JokeListTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Joke List"
+        self.title = "Category List"
+       
         JokeListRouter.setupModuleReferences(from: self)
-        
         self.presenter?.fetchJokeCategories()
     }
     
@@ -46,14 +46,17 @@ extension JokeListTableViewController: UITableViewDataSource, UITableViewDelegat
         return self.jokeList.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = UITableViewCell()
-        cell.textLabel?.text = self.jokeList[indexPath.row]
-        return cell
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
     }
     
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let categoryCell = self.tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! JokeCategoryTableViewCell
+        categoryCell.categoryTitleLabel?.text = self.jokeList[indexPath.row]
+        
+        return categoryCell
+    }
 }
 
 extension JokeListTableViewController: JokeListViewProtocol {

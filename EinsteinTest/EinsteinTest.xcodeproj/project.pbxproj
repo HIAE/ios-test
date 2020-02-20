@@ -20,6 +20,7 @@
 		A0F8F60823FE0D3F002AD169 /* JokeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F60723FE0D3F002AD169 /* JokeListInteractor.swift */; };
 		A0F8F60C23FE1056002AD169 /* JokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F60B23FE1056002AD169 /* JokeListModel.swift */; };
 		A0F8F60F23FE16E6002AD169 /* JokeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F60E23FE16E6002AD169 /* JokeListRouter.swift */; };
+		A0F8F61223FE3DD1002AD169 /* JokeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F61123FE3DD1002AD169 /* JokeCategoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A0F8F60723FE0D3F002AD169 /* JokeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListInteractor.swift; sourceTree = "<group>"; };
 		A0F8F60B23FE1056002AD169 /* JokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListModel.swift; sourceTree = "<group>"; };
 		A0F8F60E23FE16E6002AD169 /* JokeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListRouter.swift; sourceTree = "<group>"; };
+		A0F8F61123FE3DD1002AD169 /* JokeCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EinsteinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.debug.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 		A0F8F5FA23FDFC8B002AD169 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0F8F61323FE3E43002AD169 /* Cell */,
 				A0F8F5F823FDF7EB002AD169 /* JokeListTableViewController.swift */,
 			);
 			path = View;
@@ -161,6 +164,14 @@
 				A0F8F60E23FE16E6002AD169 /* JokeListRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		A0F8F61323FE3E43002AD169 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F61123FE3DD1002AD169 /* JokeCategoryTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F8F5F923FDF7EB002AD169 /* JokeListTableViewController.swift in Sources */,
+				A0F8F61223FE3DD1002AD169 /* JokeCategoryTableViewCell.swift in Sources */,
 				A0F8F5FF23FDFD4B002AD169 /* JokeListProtocols.swift in Sources */,
 				A0F8F5B423FB8C95002AD169 /* AppDelegate.swift in Sources */,
 				A0F8F60C23FE1056002AD169 /* JokeListModel.swift in Sources */,
