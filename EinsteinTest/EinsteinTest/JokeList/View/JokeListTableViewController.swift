@@ -19,14 +19,10 @@ class JokeListTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "categorias"
-       
+        self.loadingData()
+
         JokeListRouter.setupModuleReferences(from: self)
         self.presenter?.fetchJokeCategories()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.loadingData()
     }
     
     func loadingData() {
@@ -61,6 +57,7 @@ extension JokeListTableViewController: UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.presenter?.goToJoke(with: jokeList[indexPath.row], navController: self.navigationController!)
+        self.tableView.cellForRow(at: indexPath)?.setSelected(false, animated: false)
     }
 }
 
