@@ -25,7 +25,7 @@ class JokeListPresenter: JokeListPresenterProtocol {
     }
        
     func onFetchJokeError(error: String) {
-        print ("error list: \(error)")
+        self.view?.showError(error: error)
     }
     
     func goToJoke(with category: String, navController: UINavigationController) {

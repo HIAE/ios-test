@@ -70,9 +70,9 @@ extension JokeListTableViewController: JokeListViewProtocol {
     }
     
     func showError(error: String) {
-        print ("Error on joke category list: \(error)")
+
+        let errorAlert = UIAlertController(title: "Erro", message: error, preferredStyle: .alert)
+        errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         self.loadingIcon.stopAnimating()
     }
-    
-    
 }

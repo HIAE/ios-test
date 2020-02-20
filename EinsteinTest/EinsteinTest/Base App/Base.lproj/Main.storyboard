@@ -107,13 +107,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rope" translatesAutoresizingMaskIntoConstraints="NO" id="IRq-v0-uBa">
-                                <rect key="frame" x="0.0" y="94" width="414.00000000000023" height="25"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Qp3-L1-0x0"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rope" translatesAutoresizingMaskIntoConstraints="NO" id="6jw-VH-cjK">
-                                <rect key="frame" x="0.0" y="787" width="414.00000000000023" height="25"/>
+                                <rect key="frame" x="0.0" y="787" width="414" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="pIM-ri-XaS"/>
                                 </constraints>
