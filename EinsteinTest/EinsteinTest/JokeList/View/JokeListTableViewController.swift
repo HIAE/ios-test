@@ -9,17 +9,16 @@
 import Foundation
 import UIKit
 
-class JokeListTableViewController: UITableViewController {
+class JokeListTableViewController: UIViewController {
 
-    var presenter: ViewToPresenterJokeListProtocol?
+    var presenter: JokeListPresenterProtocol?
     let loadingIcon = UIActivityIndicatorView(style: .large)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Joke List"
+        JokeListRouter.setupModuleReferences(from: self)
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
         self.presenter?.fetchJokeCategories()
     }
     
@@ -39,14 +38,28 @@ class JokeListTableViewController: UITableViewController {
     }
 }
 
-extension JokeListTableViewController: PresenterToViewJokeListProtocol {
+extension JokeListTableViewController: UITableViewDataSource, UITableViewDelegate {
+ 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
     
-    func onFetchJokeSuccess(jokeList: [String]) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        return UITableViewCell()
+    }
+    
+    
+}
+
+extension JokeListTableViewController: JokeListViewProtocol {
+    
+    func showCategories(jokeList: [String]) {
         print("Success on joke category list: \(jokeList)")
         self.loadingIcon.stopAnimating()
     }
     
-    func onFetchJokeError(error: String) {
+    func showError(error: String) {
         print ("Error on joke category list: \(error)")
         self.loadingIcon.stopAnimating()
     }

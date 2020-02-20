@@ -17,6 +17,9 @@
 		A0F8F5FD23FDFCB6002AD169 /* JokeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5FC23FDFCB6002AD169 /* JokeListPresenter.swift */; };
 		A0F8F5FF23FDFD4B002AD169 /* JokeListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5FE23FDFD4B002AD169 /* JokeListProtocols.swift */; };
 		A0F8F60223FE009D002AD169 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F60123FE009D002AD169 /* Info.plist */; };
+		A0F8F60823FE0D3F002AD169 /* JokeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F60723FE0D3F002AD169 /* JokeListInteractor.swift */; };
+		A0F8F60C23FE1056002AD169 /* JokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F60B23FE1056002AD169 /* JokeListModel.swift */; };
+		A0F8F60F23FE16E6002AD169 /* JokeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F60E23FE16E6002AD169 /* JokeListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		A0F8F5FC23FDFCB6002AD169 /* JokeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListPresenter.swift; sourceTree = "<group>"; };
 		A0F8F5FE23FDFD4B002AD169 /* JokeListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListProtocols.swift; sourceTree = "<group>"; };
 		A0F8F60123FE009D002AD169 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F8F60723FE0D3F002AD169 /* JokeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListInteractor.swift; sourceTree = "<group>"; };
+		A0F8F60B23FE1056002AD169 /* JokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListModel.swift; sourceTree = "<group>"; };
+		A0F8F60E23FE16E6002AD169 /* JokeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListRouter.swift; sourceTree = "<group>"; };
 		A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EinsteinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.debug.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +103,9 @@
 				A0F8F5FE23FDFD4B002AD169 /* JokeListProtocols.swift */,
 				A0F8F5FA23FDFC8B002AD169 /* View */,
 				A0F8F5FB23FDFCA5002AD169 /* Presenter */,
+				A0F8F60623FE0D1A002AD169 /* Interactor */,
+				A0F8F60923FE101B002AD169 /* Entity */,
+				A0F8F60D23FE16C2002AD169 /* Router */,
 			);
 			path = JokeList;
 			sourceTree = "<group>";
@@ -128,6 +137,30 @@
 				A0F8F5FC23FDFCB6002AD169 /* JokeListPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A0F8F60623FE0D1A002AD169 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F60723FE0D3F002AD169 /* JokeListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A0F8F60923FE101B002AD169 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F60B23FE1056002AD169 /* JokeListModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A0F8F60D23FE16C2002AD169 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F60E23FE16E6002AD169 /* JokeListRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +287,11 @@
 				A0F8F5F923FDF7EB002AD169 /* JokeListTableViewController.swift in Sources */,
 				A0F8F5FF23FDFD4B002AD169 /* JokeListProtocols.swift in Sources */,
 				A0F8F5B423FB8C95002AD169 /* AppDelegate.swift in Sources */,
+				A0F8F60C23FE1056002AD169 /* JokeListModel.swift in Sources */,
 				A0F8F5B623FB8C95002AD169 /* SceneDelegate.swift in Sources */,
+				A0F8F60F23FE16E6002AD169 /* JokeListRouter.swift in Sources */,
 				A0F8F5FD23FDFCB6002AD169 /* JokeListPresenter.swift in Sources */,
+				A0F8F60823FE0D3F002AD169 /* JokeListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

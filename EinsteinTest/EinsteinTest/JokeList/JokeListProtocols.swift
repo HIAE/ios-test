@@ -8,16 +8,32 @@
 
 import Foundation
 
-
-// View <-> Presenter //
-
-protocol ViewToPresenterJokeListProtocol: class {
+protocol JokeListViewProtocol: class {
     
-    func fetchJokeCategories()
+    func showCategories(jokeList: [String])
+    func showError(error: String)
 }
 
-protocol PresenterToViewJokeListProtocol:class {
+protocol JokeListInteractorProtocol: class {
+    
+    var presenter: JokeListPresenterProtocol? {get set}
+    func fetchCategories()
+}
+
+protocol JokeListPresenterProtocol: class {
+    
+    var view: JokeListViewProtocol? {get set}
+    var interactor: JokeListInteractorProtocol? {get set}
+    var router: JokeListRouter? {get set}
+    
+    func fetchJokeCategories()
     
     func onFetchJokeSuccess(jokeList: [String])
     func onFetchJokeError(error: String)
+}
+
+protocol JokeListRouterProtocol: class {
+    
+    static func setupModuleReferences(from listView: JokeListTableViewController)
+    func openJoke()
 }

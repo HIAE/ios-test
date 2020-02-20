@@ -8,12 +8,23 @@
 
 import Foundation
 
-class JokeListPresenter: ViewToPresenterJokeListProtocol {
-   
-    var view: PresenterToViewJokeListProtocol?
+class JokeListPresenter: JokeListPresenterProtocol {
+      
+    var view: JokeListViewProtocol?
+    var interactor: JokeListInteractorProtocol?
+    var router: JokeListRouter?
     
     func fetchJokeCategories() {
         
+        
         print ("List Presenter: Fetching Movies")
+    }
+    
+    func onFetchJokeSuccess(jokeList: [String]) {
+           print("Success List")
+    }
+       
+    func onFetchJokeError(error: String) {
+        print ("error list: \(error)")
     }
 }
