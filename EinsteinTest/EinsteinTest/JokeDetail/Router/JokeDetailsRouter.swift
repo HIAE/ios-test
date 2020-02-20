@@ -11,7 +11,7 @@ import UIKit
 
 class JokeDetailsRouter: JokeDetailsRouterProtocol {
     
-    static func setupModuleReferences() -> JokeDetailsViewController {
+    static func setupModuleReferences(with category: String) -> JokeDetailsViewController {
        
         let jokeDetailsView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "jokeDetailsView") as! JokeDetailsViewController
         
@@ -22,6 +22,7 @@ class JokeDetailsRouter: JokeDetailsRouterProtocol {
         presenter.view = jokeDetailsView
         presenter.router = JokeDetailsRouter()
         presenter.interactor = interactor
+        presenter.category = category
         interactor.presenter = presenter
         
         return jokeDetailsView

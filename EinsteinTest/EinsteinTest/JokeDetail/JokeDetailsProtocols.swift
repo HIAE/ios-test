@@ -35,5 +35,5 @@ protocol JokeDetailsInteractorProtocol: class {
 
 protocol JokeDetailsRouterProtocol: class {
     
-    static func setupModuleReferences() -> JokeDetailsViewController
+    static func setupModuleReferences(with category: String) -> JokeDetailsViewController
 }

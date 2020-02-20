@@ -25,7 +25,7 @@ class JokeListRouter: JokeListRouterProtocol{
     
     func openJoke(from navController: UINavigationController, category: String) {
       
-        let jokeDetailsView: JokeDetailsViewController = JokeDetailsRouter.setupModuleReferences()
+        let jokeDetailsView: JokeDetailsViewController = JokeDetailsRouter.setupModuleReferences(with: category)
         navController.pushViewController(jokeDetailsView ,animated: true)
     }
 }
