@@ -10,10 +10,13 @@
 		3A592127DECF9B4F5D5F8BAB /* Pods_EinsteinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */; };
 		A0F8F5B423FB8C95002AD169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5B323FB8C95002AD169 /* AppDelegate.swift */; };
 		A0F8F5B623FB8C95002AD169 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5B523FB8C95002AD169 /* SceneDelegate.swift */; };
-		A0F8F5B823FB8C95002AD169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5B723FB8C95002AD169 /* ViewController.swift */; };
 		A0F8F5BB23FB8C95002AD169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F5B923FB8C95002AD169 /* Main.storyboard */; };
 		A0F8F5BD23FB8C96002AD169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */; };
 		A0F8F5C023FB8C96002AD169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F5BE23FB8C96002AD169 /* LaunchScreen.storyboard */; };
+		A0F8F5F923FDF7EB002AD169 /* JokeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5F823FDF7EB002AD169 /* JokeListTableViewController.swift */; };
+		A0F8F5FD23FDFCB6002AD169 /* JokeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5FC23FDFCB6002AD169 /* JokeListPresenter.swift */; };
+		A0F8F5FF23FDFD4B002AD169 /* JokeListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8F5FE23FDFD4B002AD169 /* JokeListProtocols.swift */; };
+		A0F8F60223FE009D002AD169 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0F8F60123FE009D002AD169 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,13 @@
 		A0F8F5B023FB8C95002AD169 /* EinsteinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EinsteinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F8F5B323FB8C95002AD169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0F8F5B523FB8C95002AD169 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0F8F5B723FB8C95002AD169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0F8F5BA23FB8C95002AD169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0F8F5BF23FB8C96002AD169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A0F8F5C123FB8C96002AD169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F8F5F823FDF7EB002AD169 /* JokeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListTableViewController.swift; sourceTree = "<group>"; };
+		A0F8F5FC23FDFCB6002AD169 /* JokeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListPresenter.swift; sourceTree = "<group>"; };
+		A0F8F5FE23FDFD4B002AD169 /* JokeListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListProtocols.swift; sourceTree = "<group>"; };
+		A0F8F60123FE009D002AD169 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B05AEC06BC35F304028CEF /* Pods_EinsteinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EinsteinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EinsteinTest.debug.xcconfig"; path = "Target Support Files/Pods-EinsteinTest/Pods-EinsteinTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +53,6 @@
 				D7D7CC89ADE3B2F5AB1ED93A /* Pods-EinsteinTest.debug.xcconfig */,
 				4FDB35D452F74FC72564B0AD /* Pods-EinsteinTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +85,49 @@
 		A0F8F5B223FB8C95002AD169 /* EinsteinTest */ = {
 			isa = PBXGroup;
 			children = (
+				A0F8F5F723FDF7CE002AD169 /* Base App */,
+				A0F8F5F623FDF69F002AD169 /* JokeList */,
+			);
+			path = EinsteinTest;
+			sourceTree = "<group>";
+		};
+		A0F8F5F623FDF69F002AD169 /* JokeList */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F5FE23FDFD4B002AD169 /* JokeListProtocols.swift */,
+				A0F8F5FA23FDFC8B002AD169 /* View */,
+				A0F8F5FB23FDFCA5002AD169 /* Presenter */,
+			);
+			path = JokeList;
+			sourceTree = "<group>";
+		};
+		A0F8F5F723FDF7CE002AD169 /* Base App */ = {
+			isa = PBXGroup;
+			children = (
 				A0F8F5B323FB8C95002AD169 /* AppDelegate.swift */,
 				A0F8F5B523FB8C95002AD169 /* SceneDelegate.swift */,
-				A0F8F5B723FB8C95002AD169 /* ViewController.swift */,
+				A0F8F60123FE009D002AD169 /* Info.plist */,
 				A0F8F5B923FB8C95002AD169 /* Main.storyboard */,
 				A0F8F5BC23FB8C96002AD169 /* Assets.xcassets */,
 				A0F8F5BE23FB8C96002AD169 /* LaunchScreen.storyboard */,
-				A0F8F5C123FB8C96002AD169 /* Info.plist */,
 			);
-			path = EinsteinTest;
+			path = "Base App";
+			sourceTree = "<group>";
+		};
+		A0F8F5FA23FDFC8B002AD169 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F5F823FDF7EB002AD169 /* JokeListTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0F8F5FB23FDFCA5002AD169 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8F5FC23FDFCB6002AD169 /* JokeListPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F8F60223FE009D002AD169 /* Info.plist in Resources */,
 				A0F8F5C023FB8C96002AD169 /* LaunchScreen.storyboard in Resources */,
 				A0F8F5BD23FB8C96002AD169 /* Assets.xcassets in Resources */,
 				A0F8F5BB23FB8C95002AD169 /* Main.storyboard in Resources */,
@@ -212,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F8F5B823FB8C95002AD169 /* ViewController.swift in Sources */,
+				A0F8F5F923FDF7EB002AD169 /* JokeListTableViewController.swift in Sources */,
+				A0F8F5FF23FDFD4B002AD169 /* JokeListProtocols.swift in Sources */,
 				A0F8F5B423FB8C95002AD169 /* AppDelegate.swift in Sources */,
 				A0F8F5B623FB8C95002AD169 /* SceneDelegate.swift in Sources */,
+				A0F8F5FD23FDFCB6002AD169 /* JokeListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8N79BENX2;
-				INFOPLIST_FILE = EinsteinTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EinsteinTest/Base App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8N79BENX2;
-				INFOPLIST_FILE = EinsteinTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EinsteinTest/Base App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
