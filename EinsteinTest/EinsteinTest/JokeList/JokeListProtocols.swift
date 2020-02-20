@@ -10,7 +10,7 @@ import Foundation
 
 protocol JokeListViewProtocol: class {
     
-    func showCategories(jokeList: [String])
+    func showCategories(_ categories: [String])
     func showError(error: String)
 }
 

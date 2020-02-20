@@ -15,12 +15,11 @@ class JokeListRouter {
         let presenter = JokeListPresenter()
         let interactor = JokeListInteractor()
         
-        listView.presenter?.view = listView
-        listView.presenter?.interactor = JokeListInteractor()
-        listView.presenter?.router = JokeListRouter()
-        interactor.presenter = presenter
-        
         listView.presenter = presenter
+        presenter.view = listView
+        presenter.router = JokeListRouter()
+        presenter.interactor = interactor
+        interactor.presenter = presenter
     }
     
     func openJoke() {

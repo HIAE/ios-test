@@ -9,22 +9,23 @@
 import Foundation
 import Alamofire
 
-class JokeListInteractor {
+class JokeListInteractor: JokeListInteractorProtocol {
 
     fileprivate static let categoryListEndpoint: String = "https://api.chucknorris.io/jokes/categories"
     var presenter: JokeListPresenterProtocol?
-    
-}
-
-extension JokeListInteractor: JokeListInteractorProtocol {
    
     func fetchCategories() {
        
-        let request = AF.request(JokeListInteractor.categoryListEndpoint)
-
-        request.responseJSON { (data) in
-            print("LIST RESPONSE")
-            print(data)
+        let _ = AF.request(JokeListInteractor.categoryListEndpoint)
+            .validate()
+            .responseDecodable(of: [String].self) { (response) in
+                guard let categories = response.value else {return}
+            
+                if response.response?.statusCode == 200 {
+                    self.presenter?.onFetchJokeSuccess(jokeList: categories)
+                } else {
+                    self.presenter?.onFetchJokeError(error: "Erro ao solicitar categorias")
+                }
         }
     }
 }

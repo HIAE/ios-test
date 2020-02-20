@@ -11,8 +11,10 @@ import UIKit
 
 class JokeListTableViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
     var presenter: JokeListPresenterProtocol?
     let loadingIcon = UIActivityIndicatorView(style: .large)
+    var jokeList: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +43,14 @@ class JokeListTableViewController: UIViewController {
 extension JokeListTableViewController: UITableViewDataSource, UITableViewDelegate {
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.jokeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell()
+        let cell = UITableViewCell()
+        cell.textLabel?.text = self.jokeList[indexPath.row]
+        return cell
     }
     
     
@@ -54,8 +58,9 @@ extension JokeListTableViewController: UITableViewDataSource, UITableViewDelegat
 
 extension JokeListTableViewController: JokeListViewProtocol {
     
-    func showCategories(jokeList: [String]) {
-        print("Success on joke category list: \(jokeList)")
+    func showCategories(_ categories: [String]) {
+        self.jokeList = categories
+        self.tableView.reloadData()
         self.loadingIcon.stopAnimating()
     }
     

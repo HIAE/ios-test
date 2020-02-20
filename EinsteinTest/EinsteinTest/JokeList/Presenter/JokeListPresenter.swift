@@ -13,15 +13,15 @@ class JokeListPresenter: JokeListPresenterProtocol {
     var view: JokeListViewProtocol?
     var interactor: JokeListInteractorProtocol?
     var router: JokeListRouter?
-    
+        
     func fetchJokeCategories() {
         
-        
-        print ("List Presenter: Fetching Movies")
+        self.interactor?.fetchCategories()
+        //print ("List Presenter: Fetching Movies")
     }
     
     func onFetchJokeSuccess(jokeList: [String]) {
-           print("Success List")
+        self.view?.showCategories(jokeList)
     }
        
     func onFetchJokeError(error: String) {
