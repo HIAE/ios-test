@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct JokeDetailsModel: Codable {
+struct JokeDetailsModel: Decodable {
     
-    let joke: String
-    let iconURL: String
+    let value: String
+    let icon_url: String
     
-    private enum codingKeys: String, CodingKey {
-        case joke = "value"
-        case iconURL = "url"
-    }
+//    enum codingKeys: String, CodingKey {
+//        case joke
+//        case iconURL
+//    }
 }

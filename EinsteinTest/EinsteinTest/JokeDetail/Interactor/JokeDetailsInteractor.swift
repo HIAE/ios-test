@@ -7,16 +7,39 @@
 //
 
 import Foundation
+import Alamofire
 
 class JokeDetailsInteractor: JokeDetailsInteractorProtocol {
     
     var presenter: JokeDetailsPresenterProtocol?
 
     func getRandomJoke(for category: String?) {
-        print("Get new joke for category: \(category ?? "NO CATEGORY")")
         
-        let newJoke = JokeDetailsModel(joke: "This is a joke example", iconURL: "URLEXAMPLE")
+        let _ = AF.request(self.getEndpoint(for: category))
+            .validate()
+            .responseDecodable(of: JokeDetailsModel.self) { (response) in
+              print(response)
+                if response.response?.statusCode == 200 {
+                    if let joke = response.value {
+                        self.presenter?.onGetRandomJokeSuccess(joke: joke)
+                    } else {
+                        self.presenter?.onGetRandomJokeError()
+                    }
+                } else {
+                    self.presenter?.onGetRandomJokeError()
+                }
+        }
         
-        self.presenter?.onGetRandomJokeSuccess(joke: newJoke)
+    }
+    
+    func getEndpoint(for category: String?) -> String {
+    
+        var baseURL = "https://api.chucknorris.io/jokes/random"
+        
+        if let category = category {
+            baseURL.append("?category=\(category)")
+        }
+        
+        return baseURL
     }
 }

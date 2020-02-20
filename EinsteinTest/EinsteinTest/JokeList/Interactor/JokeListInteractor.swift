@@ -19,10 +19,13 @@ class JokeListInteractor: JokeListInteractorProtocol {
         let _ = AF.request(JokeListInteractor.categoryListEndpoint)
             .validate()
             .responseDecodable(of: [String].self) { (response) in
-                guard let categories = response.value else {return}
             
                 if response.response?.statusCode == 200 {
-                    self.presenter?.onFetchJokeSuccess(jokeList: categories)
+                    if let categories = response.value {
+                        self.presenter?.onFetchJokeSuccess(jokeList: categories)
+                    } else {
+                        self.presenter?.onFetchJokeError(error: "Erro ao solicitar categorias")
+                    }
                 } else {
                     self.presenter?.onFetchJokeError(error: "Erro ao solicitar categorias")
                 }
