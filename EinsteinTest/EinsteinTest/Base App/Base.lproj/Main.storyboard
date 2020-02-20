@@ -118,10 +118,15 @@
                                     <constraint firstAttribute="height" constant="25" id="pIM-ri-XaS"/>
                                 </constraints>
                             </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asQ-nj-Aej">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Pyn-L8-azz" firstAttribute="leading" secondItem="YyG-Ep-zJ8" secondAttribute="leading" constant="16" id="0Hc-UI-SLu"/>
+                            <constraint firstItem="asQ-nj-Aej" firstAttribute="height" secondItem="uI6-qH-pNo" secondAttribute="height" id="0aD-9u-eNf"/>
                             <constraint firstItem="YyG-Ep-zJ8" firstAttribute="trailing" secondItem="IRq-v0-uBa" secondAttribute="trailing" id="28K-Cs-Vrk"/>
                             <constraint firstItem="IRq-v0-uBa" firstAttribute="leading" secondItem="YyG-Ep-zJ8" secondAttribute="leading" id="4ap-7x-bXp"/>
                             <constraint firstItem="Pyn-L8-azz" firstAttribute="top" secondItem="ORq-Zy-GpJ" secondAttribute="bottom" constant="50" id="4po-Og-KIF"/>
@@ -137,21 +142,25 @@
                             <constraint firstItem="t1q-PA-vJq" firstAttribute="height" secondItem="pzG-vk-CF2" secondAttribute="height" id="fHG-On-ff7"/>
                             <constraint firstItem="t1q-PA-vJq" firstAttribute="width" secondItem="pzG-vk-CF2" secondAttribute="width" id="kEN-AX-uV1"/>
                             <constraint firstItem="6jw-VH-cjK" firstAttribute="top" secondItem="t1q-PA-vJq" secondAttribute="bottom" constant="25" id="liu-Xg-PbY"/>
+                            <constraint firstItem="asQ-nj-Aej" firstAttribute="centerY" secondItem="YyG-Ep-zJ8" secondAttribute="centerY" id="uqp-k2-QEZ"/>
                             <constraint firstItem="ORq-Zy-GpJ" firstAttribute="leading" secondItem="YyG-Ep-zJ8" secondAttribute="leading" constant="100" id="vUQ-oX-Tsx"/>
                             <constraint firstItem="IRq-v0-uBa" firstAttribute="top" secondItem="YyG-Ep-zJ8" secondAttribute="top" constant="50" id="xKm-6y-efL"/>
                             <constraint firstItem="YyG-Ep-zJ8" firstAttribute="trailing" secondItem="Pyn-L8-azz" secondAttribute="trailing" constant="16" id="xSo-7j-EvG"/>
+                            <constraint firstItem="asQ-nj-Aej" firstAttribute="width" secondItem="uI6-qH-pNo" secondAttribute="width" id="xaV-h9-ces"/>
+                            <constraint firstItem="asQ-nj-Aej" firstAttribute="centerX" secondItem="YyG-Ep-zJ8" secondAttribute="centerX" id="zs8-P4-hqq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YyG-Ep-zJ8"/>
                     </view>
                     <connections>
                         <outlet property="jokeIcon" destination="ORq-Zy-GpJ" id="p3Y-rN-20W"/>
                         <outlet property="jokeLabel" destination="Pyn-L8-azz" id="lkJ-o6-pJF"/>
+                        <outlet property="shadeView" destination="asQ-nj-Aej" id="FC6-aG-PCw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7R-VG-Qn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="RBR-mq-RWM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2307" y="155"/>
+            <point key="canvasLocation" x="2305.7971014492755" y="154.6875"/>
         </scene>
     </scenes>
     <resources>

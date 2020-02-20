@@ -16,8 +16,10 @@ class JokeDetailsViewController: UIViewController {
     
     @IBOutlet weak var jokeIcon: UIImageView!
     @IBOutlet weak var jokeLabel: UILabel!
+    @IBOutlet weak var shadeView: UIView!
     
     @IBAction func randomizeJokeAction(_ sender: Any) {
+        self.loadingData()
         self.presenter?.getJoke()
     }
     
@@ -29,6 +31,8 @@ class JokeDetailsViewController: UIViewController {
     }
     
     func loadingData() {
+
+        self.shadeView.isHidden = false
 
         self.loadingIcon.translatesAutoresizingMaskIntoConstraints = false
         self.loadingIcon.startAnimating()
@@ -44,9 +48,8 @@ extension JokeDetailsViewController: JokeDetailsViewProtocol {
     func updateWith(joke: JokeDetailsModel) {
         self.jokeLabel.text = joke.value
         self.jokeIcon.load(urlString: joke.icon_url)
-//        print ("Joke: \(joke.value)")
-//        print ("Icon: \(joke.icon_url)")
-        
+
+        self.shadeView.isHidden = true
         self.loadingIcon.stopAnimating()
     }
     
@@ -54,6 +57,7 @@ extension JokeDetailsViewController: JokeDetailsViewProtocol {
         let errorAlert = UIAlertController(title: "Oops", message: "A API levou um Roundhouse Kick do chuck. Tente novamente.", preferredStyle: .alert)
         errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
        
+        self.shadeView.isHidden = true
         self.loadingIcon.stopAnimating()
         self.present(errorAlert, animated: true, completion: nil)
     }
