@@ -15,8 +15,9 @@
 		BB4B22B023FFE70C00174B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B22AE23FFE70C00174B87 /* Main.storyboard */; };
 		BB4B22B223FFE71100174B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B22B123FFE71100174B87 /* Assets.xcassets */; };
 		BB4B22B523FFE71100174B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B22B323FFE71100174B87 /* LaunchScreen.storyboard */; };
-		BB4B22C023FFE71100174B87 /* SoRRINDOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22BF23FFE71100174B87 /* SoRRINDOTests.swift */; };
-		BB4B22CB23FFE71100174B87 /* SoRRINDOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22CA23FFE71100174B87 /* SoRRINDOUITests.swift */; };
+		BB4B22C023FFE71100174B87 /* MasterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22BF23FFE71100174B87 /* MasterViewControllerTests.swift */; };
+		BB4B22DC23FFF01F00174B87 /* SoRRINDOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22CA23FFE71100174B87 /* SoRRINDOUITests.swift */; };
+		BB4B22E623FFF40A00174B87 /* DetailViewControllerTestes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22E523FFF40A00174B87 /* DetailViewControllerTestes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +49,12 @@
 		BB4B22B423FFE71100174B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB4B22B623FFE71100174B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB4B22BB23FFE71100174B87 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB4B22BF23FFE71100174B87 /* SoRRINDOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoRRINDOTests.swift; sourceTree = "<group>"; };
+		BB4B22BF23FFE71100174B87 /* MasterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewControllerTests.swift; sourceTree = "<group>"; };
 		BB4B22C123FFE71100174B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB4B22C623FFE71100174B87 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4B22CA23FFE71100174B87 /* SoRRINDOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoRRINDOUITests.swift; sourceTree = "<group>"; };
 		BB4B22CC23FFE71100174B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4B22E523FFF40A00174B87 /* DetailViewControllerTestes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTestes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +105,9 @@
 		BB4B22A223FFE70C00174B87 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				BB4B22A323FFE70C00174B87 /* AppDelegate.swift */,
-				BB4B22A823FFE70C00174B87 /* SceneDelegate.swift */,
-				BB4B22AA23FFE70C00174B87 /* MasterViewController.swift */,
-				BB4B22AC23FFE70C00174B87 /* DetailViewController.swift */,
-				BB4B22AE23FFE70C00174B87 /* Main.storyboard */,
-				BB4B22B123FFE71100174B87 /* Assets.xcassets */,
-				BB4B22B323FFE71100174B87 /* LaunchScreen.storyboard */,
+				BB4B22E223FFF20000174B87 /* Sources */,
 				BB4B22B623FFE71100174B87 /* Info.plist */,
-				BB4B22A523FFE70C00174B87 /* SoRRINDO.xcdatamodeld */,
+				BB4B22E123FFF12100174B87 /* Resources */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -119,7 +115,7 @@
 		BB4B22BE23FFE71100174B87 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BB4B22BF23FFE71100174B87 /* SoRRINDOTests.swift */,
+				BB4B22E323FFF29A00174B87 /* Sources */,
 				BB4B22C123FFE71100174B87 /* Info.plist */,
 			);
 			path = Tests;
@@ -132,6 +128,61 @@
 				BB4B22CC23FFE71100174B87 /* Info.plist */,
 			);
 			path = UITests;
+			sourceTree = "<group>";
+		};
+		BB4B22DE23FFF07D00174B87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B22B323FFE71100174B87 /* LaunchScreen.storyboard */,
+				BB4B22AE23FFE70C00174B87 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB4B22DF23FFF09200174B87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B22AC23FFE70C00174B87 /* DetailViewController.swift */,
+				BB4B22AA23FFE70C00174B87 /* MasterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB4B22E123FFF12100174B87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B22A523FFE70C00174B87 /* SoRRINDO.xcdatamodeld */,
+				BB4B22B123FFE71100174B87 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB4B22E223FFF20000174B87 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B22A823FFE70C00174B87 /* SceneDelegate.swift */,
+				BB4B22A323FFE70C00174B87 /* AppDelegate.swift */,
+				BB4B22DF23FFF09200174B87 /* Controllers */,
+				BB4B22DE23FFF07D00174B87 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BB4B22E323FFF29A00174B87 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B22E423FFF2C500174B87 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BB4B22E423FFF2C500174B87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B22BF23FFE71100174B87 /* MasterViewControllerTests.swift */,
+				BB4B22E523FFF40A00174B87 /* DetailViewControllerTestes.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4B22C023FFE71100174B87 /* SoRRINDOTests.swift in Sources */,
+				BB4B22E623FFF40A00174B87 /* DetailViewControllerTestes.swift in Sources */,
+				BB4B22C023FFE71100174B87 /* MasterViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4B22CB23FFE71100174B87 /* SoRRINDOUITests.swift in Sources */,
+				BB4B22DC23FFF01F00174B87 /* SoRRINDOUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +530,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SoRRINDOTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,7 +551,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SoRRINDOTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +571,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SoRRINDOUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,7 +590,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SoRRINDOUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
