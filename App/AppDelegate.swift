@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SoRRINDO
 //
-//  Created by Henrique Melo on 20/02/20.
+//  Created by Henrique Melo on 21/02/20.
 //  Copyright © 2020 Henrique Melo. All rights reserved.
 //
 

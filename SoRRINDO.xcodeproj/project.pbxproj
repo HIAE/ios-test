@@ -7,68 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB5196AF23FEAD0F00A4B377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5196AE23FEAD0F00A4B377 /* AppDelegate.swift */; };
-		BB5196B123FEAD0F00A4B377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5196B023FEAD0F00A4B377 /* SceneDelegate.swift */; };
-		BB5196B423FEAD0F00A4B377 /* SoRRINDO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB5196B223FEAD0F00A4B377 /* SoRRINDO.xcdatamodeld */; };
-		BB5196B623FEAD0F00A4B377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5196B523FEAD0F00A4B377 /* ContentView.swift */; };
-		BB5196B823FEAD1900A4B377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5196B723FEAD1900A4B377 /* Assets.xcassets */; };
-		BB5196BB23FEAD1900A4B377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5196BA23FEAD1900A4B377 /* Preview Assets.xcassets */; };
-		BB5196BE23FEAD1900A4B377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5196BC23FEAD1900A4B377 /* LaunchScreen.storyboard */; };
-		BB5196C923FEAD1900A4B377 /* SoRRINDOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5196C823FEAD1900A4B377 /* SoRRINDOTests.swift */; };
-		BB5196D423FEAD1900A4B377 /* SoRRINDOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5196D323FEAD1900A4B377 /* SoRRINDOUITests.swift */; };
+		BB4B22A423FFE70C00174B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22A323FFE70C00174B87 /* AppDelegate.swift */; };
+		BB4B22A723FFE70C00174B87 /* SoRRINDO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22A523FFE70C00174B87 /* SoRRINDO.xcdatamodeld */; };
+		BB4B22A923FFE70C00174B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22A823FFE70C00174B87 /* SceneDelegate.swift */; };
+		BB4B22AB23FFE70C00174B87 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22AA23FFE70C00174B87 /* MasterViewController.swift */; };
+		BB4B22AD23FFE70C00174B87 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22AC23FFE70C00174B87 /* DetailViewController.swift */; };
+		BB4B22B023FFE70C00174B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B22AE23FFE70C00174B87 /* Main.storyboard */; };
+		BB4B22B223FFE71100174B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B22B123FFE71100174B87 /* Assets.xcassets */; };
+		BB4B22B523FFE71100174B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B22B323FFE71100174B87 /* LaunchScreen.storyboard */; };
+		BB4B22C023FFE71100174B87 /* SoRRINDOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22BF23FFE71100174B87 /* SoRRINDOTests.swift */; };
+		BB4B22CB23FFE71100174B87 /* SoRRINDOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B22CA23FFE71100174B87 /* SoRRINDOUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BB5196C523FEAD1900A4B377 /* PBXContainerItemProxy */ = {
+		BB4B22BC23FFE71100174B87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BB5196A323FEAD0F00A4B377 /* Project object */;
+			containerPortal = BB4B229823FFE70C00174B87 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB5196AA23FEAD0F00A4B377;
+			remoteGlobalIDString = BB4B229F23FFE70C00174B87;
 			remoteInfo = SoRRINDO;
 		};
-		BB5196D023FEAD1900A4B377 /* PBXContainerItemProxy */ = {
+		BB4B22C723FFE71100174B87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BB5196A323FEAD0F00A4B377 /* Project object */;
+			containerPortal = BB4B229823FFE70C00174B87 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB5196AA23FEAD0F00A4B377;
+			remoteGlobalIDString = BB4B229F23FFE70C00174B87;
 			remoteInfo = SoRRINDO;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB5196AB23FEAD0F00A4B377 /* SoRRINDO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoRRINDO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB5196AE23FEAD0F00A4B377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB5196B023FEAD0F00A4B377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB5196B323FEAD0F00A4B377 /* SoRRINDO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoRRINDO.xcdatamodel; sourceTree = "<group>"; };
-		BB5196B523FEAD0F00A4B377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BB5196B723FEAD1900A4B377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BB5196BA23FEAD1900A4B377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BB5196BD23FEAD1900A4B377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BB5196BF23FEAD1900A4B377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB5196C423FEAD1900A4B377 /* SoRRINDOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoRRINDOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB5196C823FEAD1900A4B377 /* SoRRINDOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoRRINDOTests.swift; sourceTree = "<group>"; };
-		BB5196CA23FEAD1900A4B377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB5196CF23FEAD1900A4B377 /* SoRRINDOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoRRINDOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB5196D323FEAD1900A4B377 /* SoRRINDOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoRRINDOUITests.swift; sourceTree = "<group>"; };
-		BB5196D523FEAD1900A4B377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4B22A023FFE70C00174B87 /* SoRRINDO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoRRINDO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4B22A323FFE70C00174B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB4B22A623FFE70C00174B87 /* SoRRINDO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoRRINDO.xcdatamodel; sourceTree = "<group>"; };
+		BB4B22A823FFE70C00174B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB4B22AA23FFE70C00174B87 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		BB4B22AC23FFE70C00174B87 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB4B22AF23FFE70C00174B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB4B22B123FFE71100174B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4B22B423FFE71100174B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB4B22B623FFE71100174B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4B22BB23FFE71100174B87 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4B22BF23FFE71100174B87 /* SoRRINDOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoRRINDOTests.swift; sourceTree = "<group>"; };
+		BB4B22C123FFE71100174B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4B22C623FFE71100174B87 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4B22CA23FFE71100174B87 /* SoRRINDOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoRRINDOUITests.swift; sourceTree = "<group>"; };
+		BB4B22CC23FFE71100174B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BB5196A823FEAD0F00A4B377 /* Frameworks */ = {
+		BB4B229D23FFE70C00174B87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5196C123FEAD1900A4B377 /* Frameworks */ = {
+		BB4B22B823FFE71100174B87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5196CC23FEAD1900A4B377 /* Frameworks */ = {
+		BB4B22C323FFE71100174B87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,147 +80,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB5196A223FEAD0F00A4B377 = {
+		BB4B229723FFE70C00174B87 = {
 			isa = PBXGroup;
 			children = (
-				BB5196AD23FEAD0F00A4B377 /* SoRRINDO */,
-				BB5196C723FEAD1900A4B377 /* SoRRINDOTests */,
-				BB5196D223FEAD1900A4B377 /* SoRRINDOUITests */,
-				BB5196AC23FEAD0F00A4B377 /* Products */,
+				BB4B22A223FFE70C00174B87 /* App */,
+				BB4B22BE23FFE71100174B87 /* Tests */,
+				BB4B22C923FFE71100174B87 /* UITests */,
+				BB4B22A123FFE70C00174B87 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BB5196AC23FEAD0F00A4B377 /* Products */ = {
+		BB4B22A123FFE70C00174B87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB5196AB23FEAD0F00A4B377 /* SoRRINDO.app */,
-				BB5196C423FEAD1900A4B377 /* SoRRINDOTests.xctest */,
-				BB5196CF23FEAD1900A4B377 /* SoRRINDOUITests.xctest */,
+				BB4B22A023FFE70C00174B87 /* SoRRINDO.app */,
+				BB4B22BB23FFE71100174B87 /* Tests.xctest */,
+				BB4B22C623FFE71100174B87 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB5196AD23FEAD0F00A4B377 /* SoRRINDO */ = {
+		BB4B22A223FFE70C00174B87 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				BB5196AE23FEAD0F00A4B377 /* AppDelegate.swift */,
-				BB5196B023FEAD0F00A4B377 /* SceneDelegate.swift */,
-				BB5196B523FEAD0F00A4B377 /* ContentView.swift */,
-				BB5196B723FEAD1900A4B377 /* Assets.xcassets */,
-				BB5196BC23FEAD1900A4B377 /* LaunchScreen.storyboard */,
-				BB5196BF23FEAD1900A4B377 /* Info.plist */,
-				BB5196B223FEAD0F00A4B377 /* SoRRINDO.xcdatamodeld */,
-				BB5196B923FEAD1900A4B377 /* Preview Content */,
+				BB4B22A323FFE70C00174B87 /* AppDelegate.swift */,
+				BB4B22A823FFE70C00174B87 /* SceneDelegate.swift */,
+				BB4B22AA23FFE70C00174B87 /* MasterViewController.swift */,
+				BB4B22AC23FFE70C00174B87 /* DetailViewController.swift */,
+				BB4B22AE23FFE70C00174B87 /* Main.storyboard */,
+				BB4B22B123FFE71100174B87 /* Assets.xcassets */,
+				BB4B22B323FFE71100174B87 /* LaunchScreen.storyboard */,
+				BB4B22B623FFE71100174B87 /* Info.plist */,
+				BB4B22A523FFE70C00174B87 /* SoRRINDO.xcdatamodeld */,
 			);
-			path = SoRRINDO;
+			path = App;
 			sourceTree = "<group>";
 		};
-		BB5196B923FEAD1900A4B377 /* Preview Content */ = {
+		BB4B22BE23FFE71100174B87 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BB5196BA23FEAD1900A4B377 /* Preview Assets.xcassets */,
+				BB4B22BF23FFE71100174B87 /* SoRRINDOTests.swift */,
+				BB4B22C123FFE71100174B87 /* Info.plist */,
 			);
-			path = "Preview Content";
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		BB5196C723FEAD1900A4B377 /* SoRRINDOTests */ = {
+		BB4B22C923FFE71100174B87 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				BB5196C823FEAD1900A4B377 /* SoRRINDOTests.swift */,
-				BB5196CA23FEAD1900A4B377 /* Info.plist */,
+				BB4B22CA23FFE71100174B87 /* SoRRINDOUITests.swift */,
+				BB4B22CC23FFE71100174B87 /* Info.plist */,
 			);
-			path = SoRRINDOTests;
-			sourceTree = "<group>";
-		};
-		BB5196D223FEAD1900A4B377 /* SoRRINDOUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BB5196D323FEAD1900A4B377 /* SoRRINDOUITests.swift */,
-				BB5196D523FEAD1900A4B377 /* Info.plist */,
-			);
-			path = SoRRINDOUITests;
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB5196AA23FEAD0F00A4B377 /* SoRRINDO */ = {
+		BB4B229F23FFE70C00174B87 /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB5196D823FEAD1900A4B377 /* Build configuration list for PBXNativeTarget "SoRRINDO" */;
+			buildConfigurationList = BB4B22CF23FFE71100174B87 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
-				BB5196A723FEAD0F00A4B377 /* Sources */,
-				BB5196A823FEAD0F00A4B377 /* Frameworks */,
-				BB5196A923FEAD0F00A4B377 /* Resources */,
+				BB4B229C23FFE70C00174B87 /* Sources */,
+				BB4B229D23FFE70C00174B87 /* Frameworks */,
+				BB4B229E23FFE70C00174B87 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SoRRINDO;
+			name = App;
 			productName = SoRRINDO;
-			productReference = BB5196AB23FEAD0F00A4B377 /* SoRRINDO.app */;
+			productReference = BB4B22A023FFE70C00174B87 /* SoRRINDO.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB5196C323FEAD1900A4B377 /* SoRRINDOTests */ = {
+		BB4B22BA23FFE71100174B87 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB5196DB23FEAD1900A4B377 /* Build configuration list for PBXNativeTarget "SoRRINDOTests" */;
+			buildConfigurationList = BB4B22D223FFE71100174B87 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				BB5196C023FEAD1900A4B377 /* Sources */,
-				BB5196C123FEAD1900A4B377 /* Frameworks */,
-				BB5196C223FEAD1900A4B377 /* Resources */,
+				BB4B22B723FFE71100174B87 /* Sources */,
+				BB4B22B823FFE71100174B87 /* Frameworks */,
+				BB4B22B923FFE71100174B87 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB5196C623FEAD1900A4B377 /* PBXTargetDependency */,
+				BB4B22BD23FFE71100174B87 /* PBXTargetDependency */,
 			);
-			name = SoRRINDOTests;
+			name = Tests;
 			productName = SoRRINDOTests;
-			productReference = BB5196C423FEAD1900A4B377 /* SoRRINDOTests.xctest */;
+			productReference = BB4B22BB23FFE71100174B87 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BB5196CE23FEAD1900A4B377 /* SoRRINDOUITests */ = {
+		BB4B22C523FFE71100174B87 /* UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB5196DE23FEAD1900A4B377 /* Build configuration list for PBXNativeTarget "SoRRINDOUITests" */;
+			buildConfigurationList = BB4B22D523FFE71100174B87 /* Build configuration list for PBXNativeTarget "UITests" */;
 			buildPhases = (
-				BB5196CB23FEAD1900A4B377 /* Sources */,
-				BB5196CC23FEAD1900A4B377 /* Frameworks */,
-				BB5196CD23FEAD1900A4B377 /* Resources */,
+				BB4B22C223FFE71100174B87 /* Sources */,
+				BB4B22C323FFE71100174B87 /* Frameworks */,
+				BB4B22C423FFE71100174B87 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB5196D123FEAD1900A4B377 /* PBXTargetDependency */,
+				BB4B22C823FFE71100174B87 /* PBXTargetDependency */,
 			);
-			name = SoRRINDOUITests;
+			name = UITests;
 			productName = SoRRINDOUITests;
-			productReference = BB5196CF23FEAD1900A4B377 /* SoRRINDOUITests.xctest */;
+			productReference = BB4B22C623FFE71100174B87 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BB5196A323FEAD0F00A4B377 /* Project object */ = {
+		BB4B229823FFE70C00174B87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Henrique Melo";
 				TargetAttributes = {
-					BB5196AA23FEAD0F00A4B377 = {
+					BB4B229F23FFE70C00174B87 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					BB5196C323FEAD1900A4B377 = {
+					BB4B22BA23FFE71100174B87 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = BB5196AA23FEAD0F00A4B377;
+						TestTargetID = BB4B229F23FFE70C00174B87;
 					};
-					BB5196CE23FEAD1900A4B377 = {
+					BB4B22C523FFE71100174B87 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = BB5196AA23FEAD0F00A4B377;
+						TestTargetID = BB4B229F23FFE70C00174B87;
 					};
 				};
 			};
-			buildConfigurationList = BB5196A623FEAD0F00A4B377 /* Build configuration list for PBXProject "SoRRINDO" */;
+			buildConfigurationList = BB4B229B23FFE70C00174B87 /* Build configuration list for PBXProject "SoRRINDO" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,37 +221,37 @@
 				en,
 				Base,
 			);
-			mainGroup = BB5196A223FEAD0F00A4B377;
-			productRefGroup = BB5196AC23FEAD0F00A4B377 /* Products */;
+			mainGroup = BB4B229723FFE70C00174B87;
+			productRefGroup = BB4B22A123FFE70C00174B87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB5196AA23FEAD0F00A4B377 /* SoRRINDO */,
-				BB5196C323FEAD1900A4B377 /* SoRRINDOTests */,
-				BB5196CE23FEAD1900A4B377 /* SoRRINDOUITests */,
+				BB4B229F23FFE70C00174B87 /* App */,
+				BB4B22BA23FFE71100174B87 /* Tests */,
+				BB4B22C523FFE71100174B87 /* UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BB5196A923FEAD0F00A4B377 /* Resources */ = {
+		BB4B229E23FFE70C00174B87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5196BE23FEAD1900A4B377 /* LaunchScreen.storyboard in Resources */,
-				BB5196BB23FEAD1900A4B377 /* Preview Assets.xcassets in Resources */,
-				BB5196B823FEAD1900A4B377 /* Assets.xcassets in Resources */,
+				BB4B22B523FFE71100174B87 /* LaunchScreen.storyboard in Resources */,
+				BB4B22B223FFE71100174B87 /* Assets.xcassets in Resources */,
+				BB4B22B023FFE70C00174B87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5196C223FEAD1900A4B377 /* Resources */ = {
+		BB4B22B923FFE71100174B87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5196CD23FEAD1900A4B377 /* Resources */ = {
+		BB4B22C423FFE71100174B87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,53 +261,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BB5196A723FEAD0F00A4B377 /* Sources */ = {
+		BB4B229C23FFE70C00174B87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5196AF23FEAD0F00A4B377 /* AppDelegate.swift in Sources */,
-				BB5196B423FEAD0F00A4B377 /* SoRRINDO.xcdatamodeld in Sources */,
-				BB5196B623FEAD0F00A4B377 /* ContentView.swift in Sources */,
-				BB5196B123FEAD0F00A4B377 /* SceneDelegate.swift in Sources */,
+				BB4B22AB23FFE70C00174B87 /* MasterViewController.swift in Sources */,
+				BB4B22A423FFE70C00174B87 /* AppDelegate.swift in Sources */,
+				BB4B22AD23FFE70C00174B87 /* DetailViewController.swift in Sources */,
+				BB4B22A723FFE70C00174B87 /* SoRRINDO.xcdatamodeld in Sources */,
+				BB4B22A923FFE70C00174B87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5196C023FEAD1900A4B377 /* Sources */ = {
+		BB4B22B723FFE71100174B87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5196C923FEAD1900A4B377 /* SoRRINDOTests.swift in Sources */,
+				BB4B22C023FFE71100174B87 /* SoRRINDOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5196CB23FEAD1900A4B377 /* Sources */ = {
+		BB4B22C223FFE71100174B87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5196D423FEAD1900A4B377 /* SoRRINDOUITests.swift in Sources */,
+				BB4B22CB23FFE71100174B87 /* SoRRINDOUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BB5196C623FEAD1900A4B377 /* PBXTargetDependency */ = {
+		BB4B22BD23FFE71100174B87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB5196AA23FEAD0F00A4B377 /* SoRRINDO */;
-			targetProxy = BB5196C523FEAD1900A4B377 /* PBXContainerItemProxy */;
+			target = BB4B229F23FFE70C00174B87 /* App */;
+			targetProxy = BB4B22BC23FFE71100174B87 /* PBXContainerItemProxy */;
 		};
-		BB5196D123FEAD1900A4B377 /* PBXTargetDependency */ = {
+		BB4B22C823FFE71100174B87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB5196AA23FEAD0F00A4B377 /* SoRRINDO */;
-			targetProxy = BB5196D023FEAD1900A4B377 /* PBXContainerItemProxy */;
+			target = BB4B229F23FFE70C00174B87 /* App */;
+			targetProxy = BB4B22C723FFE71100174B87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BB5196BC23FEAD1900A4B377 /* LaunchScreen.storyboard */ = {
+		BB4B22AE23FFE70C00174B87 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BB5196BD23FEAD1900A4B377 /* Base */,
+				BB4B22AF23FFE70C00174B87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB4B22B323FFE71100174B87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4B22B423FFE71100174B87 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -320,7 +324,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BB5196D623FEAD1900A4B377 /* Debug */ = {
+		BB4B22CD23FFE71100174B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -380,7 +384,7 @@
 			};
 			name = Debug;
 		};
-		BB5196D723FEAD1900A4B377 /* Release */ = {
+		BB4B22CE23FFE71100174B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -434,45 +438,41 @@
 			};
 			name = Release;
 		};
-		BB5196D923FEAD1900A4B377 /* Debug */ = {
+		BB4B22D023FFE71100174B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SoRRINDO/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SoRRINDO/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = risos.SoRRINDO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SoRRINDO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BB5196DA23FEAD1900A4B377 /* Release */ = {
+		BB4B22D123FFE71100174B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SoRRINDO/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SoRRINDO/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = risos.SoRRINDO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SoRRINDO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		BB5196DC23FEAD1900A4B377 /* Debug */ = {
+		BB4B22D323FFE71100174B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -493,7 +493,7 @@
 			};
 			name = Debug;
 		};
-		BB5196DD23FEAD1900A4B377 /* Release */ = {
+		BB4B22D423FFE71100174B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -514,7 +514,7 @@
 			};
 			name = Release;
 		};
-		BB5196DF23FEAD1900A4B377 /* Debug */ = {
+		BB4B22D623FFE71100174B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -533,7 +533,7 @@
 			};
 			name = Debug;
 		};
-		BB5196E023FEAD1900A4B377 /* Release */ = {
+		BB4B22D723FFE71100174B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -555,38 +555,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB5196A623FEAD0F00A4B377 /* Build configuration list for PBXProject "SoRRINDO" */ = {
+		BB4B229B23FFE70C00174B87 /* Build configuration list for PBXProject "SoRRINDO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB5196D623FEAD1900A4B377 /* Debug */,
-				BB5196D723FEAD1900A4B377 /* Release */,
+				BB4B22CD23FFE71100174B87 /* Debug */,
+				BB4B22CE23FFE71100174B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB5196D823FEAD1900A4B377 /* Build configuration list for PBXNativeTarget "SoRRINDO" */ = {
+		BB4B22CF23FFE71100174B87 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB5196D923FEAD1900A4B377 /* Debug */,
-				BB5196DA23FEAD1900A4B377 /* Release */,
+				BB4B22D023FFE71100174B87 /* Debug */,
+				BB4B22D123FFE71100174B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB5196DB23FEAD1900A4B377 /* Build configuration list for PBXNativeTarget "SoRRINDOTests" */ = {
+		BB4B22D223FFE71100174B87 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB5196DC23FEAD1900A4B377 /* Debug */,
-				BB5196DD23FEAD1900A4B377 /* Release */,
+				BB4B22D323FFE71100174B87 /* Debug */,
+				BB4B22D423FFE71100174B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB5196DE23FEAD1900A4B377 /* Build configuration list for PBXNativeTarget "SoRRINDOUITests" */ = {
+		BB4B22D523FFE71100174B87 /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB5196DF23FEAD1900A4B377 /* Debug */,
-				BB5196E023FEAD1900A4B377 /* Release */,
+				BB4B22D623FFE71100174B87 /* Debug */,
+				BB4B22D723FFE71100174B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -594,17 +594,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BB5196B223FEAD0F00A4B377 /* SoRRINDO.xcdatamodeld */ = {
+		BB4B22A523FFE70C00174B87 /* SoRRINDO.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BB5196B323FEAD0F00A4B377 /* SoRRINDO.xcdatamodel */,
+				BB4B22A623FFE70C00174B87 /* SoRRINDO.xcdatamodel */,
 			);
-			currentVersion = BB5196B323FEAD0F00A4B377 /* SoRRINDO.xcdatamodel */;
+			currentVersion = BB4B22A623FFE70C00174B87 /* SoRRINDO.xcdatamodel */;
 			path = SoRRINDO.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = BB5196A323FEAD0F00A4B377 /* Project object */;
+	rootObject = BB4B229823FFE70C00174B87 /* Project object */;
 }
