@@ -5,7 +5,7 @@ public enum Networking {
     public typealias Headers = [String: String]
     public typealias Parameters = [String: Any]
     public typealias HTTPBody = Data
-    
+        
     public enum Method: String {
         case get = "GET"
         case post = "POST"
@@ -25,7 +25,9 @@ public enum Networking {
             self.urlSession = urlSession
         }
         
-        func request(_ req: RequestProtocol, additionalHeaders: [String: String] = [:], completion: Completion?) {
+        func request(_ req: RequestProtocol,
+                     additionalHeaders: [String: String] = [:],
+                     completion: Completion?) {
             
             guard let urlRequest = makeRequest(req, additionalHeaders: additionalHeaders) else {
                 let error = NSError(domain: "No request present", code: 1000, userInfo: nil)
@@ -71,7 +73,8 @@ public enum Networking {
 
         }
         
-        func makeRequest(_ request: RequestProtocol, additionalHeaders: Headers = [:]) -> URLRequest? {
+        private func makeRequest(_ request: RequestProtocol,
+                                 additionalHeaders: Headers = [:]) -> URLRequest? {
             
             guard let url = URL(string: request.url) else { return nil }
             
