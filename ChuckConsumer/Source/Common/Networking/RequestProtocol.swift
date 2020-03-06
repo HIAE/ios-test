@@ -1,10 +1,22 @@
 import Foundation
 
+public typealias HttpHeaders = [String: String]
+public typealias HttpParameters = [String: Any]
+public typealias HttpBody = Data
+
+public enum HttpMethod: String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case patch = "PATCH"
+    case delete = "DELETE"
+}
+
 public protocol RequestProtocol {
     var url: String { get }
-    var method: HTTPMethod { get }
-    var body: HTTPBody? { get }
-    var headers: HTTPHeaders { get set }
+    var method: HttpMethod { get }
+    var body: HttpBody? { get }
+    var headers: HttpHeaders { get set }
     var timeout: TimeInterval { get }
 }
 

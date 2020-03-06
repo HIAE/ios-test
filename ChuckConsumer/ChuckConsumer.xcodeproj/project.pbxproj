@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		913FE8DC240F421700E15455 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8DB240F421700E15455 /* Networking.swift */; };
+		913FE8DC240F421700E15455 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8DB240F421700E15455 /* Http.swift */; };
 		913FE8DE240F423700E15455 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8DD240F423700E15455 /* RequestProtocol.swift */; };
 		913FE8E0240F429700E15455 /* RawService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8DF240F429700E15455 /* RawService.swift */; };
 		913FE8E8240FD0A100E15455 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8E7240FD0A100E15455 /* Category.swift */; };
 		913FE8EA240FD13200E15455 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8E9240FD13200E15455 /* Joke.swift */; };
+		913FE8ED2411E41200E15455 /* HttpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8EC2411E41200E15455 /* HttpProtocol.swift */; };
 		917D4CEB240F3786008CBCAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4CEA240F3786008CBCAA /* AppDelegate.swift */; };
 		917D4CF4240F3787008CBCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917D4CF3240F3787008CBCAA /* Assets.xcassets */; };
 		917D4CF7240F3787008CBCAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D4CF5240F3787008CBCAA /* LaunchScreen.storyboard */; };
@@ -38,11 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		913FE8DB240F421700E15455 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		913FE8DB240F421700E15455 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
 		913FE8DD240F423700E15455 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		913FE8DF240F429700E15455 /* RawService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawService.swift; sourceTree = "<group>"; };
 		913FE8E7240FD0A100E15455 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		913FE8E9240FD13200E15455 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		913FE8EC2411E41200E15455 /* HttpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpProtocol.swift; sourceTree = "<group>"; };
 		917D4CE7240F3786008CBCAA /* ChuckConsumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckConsumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D4CEA240F3786008CBCAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917D4CF3240F3787008CBCAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,8 +87,6 @@
 		913FE8D9240F418600E15455 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				913FE8E5240FCFB800E15455 /* Model */,
-				913FE8E6240FCFBF00E15455 /* Services */,
 				913FE8DA240F41FD00E15455 /* Networking */,
 			);
 			path = Common;
@@ -95,7 +95,8 @@
 		913FE8DA240F41FD00E15455 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				913FE8DB240F421700E15455 /* Networking.swift */,
+				913FE8EC2411E41200E15455 /* HttpProtocol.swift */,
+				913FE8DB240F421700E15455 /* Http.swift */,
 				913FE8DD240F423700E15455 /* RequestProtocol.swift */,
 				913FE8DF240F429700E15455 /* RawService.swift */,
 			);
@@ -116,6 +117,15 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		913FE8EB2411E37A00E15455 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				913FE8E5240FCFB800E15455 /* Model */,
+				913FE8E6240FCFBF00E15455 /* Services */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		917D4CDE240F3785008CBCAA = {
@@ -143,6 +153,7 @@
 			children = (
 				917D4D1B240F3C75008CBCAA /* Application */,
 				913FE8D9240F418600E15455 /* Common */,
+				913FE8EB2411E37A00E15455 /* Domain */,
 				917D4CF3240F3787008CBCAA /* Assets.xcassets */,
 				917D4CF5240F3787008CBCAA /* LaunchScreen.storyboard */,
 				917D4CF8240F3787008CBCAA /* Info.plist */,
@@ -308,12 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				913FE8E0240F429700E15455 /* RawService.swift in Sources */,
-				913FE8DC240F421700E15455 /* Networking.swift in Sources */,
+				913FE8DC240F421700E15455 /* Http.swift in Sources */,
 				917D4D25240F3ED4008CBCAA /* AppMain.swift in Sources */,
 				917D4CEB240F3786008CBCAA /* AppDelegate.swift in Sources */,
 				913FE8DE240F423700E15455 /* RequestProtocol.swift in Sources */,
 				913FE8E8240FD0A100E15455 /* Category.swift in Sources */,
 				913FE8EA240FD13200E15455 /* Joke.swift in Sources */,
+				913FE8ED2411E41200E15455 /* HttpProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

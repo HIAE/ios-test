@@ -2,25 +2,27 @@ import Foundation
 
 public class RawService {
     
-    let http : HTTP
+    let http: HttpProtocol
     
-    public init(http:HTTP = HTTP()) {
+    public init(http: HttpProtocol = HTTP()) {
         self.http = http
     }
     
     func rawRequestData(from request:RequestProtocol,
-                        additionalHeaders:HTTPHeaders = [:],
-                        completion: HTTP.Completion?) {
+                        additionalHeaders: HttpHeaders = [:],
+                        completion: HttpCompletion?) {
         
-        http.request(request, completion: completion)
+        http.request(request,
+                     additionalHeaders: additionalHeaders,
+                     completion: completion)
     }
     
     func rawRequest<T:Decodable>(_ type:T.Type,
                                  from request:RequestProtocol,
-                                 additionalHeaders:HTTPHeaders = [:],
+                                 additionalHeaders:HttpHeaders = [:],
                                  completion:((Result<T, Error>) -> Void)?) {
         
-        http.request(request) { dataResult in
+        http.request(request, additionalHeaders: additionalHeaders) { dataResult in
             switch dataResult {
             case .failure(let error):
                 completion?(.failure(error))

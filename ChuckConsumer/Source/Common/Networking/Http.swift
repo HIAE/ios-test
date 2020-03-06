@@ -1,22 +1,8 @@
 import Foundation
 
-
-public typealias HTTPHeaders = [String: String]
-public typealias HTTPParameters = [String: Any]
-public typealias HTTPBody = Data
-
-public enum HTTPMethod: String {
-    case get = "GET"
-    case post = "POST"
-    case put = "PUT"
-    case patch = "PATCH"
-    case delete = "DELETE"
-}
-
-public class HTTP {
+public class HTTP: HttpProtocol {
     
-    public typealias RequestResult = Result<Data, Error>
-    public typealias Completion = (RequestResult) -> Void
+    typealias RequestResult = Result<Data, Error>
     
     let urlSession: URLSession
     
@@ -24,9 +10,9 @@ public class HTTP {
         self.urlSession = urlSession
     }
     
-    func request(_ req: RequestProtocol,
+    public func request(_ req: RequestProtocol,
                  additionalHeaders: [String: String] = [:],
-                 completion: Completion?) {
+                 completion: ((Result<Data, Error>) -> Void)?) {
         
         guard let urlRequest = makeRequest(req, additionalHeaders: additionalHeaders) else {
             let error = NSError(domain: "No request present", code: 1000, userInfo: nil)
@@ -73,7 +59,7 @@ public class HTTP {
     }
     
     private func makeRequest(_ request: RequestProtocol,
-                             additionalHeaders: HTTPHeaders = [:]) -> URLRequest? {
+                             additionalHeaders: HttpHeaders = [:]) -> URLRequest? {
         
         guard let url = URL(string: request.url) else { return nil }
         
