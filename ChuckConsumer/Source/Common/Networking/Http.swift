@@ -1,6 +1,6 @@
 import Foundation
 
-public class HTTP: HttpProtocol {
+public class Http: HttpProtocol {
     
     typealias RequestResult = Result<Data, Error>
     
@@ -29,7 +29,7 @@ public class HTTP: HttpProtocol {
             }
             
             guard let httpResponse = response as? HTTPURLResponse else {
-                let info : [String:Any] = [ "error_message" : "Error converting HTTPREsponse" ]
+                let info : [String:Any] = [ "error_message" : "Error converting HTTPresponse" ]
                 let error = NSError(domain: "Unknown Error", code: 601, userInfo: info)
                 completion?(Result.failure(error))
                 return

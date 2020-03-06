@@ -2,13 +2,13 @@ import Foundation
 
 public class RawService {
     
-    let http: HttpProtocol
+    private let http: HttpProtocol
     
-    public init(http: HttpProtocol = HTTP()) {
+    public init(http: HttpProtocol = Http()) {
         self.http = http
     }
     
-    func rawRequestData(from request:RequestProtocol,
+    public func rawRequestData(from request:RequestProtocol,
                         additionalHeaders: HttpHeaders = [:],
                         completion: HttpCompletion?) {
         
@@ -17,10 +17,10 @@ public class RawService {
                      completion: completion)
     }
     
-    func rawRequest<T:Decodable>(_ type:T.Type,
-                                 from request:RequestProtocol,
-                                 additionalHeaders:HttpHeaders = [:],
-                                 completion:((Result<T, Error>) -> Void)?) {
+    public func rawRequest<T:Decodable>(_ type:T.Type,
+                                        from request:RequestProtocol,
+                                        additionalHeaders:HttpHeaders = [:],
+                                        completion:((Result<T, Error>) -> Void)?) {
         
         http.request(request, additionalHeaders: additionalHeaders) { dataResult in
             switch dataResult {

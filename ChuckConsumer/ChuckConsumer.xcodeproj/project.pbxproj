@@ -13,10 +13,10 @@
 		913FE8E8240FD0A100E15455 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8E7240FD0A100E15455 /* Category.swift */; };
 		913FE8EA240FD13200E15455 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8E9240FD13200E15455 /* Joke.swift */; };
 		913FE8ED2411E41200E15455 /* HttpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8EC2411E41200E15455 /* HttpProtocol.swift */; };
+		913FE8F42411F73E00E15455 /* HttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FE8F32411F73E00E15455 /* HttpTests.swift */; };
 		917D4CEB240F3786008CBCAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4CEA240F3786008CBCAA /* AppDelegate.swift */; };
 		917D4CF4240F3787008CBCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917D4CF3240F3787008CBCAA /* Assets.xcassets */; };
 		917D4CF7240F3787008CBCAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D4CF5240F3787008CBCAA /* LaunchScreen.storyboard */; };
-		917D4D02240F3787008CBCAA /* ChuckConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4D01240F3787008CBCAA /* ChuckConsumerTests.swift */; };
 		917D4D0D240F3787008CBCAA /* ChuckConsumerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4D0C240F3787008CBCAA /* ChuckConsumerUITests.swift */; };
 		917D4D25240F3ED4008CBCAA /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4D24240F3ED4008CBCAA /* AppMain.swift */; };
 /* End PBXBuildFile section */
@@ -45,13 +45,13 @@
 		913FE8E7240FD0A100E15455 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		913FE8E9240FD13200E15455 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		913FE8EC2411E41200E15455 /* HttpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpProtocol.swift; sourceTree = "<group>"; };
+		913FE8F32411F73E00E15455 /* HttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTests.swift; sourceTree = "<group>"; };
 		917D4CE7240F3786008CBCAA /* ChuckConsumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckConsumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D4CEA240F3786008CBCAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917D4CF3240F3787008CBCAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917D4CF6240F3787008CBCAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917D4CF8240F3787008CBCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917D4CFD240F3787008CBCAA /* ChuckConsumerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckConsumerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		917D4D01240F3787008CBCAA /* ChuckConsumerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckConsumerTests.swift; sourceTree = "<group>"; };
 		917D4D03240F3787008CBCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917D4D08240F3787008CBCAA /* ChuckConsumerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckConsumerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D4D0C240F3787008CBCAA /* ChuckConsumerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckConsumerUITests.swift; sourceTree = "<group>"; };
@@ -87,6 +87,7 @@
 		913FE8D9240F418600E15455 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				913FE8E5240FCFB800E15455 /* Model */,
 				913FE8DA240F41FD00E15455 /* Networking */,
 			);
 			path = Common;
@@ -112,20 +113,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		913FE8E6240FCFBF00E15455 /* Services */ = {
+		913FE8F02411F6E900E15455 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				913FE8F12411F6EF00E15455 /* Networking */,
 			);
-			path = Services;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		913FE8EB2411E37A00E15455 /* Domain */ = {
+		913FE8F12411F6EF00E15455 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				913FE8E5240FCFB800E15455 /* Model */,
-				913FE8E6240FCFBF00E15455 /* Services */,
+				913FE8F32411F73E00E15455 /* HttpTests.swift */,
 			);
-			path = Domain;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		917D4CDE240F3785008CBCAA = {
@@ -153,7 +154,6 @@
 			children = (
 				917D4D1B240F3C75008CBCAA /* Application */,
 				913FE8D9240F418600E15455 /* Common */,
-				913FE8EB2411E37A00E15455 /* Domain */,
 				917D4CF3240F3787008CBCAA /* Assets.xcassets */,
 				917D4CF5240F3787008CBCAA /* LaunchScreen.storyboard */,
 				917D4CF8240F3787008CBCAA /* Info.plist */,
@@ -164,7 +164,7 @@
 		917D4D00240F3787008CBCAA /* ChuckConsumerTests */ = {
 			isa = PBXGroup;
 			children = (
-				917D4D01240F3787008CBCAA /* ChuckConsumerTests.swift */,
+				913FE8F02411F6E900E15455 /* Common */,
 				917D4D03240F3787008CBCAA /* Info.plist */,
 			);
 			path = ChuckConsumerTests;
@@ -259,6 +259,7 @@
 					};
 					917D4CFC240F3787008CBCAA = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 917D4CE6240F3785008CBCAA;
 					};
 					917D4D07240F3787008CBCAA = {
@@ -333,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				917D4D02240F3787008CBCAA /* ChuckConsumerTests.swift in Sources */,
+				913FE8F42411F73E00E15455 /* HttpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -476,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,6 +526,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChuckConsumerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -535,6 +537,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exe.dede.ChuckConsumerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChuckConsumer.app/ChuckConsumer";
@@ -546,6 +551,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChuckConsumerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -556,6 +562,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exe.dede.ChuckConsumerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChuckConsumer.app/ChuckConsumer";
