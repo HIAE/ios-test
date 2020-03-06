@@ -3,19 +3,19 @@ import XCTest
 
 class HttpTests: XCTestCase {
 
-    var http: Http!
+    var sut: Http!
     var sessionMock: URLSessionMock!
 
     override func setUp() {
         sessionMock = URLSessionMock()
-        http = Http(urlSession: sessionMock)
+        sut = Http(urlSession: sessionMock)
     }
 
     func testMakingRequestFail() {
         let request = MockedRequest(url: "", method: .get, body: nil, headers: [:])
         let expecation = XCTestExpectation(description: "")
 
-        http.request(request, additionalHeaders: [:]) { result in
+        sut.request(request, additionalHeaders: [:]) { result in
             switch result {
             case .failure(let err as NSError):
                 XCTAssertEqual(err.code, 1000)
@@ -39,7 +39,7 @@ class HttpTests: XCTestCase {
 
         let expecation = XCTestExpectation(description: "")
 
-        http.request(request, additionalHeaders: [:]) { result in
+        sut.request(request, additionalHeaders: [:]) { result in
             switch result {
             case .failure(let err as NSError):
                 XCTAssertEqual(err.code, 1234)
@@ -59,7 +59,7 @@ class HttpTests: XCTestCase {
                                     headers: [:])
 
         let expecation = XCTestExpectation(description: "")
-        http.request(request, additionalHeaders: [:]) { result in
+        sut.request(request, additionalHeaders: [:]) { result in
 
             switch result {
             case .failure(let err as NSError):
@@ -89,7 +89,7 @@ class HttpTests: XCTestCase {
 
         let expecation = XCTestExpectation(description: "")
 
-        http.request(request, additionalHeaders: [:]) { result in
+        sut.request(request, additionalHeaders: [:]) { result in
             switch result {
             case .failure(let err as NSError):
                 XCTAssertEqual(err.code, 301)
@@ -121,7 +121,7 @@ class HttpTests: XCTestCase {
 
         let expecation = XCTestExpectation(description: "")
 
-        http.request(request, additionalHeaders: [:]) { result in
+        sut.request(request, additionalHeaders: [:]) { result in
             switch result {
             case .success(let returnedData):
                 XCTAssertEqual(returnedData, data)

@@ -1,20 +1,25 @@
 import Foundation
 
-public class Http: HttpProtocol {
+public class Http: HttpService {
+
     typealias RequestResult = Result<Data, Error>
     let urlSession: URLSession
+
     public init(urlSession: URLSession = URLSession.shared) {
         self.urlSession = urlSession
     }
+
     public func request(_ req: RequestProtocol,
                         additionalHeaders: [String: String] = [:],
                         completion: ((Result<Data, Error>) -> Void)?) {
+
         guard let urlRequest = makeRequest(req, additionalHeaders: additionalHeaders) else {
             let error = NSError(domain: "No request present", code: 1000, userInfo: nil)
             let result = RequestResult.failure(error)
             completion?(result)
             return
         }
+
         let task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
             if let err = error {
                 completion?(Result.failure(err))
@@ -46,19 +51,26 @@ public class Http: HttpProtocol {
 
         task.resume()
     }
+
     private func makeRequest(_ request: RequestProtocol,
                              additionalHeaders: HttpHeaders = [:]) -> URLRequest? {
+
         guard let url = URL(string: request.url) else { return nil }
+
         var newRequest = URLRequest(url: url,
                                     cachePolicy: URLRequest.CachePolicy.useProtocolCachePolicy,
                                     timeoutInterval: request.timeout)
+
         newRequest.httpMethod = request.method.rawValue
+
         request.headers.forEach { key, value in
             newRequest.addValue(value, forHTTPHeaderField: key)
         }
+
         additionalHeaders.forEach { key, value in
             newRequest.addValue(value, forHTTPHeaderField: key)
         }
+
         newRequest.httpBody = request.body
         return newRequest
     }
