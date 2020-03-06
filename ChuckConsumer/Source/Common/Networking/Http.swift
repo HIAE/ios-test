@@ -1,6 +1,6 @@
 import Foundation
 
-public class Http: HttpService {
+public final class Http: HttpService {
 
     typealias RequestResult = Result<Data, Error>
     let urlSession: URLSession
@@ -9,9 +9,9 @@ public class Http: HttpService {
         self.urlSession = urlSession
     }
 
-    public func request(_ req: RequestProtocol,
+    public func request(_ req: StandardRequest,
                         additionalHeaders: [String: String] = [:],
-                        completion: ((Result<Data, Error>) -> Void)?) {
+                        completion: HttpCompletion?) {
 
         guard let urlRequest = makeRequest(req, additionalHeaders: additionalHeaders) else {
             let error = NSError(domain: "No request present", code: 1000, userInfo: nil)
@@ -52,7 +52,7 @@ public class Http: HttpService {
         task.resume()
     }
 
-    private func makeRequest(_ request: RequestProtocol,
+    private func makeRequest(_ request: StandardRequest,
                              additionalHeaders: HttpHeaders = [:]) -> URLRequest? {
 
         guard let url = URL(string: request.url) else { return nil }

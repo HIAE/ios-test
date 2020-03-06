@@ -1,13 +1,13 @@
 import Foundation
 
-public class RawService: RequestService {
+public final class RawService: RequestService {
     private let http: HttpService
 
     public init(http: HttpService = Http()) {
         self.http = http
     }
 
-    public func requestData(from request: RequestProtocol,
+    public func requestData(from request: StandardRequest,
                             additionalHeaders: HttpHeaders = [:],
                             completion: HttpCompletion?) {
 
@@ -17,7 +17,7 @@ public class RawService: RequestService {
     }
 
     public func request<T: Decodable>(_ type: T.Type,
-                                      from request: RequestProtocol,
+                                      from request: StandardRequest,
                                       additionalHeaders: HttpHeaders = [:],
                                       completion: ((Result<T, Error>) -> Void)?) {
 

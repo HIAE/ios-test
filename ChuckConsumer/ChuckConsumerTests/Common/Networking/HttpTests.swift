@@ -139,7 +139,7 @@ class HttpTests: XCTestCase {
 // HELPERS
 // =======
 
-struct MockedRequest: RequestProtocol {
+struct MockedRequest: StandardRequest {
     var url: String
     var method: HttpMethod
     var body: HttpBody?

@@ -5,8 +5,8 @@ public typealias HttpCompletion = (HttpResult) -> Void
 
 public protocol HttpService {
 
-    func request(_ req: RequestProtocol,
+    func request(_ req: StandardRequest,
                  additionalHeaders: HttpHeaders,
-                 completion: ((Result<Data, Error>) -> Void)?)
+                 completion: HttpCompletion?)
 
 }

@@ -12,7 +12,7 @@ public enum HttpMethod: String {
     case delete = "DELETE"
 }
 
-public protocol RequestProtocol {
+public protocol StandardRequest {
     var url: String { get }
     var method: HttpMethod { get }
     var body: HttpBody? { get }
@@ -20,6 +20,6 @@ public protocol RequestProtocol {
     var timeout: TimeInterval { get }
 }
 
-extension RequestProtocol {
+extension StandardRequest {
     public var timeout: TimeInterval { return TimeInterval(30) }
 }
