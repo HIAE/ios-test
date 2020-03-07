@@ -81,7 +81,7 @@ class HttpMock: HttpService {
         self.successData = successData
     }
 
-    func request(_ req: StandardRequest, additionalHeaders: HttpHeaders, completion: HttpCompletion?) {
+    func request(_ req: RequestModel, additionalHeaders: HttpHeaders, completion: HttpCompletion?) {
         if response == .error {
             let error = NSError(domain: "Not Found", code: 404, userInfo: [:])
             completion?(.failure(error))
@@ -94,7 +94,7 @@ class HttpMock: HttpService {
 
 }
 
-struct Request: StandardRequest {
+struct Request: RequestModel {
     var url: String = ""
     var method: HttpMethod = .get
     var body: HttpBody?

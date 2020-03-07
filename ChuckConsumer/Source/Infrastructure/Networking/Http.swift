@@ -9,7 +9,7 @@ public final class Http: HttpService {
         self.urlSession = urlSession
     }
 
-    public func request(_ req: StandardRequest,
+    public func request(_ req: RequestModel,
                         additionalHeaders: [String: String] = [:],
                         completion: HttpCompletion?) {
 
@@ -52,7 +52,7 @@ public final class Http: HttpService {
         task.resume()
     }
 
-    private func makeRequest(_ request: StandardRequest,
+    private func makeRequest(_ request: RequestModel,
                              additionalHeaders: HttpHeaders = [:]) -> URLRequest? {
 
         guard let url = URL(string: request.url) else { return nil }

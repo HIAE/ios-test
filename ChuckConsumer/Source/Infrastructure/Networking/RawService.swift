@@ -9,7 +9,7 @@ public final class RawService: RequestService {
         self.decoder = RawService.generateDecoder(from: decoder)
     }
 
-    public func requestData(from request: StandardRequest,
+    public func requestData(from request: RequestModel,
                             additionalHeaders: HttpHeaders = [:],
                             completion: HttpCompletion?) {
 
@@ -19,7 +19,7 @@ public final class RawService: RequestService {
     }
 
     public func request<T: Decodable>(_ type: T.Type,
-                                      from request: StandardRequest,
+                                      from request: RequestModel,
                                       additionalHeaders: HttpHeaders = [:],
                                       completion: ((Result<T, Error>) -> Void)?) {
 
