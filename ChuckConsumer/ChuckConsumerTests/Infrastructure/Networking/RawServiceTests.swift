@@ -7,12 +7,14 @@ class RawServiceTests: XCTestCase {
     var mockedHttp: HttpService!
 
     func testSuccessRawData() {
-        setupSut(response: .success, successData: TestModel.createStringModel())
+        let model = TestModel(dailyPhrase: "A1B2C3D4", value: 12345)
+
+        setupSut(response: .success, successData: model.serialized())
 
         sut.requestData(from: Request()) { result in
             switch result {
             case .success(let resultData):
-                XCTAssertEqual(resultData, TestModel.createStringModel().data(using: .utf8)!)
+                XCTAssertEqual(resultData, model.serialized().data(using: .utf8)!)
             default:
                 XCTFail("This test was expecting a success result")
             }
@@ -34,10 +36,25 @@ class RawServiceTests: XCTestCase {
         }
     }
 
+    func testSuccessDecodedObject() {
+        let model = TestModel(dailyPhrase: "A1B2C3D4", value: 12345)
+
+        setupSut(response: .success, successData: model.serialized())
+
+        sut.request(TestModel.self, from: Request()) { result in
+            switch result {
+            case .success(let resultModel):
+                XCTAssertEqual(resultModel, model)
+            default:
+                XCTFail("This test was expecting a success result")
+            }
+        }
+    }
+
     // -------------------------
     func setupSut(response: HttpMock.ResponseType, successData: String) {
         mockedHttp = HttpMock(responseType: response,
-                              successData: TestModel.createStringModel())
+                              successData: successData)
 
         sut = RawService(http: mockedHttp)
     }
@@ -84,11 +101,11 @@ struct Request: StandardRequest {
     var headers: HttpHeaders = [:]
 }
 
-struct TestModel: Decodable {
+struct TestModel: Decodable, Equatable {
     let dailyPhrase: String
     let value: Int
 
-    static func createStringModel(phrase: String = "Test", value: Int = 12345) -> String {
-        return "{\"daily_phrase\":\"\(phrase)\", \"value\": \(value)}"
+    func serialized() -> String {
+        return "{\"daily_phrase\":\"\(dailyPhrase)\", \"value\": \(value)}"
     }
 }
