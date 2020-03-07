@@ -2,14 +2,11 @@ import Foundation
 
 public final class RawService: RequestService {
     private let http: HttpService
-    private var decoder: JSONDecoder!
+    private var decoder: JSONDecoder
 
-    public init(http: HttpService = Http()) {
+    public init(decoder: JSONDecoder? = nil, http: HttpService = Http()) {
         self.http = http
-    }
-
-    public func setupJsonDecoder(_ decoder: JSONDecoder?) {
-        self.decoder = decoder
+        self.decoder = RawService.generateDecoder(from: decoder)
     }
 
     public func requestData(from request: StandardRequest,
@@ -33,9 +30,8 @@ public final class RawService: RequestService {
                 completion?(.failure(error))
 
             case .success(let data):
-                let decoder = self.getDecoder()
 
-                guard let decodedObject = try? decoder.decode(type, from: data) else {
+                guard let decodedObject = try? self.decoder.decode(type, from: data) else {
                     let error = NSError(domain: "Fail to decode data", code: 1001, userInfo: nil)
                     completion?(.failure(error))
                     return
@@ -46,8 +42,8 @@ public final class RawService: RequestService {
         }
     }
 
-    private func getDecoder() -> JSONDecoder {
-        if let jsonDecoder = self.decoder {
+    static private func generateDecoder(from decoder: JSONDecoder?) -> JSONDecoder {
+        if let jsonDecoder = decoder {
             return jsonDecoder
         }
 
