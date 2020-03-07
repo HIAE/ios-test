@@ -1,14 +1,14 @@
 import XCTest
 @testable import ChuckConsumer
 
-class HttpTests: XCTestCase {
+class HttpWorkerTests: XCTestCase {
 
-    var sut: Http!
+    var sut: HttpWorker!
     var sessionMock: URLSessionMock!
 
     override func setUp() {
         sessionMock = URLSessionMock()
-        sut = Http(urlSession: sessionMock)
+        sut = HttpWorker(urlSession: sessionMock)
     }
 
     func testMakingRequestFail() {

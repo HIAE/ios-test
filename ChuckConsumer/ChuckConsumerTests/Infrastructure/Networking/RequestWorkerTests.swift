@@ -1,9 +1,9 @@
 import XCTest
 @testable import ChuckConsumer
 
-class RawServiceTests: XCTestCase {
+class RequestWorkerTests: XCTestCase {
 
-    var sut: RawService!
+    var sut: RequestWorker!
     var mockedHttp: HttpService!
 
     func testSuccessRawData() {
@@ -56,7 +56,7 @@ class RawServiceTests: XCTestCase {
         mockedHttp = HttpMock(responseType: response,
                               successData: successData)
 
-        sut = RawService(http: mockedHttp)
+        sut = RequestWorker(http: mockedHttp)
     }
 }
 

@@ -1,12 +1,12 @@
 import Foundation
 
-public final class RawService: RequestService {
+public final class RequestWorker: RequestService {
     private let http: HttpService
     private var decoder: JSONDecoder
 
-    public init(decoder: JSONDecoder? = nil, http: HttpService = Http()) {
+    public init(decoder: JSONDecoder? = nil, http: HttpService = HttpWorker()) {
         self.http = http
-        self.decoder = RawService.generateDecoder(from: decoder)
+        self.decoder = RequestWorker.generateDecoder(from: decoder)
     }
 
     public func requestData(from request: RequestModel,

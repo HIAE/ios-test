@@ -1,6 +1,6 @@
 import Foundation
 
-public final class Http: HttpService {
+public final class HttpWorker: HttpService {
 
     typealias RequestResult = Result<Data, Error>
     let urlSession: URLSession
