@@ -22,6 +22,7 @@
 		917D4D25240F3ED4008CBCAA /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4D24240F3ED4008CBCAA /* AppMain.swift */; };
 		91A7DCAC2412FE710012487F /* RawServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAB2412FE710012487F /* RawServiceTests.swift */; };
 		91A7DCAE2412FF390012487F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAD2412FF390012487F /* RequestService.swift */; };
+		91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCB22413C3940012487F /* AppMainTests.swift */; };
 		A9F01ADFF27F4AD5A9445F5D /* Pods_ChuckConsumer_ChuckConsumerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4BD686E535145CD6002C52 /* Pods_ChuckConsumer_ChuckConsumerUITests.framework */; };
 		B6E977149041D1BA9156D314 /* Pods_ChuckConsumerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081F5450C915CBB82F67D2 /* Pods_ChuckConsumerTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		917D4D24240F3ED4008CBCAA /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		91A7DCAB2412FE710012487F /* RawServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawServiceTests.swift; sourceTree = "<group>"; };
 		91A7DCAD2412FF390012487F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		91A7DCB22413C3940012487F /* AppMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainTests.swift; sourceTree = "<group>"; };
 		AC91E82E44D06BCEC63A1349 /* Pods-ChuckConsumerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckConsumerTests.release.xcconfig"; path = "Target Support Files/Pods-ChuckConsumerTests/Pods-ChuckConsumerTests.release.xcconfig"; sourceTree = "<group>"; };
 		B8483023EA52D897A4C5DDF2 /* Pods-ChuckConsumer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckConsumer.release.xcconfig"; path = "Target Support Files/Pods-ChuckConsumer/Pods-ChuckConsumer.release.xcconfig"; sourceTree = "<group>"; };
 		CEC5C4BA374B633F35668057 /* Pods_ChuckConsumer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckConsumer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 		917D4D00240F3787008CBCAA /* ChuckConsumerTests */ = {
 			isa = PBXGroup;
 			children = (
+				91A7DCB12413C3300012487F /* Application */,
 				913FE8F02411F6E900E15455 /* Infrastructure */,
 				917D4D03240F3787008CBCAA /* Info.plist */,
 			);
@@ -227,6 +230,14 @@
 				913FE8DA240F41FD00E15455 /* Networking */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		91A7DCB12413C3300012487F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				91A7DCB22413C3940012487F /* AppMainTests.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		C5B30EE060B9825C4861AE37 /* Pods */ = {
@@ -481,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A7DCAC2412FE710012487F /* RawServiceTests.swift in Sources */,
+				91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */,
 				913FE8F42411F73E00E15455 /* HttpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
