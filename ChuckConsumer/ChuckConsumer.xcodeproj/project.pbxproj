@@ -113,13 +113,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		913FE8D9240F418600E15455 /* Common */ = {
+		913FE8D9240F418600E15455 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				913FE8E5240FCFB800E15455 /* Model */,
-				913FE8DA240F41FD00E15455 /* Networking */,
 			);
-			path = Common;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		913FE8DA240F41FD00E15455 /* Networking */ = {
@@ -143,12 +142,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		913FE8F02411F6E900E15455 /* Common */ = {
+		913FE8F02411F6E900E15455 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
 				913FE8F12411F6EF00E15455 /* Networking */,
 			);
-			path = Common;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		913FE8F12411F6EF00E15455 /* Networking */ = {
@@ -186,7 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				917D4D1B240F3C75008CBCAA /* Application */,
-				913FE8D9240F418600E15455 /* Common */,
+				913FE8D9240F418600E15455 /* Domain */,
+				91A7DCB02413C2650012487F /* Infrastructure */,
 				917D4CF3240F3787008CBCAA /* Assets.xcassets */,
 				917D4CF5240F3787008CBCAA /* LaunchScreen.storyboard */,
 				917D4CF8240F3787008CBCAA /* Info.plist */,
@@ -197,7 +197,7 @@
 		917D4D00240F3787008CBCAA /* ChuckConsumerTests */ = {
 			isa = PBXGroup;
 			children = (
-				913FE8F02411F6E900E15455 /* Common */,
+				913FE8F02411F6E900E15455 /* Infrastructure */,
 				917D4D03240F3787008CBCAA /* Info.plist */,
 			);
 			path = ChuckConsumerTests;
@@ -219,6 +219,14 @@
 				917D4D24240F3ED4008CBCAA /* AppMain.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		91A7DCB02413C2650012487F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				913FE8DA240F41FD00E15455 /* Networking */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		C5B30EE060B9825C4861AE37 /* Pods */ = {
