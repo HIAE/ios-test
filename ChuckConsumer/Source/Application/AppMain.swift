@@ -12,8 +12,7 @@ class AppMain {
             return false
         }
 
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = UIColor.gray
+        let viewController = CategoriesSceneCreator.create()
 
         window.rootViewController = viewController
         window.makeKeyAndVisible()
