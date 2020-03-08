@@ -2,16 +2,15 @@ import UIKit
 
 final class CategoriesTableViewDataHandler: NSObject, CategoriesTableViewHandler, UITableViewDataSource, UITableViewDelegate {
 
-    private weak var tableView: UITableView?
-
     var categories: [Category] = [] {
         didSet {
-            tableView?.reloadData()
+            target?.reloadData()
         }
     }
 
-    var target: UITableView? = nil {
+    weak var target: UITableView? = nil {
         didSet {
+            setupComponents()
             target?.delegate = self
             target?.dataSource = self
         }
@@ -24,7 +23,7 @@ final class CategoriesTableViewDataHandler: NSObject, CategoriesTableViewHandler
     private func setupComponents() {
         let identifier = "CategoryCell"
         let nib = UINib(nibName: identifier, bundle: nil)
-        tableView?.register(nib, forCellReuseIdentifier: identifier)
+        target?.register(nib, forCellReuseIdentifier: identifier)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

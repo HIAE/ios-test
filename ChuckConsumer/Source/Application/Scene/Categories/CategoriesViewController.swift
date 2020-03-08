@@ -3,11 +3,16 @@ import UIKit
 final class CategoriesViewController: UIViewController, CategoriesView {
 
     @IBOutlet weak var tableView: UITableView!
-    private var tableViewHandler: CategoriesTableViewHandler!
 
-    init(tableViewHandler: CategoriesTableViewHandler) {
+    private let tableViewHandler: CategoriesTableViewHandler
+    private let presenter: CategoriesPresenter
+
+    init(presenter: CategoriesPresenter,
+         tableViewHandler: CategoriesTableViewHandler = CategoriesTableViewDataHandler()) {
+
         let nibName = "CategoriesViewController"
         self.tableViewHandler = tableViewHandler
+        self.presenter = presenter
         super.init(nibName: nibName, bundle: nil)
     }
 
@@ -18,6 +23,7 @@ final class CategoriesViewController: UIViewController, CategoriesView {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        presenter.getCategories()
     }
 
     func setup() {
@@ -25,6 +31,8 @@ final class CategoriesViewController: UIViewController, CategoriesView {
     }
 
     func show(categories: [Category]) {
-        tableViewHandler.categories = categories
+        DispatchQueue.main.async { [weak self] in
+            self?.tableViewHandler.categories = categories
+        }
     }
 }

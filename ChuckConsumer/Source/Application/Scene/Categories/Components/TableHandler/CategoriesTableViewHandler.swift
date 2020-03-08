@@ -1,6 +1,6 @@
 import UIKit
 
-protocol CategoriesTableViewHandler {
+protocol CategoriesTableViewHandler: class {
     var categories: [Category] { get set }
     var target: UITableView? { get set }
 }

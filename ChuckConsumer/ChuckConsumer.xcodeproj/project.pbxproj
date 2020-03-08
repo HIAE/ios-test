@@ -35,6 +35,9 @@
 		9185705E24159DC7005750F9 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9185705C24159DC7005750F9 /* CategoryCell.xib */; };
 		918570622415A3BD005750F9 /* CategoriesTableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570612415A3BD005750F9 /* CategoriesTableViewHandler.swift */; };
 		918570692415A6E8005750F9 /* CategoriesSceneCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570682415A6E8005750F9 /* CategoriesSceneCreator.swift */; };
+		9185706B2415AB65005750F9 /* CategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185706A2415AB65005750F9 /* CategoriesPresenter.swift */; };
+		9185706D2415AD24005750F9 /* CategoriesInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185706C2415AD24005750F9 /* CategoriesInteractorInput.swift */; };
+		9185706F2415AFDB005750F9 /* CategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185706E2415AFDB005750F9 /* CategoriesRouter.swift */; };
 		91A7DCAC2412FE710012487F /* RequestWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */; };
 		91A7DCAE2412FF390012487F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAD2412FF390012487F /* RequestService.swift */; };
 		91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCB22413C3940012487F /* AppMainTests.swift */; };
@@ -99,6 +102,9 @@
 		9185705C24159DC7005750F9 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		918570612415A3BD005750F9 /* CategoriesTableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewHandler.swift; sourceTree = "<group>"; };
 		918570682415A6E8005750F9 /* CategoriesSceneCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSceneCreator.swift; sourceTree = "<group>"; };
+		9185706A2415AB65005750F9 /* CategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPresenter.swift; sourceTree = "<group>"; };
+		9185706C2415AD24005750F9 /* CategoriesInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractorInput.swift; sourceTree = "<group>"; };
+		9185706E2415AFDB005750F9 /* CategoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRouter.swift; sourceTree = "<group>"; };
 		91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorkerTests.swift; sourceTree = "<group>"; };
 		91A7DCAD2412FF390012487F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		91A7DCB22413C3940012487F /* AppMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainTests.swift; sourceTree = "<group>"; };
@@ -290,8 +296,11 @@
 			children = (
 				9185705824159D1D005750F9 /* Components */,
 				9185705224159B5A005750F9 /* CategoriesInterfaces.swift */,
-				9185704E24159B22005750F9 /* CategoriesViewController.swift */,
 				9185704F24159B22005750F9 /* CategoriesViewController.xib */,
+				9185704E24159B22005750F9 /* CategoriesViewController.swift */,
+				9185706A2415AB65005750F9 /* CategoriesPresenter.swift */,
+				9185706C2415AD24005750F9 /* CategoriesInteractorInput.swift */,
+				9185706E2415AFDB005750F9 /* CategoriesRouter.swift */,
 				918570682415A6E8005750F9 /* CategoriesSceneCreator.swift */,
 			);
 			path = Categories;
@@ -614,11 +623,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				913FE8E0240F429700E15455 /* RequestWorker.swift in Sources */,
+				9185706D2415AD24005750F9 /* CategoriesInteractorInput.swift in Sources */,
 				9185705D24159DC7005750F9 /* CategoryCell.swift in Sources */,
 				9164282A2413EF840075D8E1 /* Defines.swift in Sources */,
 				91A7DCB62413EEDD0012487F /* CategoryService.swift in Sources */,
 				918570622415A3BD005750F9 /* CategoriesTableViewHandler.swift in Sources */,
 				916428312413F74D0075D8E1 /* JokeService.swift in Sources */,
+				9185706B2415AB65005750F9 /* CategoriesPresenter.swift in Sources */,
+				9185706F2415AFDB005750F9 /* CategoriesRouter.swift in Sources */,
 				9164282C2413F1860075D8E1 /* CategoryWorker.swift in Sources */,
 				9185705324159B5A005750F9 /* CategoriesInterfaces.swift in Sources */,
 				913FE8DC240F421700E15455 /* HttpWorker.swift in Sources */,

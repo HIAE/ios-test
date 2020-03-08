@@ -2,8 +2,13 @@ import Foundation
 
 enum CategoriesSceneCreator {
     static func create() -> CategoriesViewController {
-        let tableViewHandler = CategoriesTableViewDataHandler()
-        let view = CategoriesViewController(tableViewHandler: tableViewHandler)
+        let router = CategoriesRouter()
+        let interactor = CategoriesInteractorInput()
+        let presenter = CategoriesPresenterHandler(interactor: interactor, router: router)
+        let view = CategoriesViewController(presenter: presenter)
+
+        presenter.viewController = view
+        interactor.responder = presenter
 
         return view
     }
