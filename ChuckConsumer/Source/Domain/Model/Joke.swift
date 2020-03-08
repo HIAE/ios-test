@@ -1,6 +1,6 @@
 import Foundation
 
-struct Joke: Decodable {
+struct Joke: Decodable, Equatable {
     var categories: [Category]?
     var value: String?
 }

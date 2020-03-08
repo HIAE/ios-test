@@ -9,11 +9,13 @@ final class CategoryWorker: CategoryService {
         self.service = service
     }
 
+    @discardableResult
     func onSuccess(completion: @escaping ([Category]) -> Void) -> Self {
         successCompletion = completion
         return self
     }
 
+    @discardableResult
     func onError(completion: @escaping (Error) -> Void) -> Self {
         errorCompletion = completion
         return self

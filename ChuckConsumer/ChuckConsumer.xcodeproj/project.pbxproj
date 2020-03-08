@@ -25,6 +25,8 @@
 		917D4CF7240F3787008CBCAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D4CF5240F3787008CBCAA /* LaunchScreen.storyboard */; };
 		917D4D0D240F3787008CBCAA /* ChuckConsumerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4D0C240F3787008CBCAA /* ChuckConsumerUITests.swift */; };
 		917D4D25240F3ED4008CBCAA /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D4D24240F3ED4008CBCAA /* AppMain.swift */; };
+		91857043241578C9005750F9 /* CategoryWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91857042241578C9005750F9 /* CategoryWorkerTests.swift */; };
+		9185704924159799005750F9 /* JokeWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185704824159799005750F9 /* JokeWorkerTests.swift */; };
 		91A7DCAC2412FE710012487F /* RequestWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */; };
 		91A7DCAE2412FF390012487F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAD2412FF390012487F /* RequestService.swift */; };
 		91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCB22413C3940012487F /* AppMainTests.swift */; };
@@ -79,6 +81,8 @@
 		917D4D0C240F3787008CBCAA /* ChuckConsumerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckConsumerUITests.swift; sourceTree = "<group>"; };
 		917D4D0E240F3787008CBCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917D4D24240F3ED4008CBCAA /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		91857042241578C9005750F9 /* CategoryWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryWorkerTests.swift; sourceTree = "<group>"; };
+		9185704824159799005750F9 /* JokeWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWorkerTests.swift; sourceTree = "<group>"; };
 		91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorkerTests.swift; sourceTree = "<group>"; };
 		91A7DCAD2412FF390012487F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		91A7DCB22413C3940012487F /* AppMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainTests.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				91A7DCB12413C3300012487F /* Application */,
+				918570402415789F005750F9 /* Domain */,
 				913FE8F02411F6E900E15455 /* Infrastructure */,
 				917D4D03240F3787008CBCAA /* Info.plist */,
 			);
@@ -236,6 +241,23 @@
 				917D4D24240F3ED4008CBCAA /* AppMain.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		918570402415789F005750F9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				91857041241578A6005750F9 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		91857041241578A6005750F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9185704824159799005750F9 /* JokeWorkerTests.swift */,
+				91857042241578C9005750F9 /* CategoryWorkerTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		91A7DCB02413C2650012487F /* Infrastructure */ = {
@@ -526,6 +548,8 @@
 				91A7DCAC2412FE710012487F /* RequestWorkerTests.swift in Sources */,
 				91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */,
 				913FE8F42411F73E00E15455 /* HttpWorkerTests.swift in Sources */,
+				91857043241578C9005750F9 /* CategoryWorkerTests.swift in Sources */,
+				9185704924159799005750F9 /* JokeWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

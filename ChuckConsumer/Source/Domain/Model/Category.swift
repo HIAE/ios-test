@@ -1,5 +1,5 @@
 import Foundation
 
-struct Category: Decodable {
+struct Category: Decodable, Equatable {
     var name: String?
 }
