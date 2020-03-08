@@ -28,6 +28,11 @@ final class CategoriesViewController: UIViewController, CategoriesView {
 
     func setup() {
         tableViewHandler.target = tableView
+        tableView.allowsSelection = false
+
+        tableViewHandler.onSelectCategory = { category, _ in
+            self.presenter.show(category: category)
+        }
     }
 
     func show(categories: [Category]) {

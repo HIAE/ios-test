@@ -6,6 +6,7 @@ protocol CategoriesView: class {
 
 protocol CategoriesPresenter: class {
     func getCategories()
+    func show(category: Category)
 }
 
 protocol CategoriesInteractor: class {
@@ -18,5 +19,5 @@ protocol CategoriesInteractorResponder: class {
 }
 
 protocol CategoriesWireframe: class {
-    func showJoke(category: String)
+    func showJoke(category: Category)
 }

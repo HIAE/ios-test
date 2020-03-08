@@ -2,6 +2,8 @@ import UIKit
 
 final class CategoriesTableViewDataHandler: NSObject, CategoriesTableViewHandler, UITableViewDataSource, UITableViewDelegate {
 
+    var onSelectCategory: ((Category, IndexPath) -> Void)?
+
     var categories: [Category] = [] {
         didSet {
             target?.reloadData()

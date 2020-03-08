@@ -1,10 +1,9 @@
 import UIKit
 
 class CategoriesRouter: CategoriesWireframe {
-
     weak var viewController: UIViewController?
 
-    func showJoke(category: String) {
+    func showJoke(category: Category) {
         
     }
 }

@@ -15,6 +15,10 @@ final class CategoriesPresenterHandler: CategoriesPresenter, CategoriesInteracto
         interactor.fetchCategories()
     }
 
+    func show(category: Category) {
+        router.showJoke(category: category)
+    }
+
     func handle(categories: [Category]) {
         viewController?.show(categories: categories)
     }

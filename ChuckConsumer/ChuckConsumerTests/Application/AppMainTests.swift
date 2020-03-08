@@ -17,7 +17,7 @@ class AppMainTests: XCTestCase {
         XCTAssertTrue(result)
 
         XCTAssertNotNil(window.rootViewController)
-        XCTAssertTrue(window.rootViewController! is UIViewController)
+        XCTAssertTrue(window.rootViewController! is CategoriesViewController)
     }
 
     func testRunFail() {
