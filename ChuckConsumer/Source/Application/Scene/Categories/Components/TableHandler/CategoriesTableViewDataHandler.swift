@@ -1,6 +1,7 @@
 import UIKit
 
-final class CategoriesTableViewDataHandler: NSObject, CategoriesTableViewHandler, UITableViewDataSource, UITableViewDelegate {
+final class CategoriesTableViewDataHandler: NSObject, CategoriesTableViewHandler,
+        UITableViewDataSource, UITableViewDelegate {
 
     var onSelectCategory: ((Category, IndexPath) -> Void)?
 

@@ -33,4 +33,8 @@ class JokeViewController: UIViewController, JokeView {
         }
     }
 
+    @IBAction func getNextJoke() {
+        presenter.getJoke()
+    }
+
 }

@@ -4,8 +4,8 @@ final class CategoriesViewController: UIViewController, CategoriesView {
 
     @IBOutlet weak var tableView: UITableView!
 
-    private let tableViewHandler: CategoriesTableViewHandler
-    private let presenter: CategoriesPresenter
+    let tableViewHandler: CategoriesTableViewHandler
+    let presenter: CategoriesPresenter
 
     init(presenter: CategoriesPresenter,
          tableViewHandler: CategoriesTableViewHandler = CategoriesTableViewDataHandler()) {

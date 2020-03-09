@@ -3,7 +3,7 @@ import Foundation
 final class CategoriesInteractorInput: CategoriesInteractor {
 
     weak var responder: CategoriesInteractorResponder?
-    private let service: CategoryService
+    let service: CategoryService
 
     init(with service: CategoryService = CategoryWorker()) {
         self.service = service
