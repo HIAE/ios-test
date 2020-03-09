@@ -44,6 +44,7 @@
 		918570782415BB53005750F9 /* JokePresenterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570772415BB53005750F9 /* JokePresenterHandler.swift */; };
 		9185707A2415BC40005750F9 /* JokeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570792415BC40005750F9 /* JokeInteractorInput.swift */; };
 		9185707C2415BE4F005750F9 /* JokeSceneCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185707B2415BE4F005750F9 /* JokeSceneCreator.swift */; };
+		9185707E2415C59B005750F9 /* CategoriesTableViewDataHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185707D2415C59B005750F9 /* CategoriesTableViewDataHandlerTests.swift */; };
 		91A7DCAC2412FE710012487F /* RequestWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */; };
 		91A7DCAE2412FF390012487F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAD2412FF390012487F /* RequestService.swift */; };
 		91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCB22413C3940012487F /* AppMainTests.swift */; };
@@ -117,6 +118,7 @@
 		918570772415BB53005750F9 /* JokePresenterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenterHandler.swift; sourceTree = "<group>"; };
 		918570792415BC40005750F9 /* JokeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractorInput.swift; sourceTree = "<group>"; };
 		9185707B2415BE4F005750F9 /* JokeSceneCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeSceneCreator.swift; sourceTree = "<group>"; };
+		9185707D2415C59B005750F9 /* CategoriesTableViewDataHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewDataHandlerTests.swift; sourceTree = "<group>"; };
 		91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorkerTests.swift; sourceTree = "<group>"; };
 		91A7DCAD2412FF390012487F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		91A7DCB22413C3940012487F /* AppMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainTests.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 		918570652415A456005750F9 /* TableHandler */ = {
 			isa = PBXGroup;
 			children = (
+				9185707D2415C59B005750F9 /* CategoriesTableViewDataHandlerTests.swift */,
 			);
 			path = TableHandler;
 			sourceTree = "<group>";
@@ -685,6 +688,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9185707E2415C59B005750F9 /* CategoriesTableViewDataHandlerTests.swift in Sources */,
 				91A7DCAC2412FE710012487F /* RequestWorkerTests.swift in Sources */,
 				91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */,
 				913FE8F42411F73E00E15455 /* HttpWorkerTests.swift in Sources */,

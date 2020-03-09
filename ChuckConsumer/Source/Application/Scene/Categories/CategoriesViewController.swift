@@ -23,11 +23,11 @@ final class CategoriesViewController: UIViewController, CategoriesView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        bindComponents()
         presenter.getCategories()
     }
 
-    func setup() {
+    func bindComponents() {
         tableViewHandler.target = tableView
 
         tableViewHandler.onSelectCategory = { category, _ in
