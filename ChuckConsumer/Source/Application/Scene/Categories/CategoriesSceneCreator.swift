@@ -9,6 +9,7 @@ enum CategoriesSceneCreator {
 
         presenter.viewController = view
         interactor.responder = presenter
+        router.viewController = view
 
         return view
     }

@@ -16,6 +16,7 @@ final class CategoriesViewController: UIViewController, CategoriesView {
         super.init(nibName: nibName, bundle: nil)
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -28,7 +29,6 @@ final class CategoriesViewController: UIViewController, CategoriesView {
 
     func setup() {
         tableViewHandler.target = tableView
-        tableView.allowsSelection = false
 
         tableViewHandler.onSelectCategory = { category, _ in
             self.presenter.show(category: category)

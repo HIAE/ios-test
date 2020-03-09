@@ -46,7 +46,13 @@ final class CategoriesTableViewDataHandler: NSObject, CategoriesTableViewHandler
 
         let category = categories[indexPath.row]
         cell.show(category: category)
+        cell.selectionStyle = .none
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = categories[indexPath.row]
+        onSelectCategory?(category, indexPath)
     }
 
 }

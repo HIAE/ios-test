@@ -15,7 +15,7 @@ class JokeWorkerTests: XCTestCase {
         let expectation = XCTestExpectation()
         requestWorker.resultIsSuccess = true
 
-        let expectedJoke = Joke(categories: nil, value: "ABCDE")
+        let expectedJoke = Joke(value: "ABCDE")
 
         sut.onSuccess { joke in
             XCTAssertEqual(joke, expectedJoke)
@@ -72,7 +72,7 @@ class JokeWorkerRequestServiceMock: RequestService {
                            completion: ((Result<Joke, Error>) -> Void)?) where T: Decodable {
 
         if resultIsSuccess {
-            let joke = Joke(categories: nil, value: "ABCDE")
+            let joke = Joke(value: "ABCDE")
             let result = Result<Joke, Error>.success(joke)
             completion?(result)
             return

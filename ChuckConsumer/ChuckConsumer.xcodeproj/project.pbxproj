@@ -38,6 +38,12 @@
 		9185706B2415AB65005750F9 /* CategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185706A2415AB65005750F9 /* CategoriesPresenter.swift */; };
 		9185706D2415AD24005750F9 /* CategoriesInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185706C2415AD24005750F9 /* CategoriesInteractorInput.swift */; };
 		9185706F2415AFDB005750F9 /* CategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185706E2415AFDB005750F9 /* CategoriesRouter.swift */; };
+		918570742415B947005750F9 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570722415B947005750F9 /* JokeViewController.swift */; };
+		918570752415B947005750F9 /* JokeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918570732415B947005750F9 /* JokeViewController.xib */; };
+		918570762415B9CA005750F9 /* JokeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570712415B80A005750F9 /* JokeInterfaces.swift */; };
+		918570782415BB53005750F9 /* JokePresenterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570772415BB53005750F9 /* JokePresenterHandler.swift */; };
+		9185707A2415BC40005750F9 /* JokeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918570792415BC40005750F9 /* JokeInteractorInput.swift */; };
+		9185707C2415BE4F005750F9 /* JokeSceneCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185707B2415BE4F005750F9 /* JokeSceneCreator.swift */; };
 		91A7DCAC2412FE710012487F /* RequestWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */; };
 		91A7DCAE2412FF390012487F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCAD2412FF390012487F /* RequestService.swift */; };
 		91A7DCB32413C3940012487F /* AppMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7DCB22413C3940012487F /* AppMainTests.swift */; };
@@ -105,6 +111,12 @@
 		9185706A2415AB65005750F9 /* CategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPresenter.swift; sourceTree = "<group>"; };
 		9185706C2415AD24005750F9 /* CategoriesInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractorInput.swift; sourceTree = "<group>"; };
 		9185706E2415AFDB005750F9 /* CategoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRouter.swift; sourceTree = "<group>"; };
+		918570712415B80A005750F9 /* JokeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInterfaces.swift; sourceTree = "<group>"; };
+		918570722415B947005750F9 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		918570732415B947005750F9 /* JokeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeViewController.xib; sourceTree = "<group>"; };
+		918570772415BB53005750F9 /* JokePresenterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenterHandler.swift; sourceTree = "<group>"; };
+		918570792415BC40005750F9 /* JokeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractorInput.swift; sourceTree = "<group>"; };
+		9185707B2415BE4F005750F9 /* JokeSceneCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeSceneCreator.swift; sourceTree = "<group>"; };
 		91A7DCAB2412FE710012487F /* RequestWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorkerTests.swift; sourceTree = "<group>"; };
 		91A7DCAD2412FF390012487F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		91A7DCB22413C3940012487F /* AppMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainTests.swift; sourceTree = "<group>"; };
@@ -287,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				9185704B24159AE6005750F9 /* Categories */,
+				918570702415B7D1005750F9 /* Joke */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -354,6 +367,19 @@
 			children = (
 			);
 			path = TableHandler;
+			sourceTree = "<group>";
+		};
+		918570702415B7D1005750F9 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				918570712415B80A005750F9 /* JokeInterfaces.swift */,
+				918570732415B947005750F9 /* JokeViewController.xib */,
+				918570722415B947005750F9 /* JokeViewController.swift */,
+				918570772415BB53005750F9 /* JokePresenterHandler.swift */,
+				918570792415BC40005750F9 /* JokeInteractorInput.swift */,
+				9185707B2415BE4F005750F9 /* JokeSceneCreator.swift */,
+			);
+			path = Joke;
 			sourceTree = "<group>";
 		};
 		91A7DCB02413C2650012487F /* Infrastructure */ = {
@@ -510,6 +536,7 @@
 				917D4CF7240F3787008CBCAA /* LaunchScreen.storyboard in Resources */,
 				917D4CF4240F3787008CBCAA /* Assets.xcassets in Resources */,
 				9185705124159B22005750F9 /* CategoriesViewController.xib in Resources */,
+				918570752415B947005750F9 /* JokeViewController.xib in Resources */,
 				9185705E24159DC7005750F9 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,11 +649,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918570762415B9CA005750F9 /* JokeInterfaces.swift in Sources */,
+				918570742415B947005750F9 /* JokeViewController.swift in Sources */,
 				913FE8E0240F429700E15455 /* RequestWorker.swift in Sources */,
 				9185706D2415AD24005750F9 /* CategoriesInteractorInput.swift in Sources */,
 				9185705D24159DC7005750F9 /* CategoryCell.swift in Sources */,
 				9164282A2413EF840075D8E1 /* Defines.swift in Sources */,
 				91A7DCB62413EEDD0012487F /* CategoryService.swift in Sources */,
+				9185707A2415BC40005750F9 /* JokeInteractorInput.swift in Sources */,
 				918570622415A3BD005750F9 /* CategoriesTableViewHandler.swift in Sources */,
 				916428312413F74D0075D8E1 /* JokeService.swift in Sources */,
 				9185706B2415AB65005750F9 /* CategoriesPresenter.swift in Sources */,
@@ -642,8 +672,10 @@
 				913FE8DE240F423700E15455 /* RequestModel.swift in Sources */,
 				913FE8E8240FD0A100E15455 /* Category.swift in Sources */,
 				918570692415A6E8005750F9 /* CategoriesSceneCreator.swift in Sources */,
+				9185707C2415BE4F005750F9 /* JokeSceneCreator.swift in Sources */,
 				913FE8EA240FD13200E15455 /* Joke.swift in Sources */,
 				9164282E2413F4C20075D8E1 /* ServiceRequest.swift in Sources */,
+				918570782415BB53005750F9 /* JokePresenterHandler.swift in Sources */,
 				9185705024159B22005750F9 /* CategoriesViewController.swift in Sources */,
 				913FE8ED2411E41200E15455 /* HttpService.swift in Sources */,
 			);
