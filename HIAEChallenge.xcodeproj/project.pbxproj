@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542AACBF24C36C6100D2C2C3 /* ChuckNorrisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */; };
+		542AACC124C36F9700D2C2C3 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC024C36F9700D2C2C3 /* APIRequest.swift */; };
+		542AACC524C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */; };
+		542AACC724C3751100D2C2C3 /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */; };
 		549B827E24C2752E000EBC3B /* JokePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827824C2752E000EBC3B /* JokePresenter.swift */; };
 		549B827F24C2752E000EBC3B /* JokeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827924C2752E000EBC3B /* JokeRouter.swift */; };
 		549B828024C2752E000EBC3B /* JokeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827A24C2752E000EBC3B /* JokeContracts.swift */; };
@@ -20,15 +24,20 @@
 		549B828E24C2755D000EBC3B /* JokeCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828824C2755D000EBC3B /* JokeCategoriesVC.swift */; };
 		549B828F24C2755D000EBC3B /* JokeCategoriesPageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828924C2755D000EBC3B /* JokeCategoriesPageBuilder.swift */; };
 		54C47FB924C26E450029D386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C47FB824C26E450029D386 /* AppDelegate.swift */; };
-		54C47FBB24C26E450029D386 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C47FBA24C26E450029D386 /* SceneDelegate.swift */; };
 		54C47FBD24C26E450029D386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C47FBC24C26E450029D386 /* ViewController.swift */; };
 		54C47FC024C26E450029D386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C47FBE24C26E450029D386 /* Main.storyboard */; };
 		54C47FC324C26E450029D386 /* HIAEChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C47FC124C26E450029D386 /* HIAEChallenge.xcdatamodeld */; };
 		54C47FC524C26E560029D386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C47FC424C26E560029D386 /* Assets.xcassets */; };
 		54C47FC824C26E560029D386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C47FC624C26E560029D386 /* LaunchScreen.storyboard */; };
+		AE71ACF490BCFE8DDC918259 /* Pods_HIAEChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisService.swift; sourceTree = "<group>"; };
+		542AACC024C36F9700D2C2C3 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRandomJokeRequest.swift; sourceTree = "<group>"; };
+		542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
 		549B827824C2752E000EBC3B /* JokePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenter.swift; sourceTree = "<group>"; };
 		549B827924C2752E000EBC3B /* JokeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRouter.swift; sourceTree = "<group>"; };
 		549B827A24C2752E000EBC3B /* JokeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeContracts.swift; sourceTree = "<group>"; };
@@ -43,13 +52,14 @@
 		549B828924C2755D000EBC3B /* JokeCategoriesPageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesPageBuilder.swift; sourceTree = "<group>"; };
 		54C47FB524C26E450029D386 /* HIAEChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIAEChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C47FB824C26E450029D386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54C47FBA24C26E450029D386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		54C47FBC24C26E450029D386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54C47FBF24C26E450029D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54C47FC224C26E450029D386 /* HIAEChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HIAEChallenge.xcdatamodel; sourceTree = "<group>"; };
 		54C47FC424C26E560029D386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C47FC724C26E560029D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54C47FC924C26E560029D386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.release.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIAEChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +67,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE71ACF490BCFE8DDC918259 /* Pods_HIAEChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542AACBC24C36C4600D2C2C3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				549B827724C274BB000EBC3B /* RandomJoke */,
+				549B827624C274AF000EBC3B /* JokeCategories */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		542AACBD24C36C5100D2C2C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				542AACC224C3745F00D2C2C3 /* ChuckNoris */,
+				542AACC024C36F9700D2C2C3 /* APIRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		542AACC224C3745F00D2C2C3 /* ChuckNoris */ = {
+			isa = PBXGroup;
+			children = (
+				542AACC324C3747300D2C2C3 /* Requests */,
+				542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */,
+			);
+			path = ChuckNoris;
+			sourceTree = "<group>";
+		};
+		542AACC324C3747300D2C2C3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */,
+				542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		549B827624C274AF000EBC3B /* JokeCategories */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +141,8 @@
 			children = (
 				54C47FB724C26E450029D386 /* HIAEChallenge */,
 				54C47FB624C26E450029D386 /* Products */,
+				BAD47F7801AA8A1C2809BC74 /* Pods */,
+				E32FF13F9152DF11C48AE580 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,10 +157,9 @@
 		54C47FB724C26E450029D386 /* HIAEChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				549B827724C274BB000EBC3B /* RandomJoke */,
-				549B827624C274AF000EBC3B /* JokeCategories */,
+				542AACBD24C36C5100D2C2C3 /* Services */,
+				542AACBC24C36C4600D2C2C3 /* Modules */,
 				54C47FB824C26E450029D386 /* AppDelegate.swift */,
-				54C47FBA24C26E450029D386 /* SceneDelegate.swift */,
 				54C47FBC24C26E450029D386 /* ViewController.swift */,
 				54C47FBE24C26E450029D386 /* Main.storyboard */,
 				54C47FC424C26E560029D386 /* Assets.xcassets */,
@@ -122,6 +170,23 @@
 			path = HIAEChallenge;
 			sourceTree = "<group>";
 		};
+		BAD47F7801AA8A1C2809BC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */,
+				751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E32FF13F9152DF11C48AE580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54C47FCC24C26E560029D386 /* Build configuration list for PBXNativeTarget "HIAEChallenge" */;
 			buildPhases = (
+				BE8413F0180A42F66AEFDC10 /* [CP] Check Pods Manifest.lock */,
 				54C47FB124C26E450029D386 /* Sources */,
 				54C47FB224C26E450029D386 /* Frameworks */,
 				54C47FB324C26E450029D386 /* Resources */,
+				A20F8AA25A6F102EF8C7D417 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,15 +255,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A20F8AA25A6F102EF8C7D417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8413F0180A42F66AEFDC10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HIAEChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54C47FB124C26E450029D386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542AACC124C36F9700D2C2C3 /* APIRequest.swift in Sources */,
 				549B827E24C2752E000EBC3B /* JokePresenter.swift in Sources */,
 				549B828B24C2755D000EBC3B /* JokeCategoriesRouter.swift in Sources */,
+				542AACC524C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift in Sources */,
 				549B828C24C2755D000EBC3B /* JokeCategoriesContracts.swift in Sources */,
 				549B828A24C2755D000EBC3B /* JokeCategoriesPresenter.swift in Sources */,
+				542AACBF24C36C6100D2C2C3 /* ChuckNorrisService.swift in Sources */,
 				549B828224C2752E000EBC3B /* JokeViewController.swift in Sources */,
 				54C47FC324C26E450029D386 /* HIAEChallenge.xcdatamodeld in Sources */,
 				54C47FBD24C26E450029D386 /* ViewController.swift in Sources */,
@@ -204,10 +316,10 @@
 				549B828024C2752E000EBC3B /* JokeContracts.swift in Sources */,
 				549B828D24C2755D000EBC3B /* JokeCategoriesInteractor.swift in Sources */,
 				54C47FB924C26E450029D386 /* AppDelegate.swift in Sources */,
+				542AACC724C3751100D2C2C3 /* CategoriesRequest.swift in Sources */,
 				549B828324C2752E000EBC3B /* JokePageBuilder.swift in Sources */,
 				549B828E24C2755D000EBC3B /* JokeCategoriesVC.swift in Sources */,
 				549B828F24C2755D000EBC3B /* JokeCategoriesPageBuilder.swift in Sources */,
-				54C47FBB24C26E450029D386 /* SceneDelegate.swift in Sources */,
 				549B827F24C2752E000EBC3B /* JokeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,11 +462,13 @@
 		};
 		54C47FCD24C26E560029D386 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A78WY25467;
 				INFOPLIST_FILE = HIAEChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,11 +482,13 @@
 		};
 		54C47FCE24C26E560029D386 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A78WY25467;
 				INFOPLIST_FILE = HIAEChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
