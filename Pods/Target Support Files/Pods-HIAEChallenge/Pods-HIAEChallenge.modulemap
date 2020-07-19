@@ -1,6 +1,0 @@
-framework module Pods_HIAEChallenge {
-  umbrella header "Pods-HIAEChallenge-umbrella.h"
-
-  export *
-  module * { export * }
-}

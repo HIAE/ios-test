@@ -11,10 +11,16 @@ import UIKit
 class JokeViewController: UIViewController, JokeViewProtocol {
     var presenter: JokePresenterProtocol!
     
-    weak var tableView: UITableView! {
-        let tableView = UITableView()
-        
-        return tableView
+    @IBOutlet var iconImage: UIImageView!
+    @IBOutlet var jokeUrl: UILabel!
+    @IBOutlet var jokeLabel: UILabel!
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
     override func viewDidLoad() {

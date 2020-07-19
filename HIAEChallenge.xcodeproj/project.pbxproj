@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5421913D24C3F03E002D9800 /* RandomJoke.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5421913C24C3F03E002D9800 /* RandomJoke.storyboard */; };
+		5421913F24C3F5B3002D9800 /* JokeCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5421913E24C3F5B3002D9800 /* JokeCategories.storyboard */; };
 		542AACBF24C36C6100D2C2C3 /* ChuckNorrisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */; };
 		542AACC124C36F9700D2C2C3 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC024C36F9700D2C2C3 /* APIRequest.swift */; };
 		542AACC524C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5421913C24C3F03E002D9800 /* RandomJoke.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomJoke.storyboard; sourceTree = "<group>"; };
+		5421913E24C3F5B3002D9800 /* JokeCategories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JokeCategories.storyboard; sourceTree = "<group>"; };
 		542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisService.swift; sourceTree = "<group>"; };
 		542AACC024C36F9700D2C2C3 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRandomJokeRequest.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				549B828724C2755D000EBC3B /* JokeCategoriesInteractor.swift */,
 				549B828824C2755D000EBC3B /* JokeCategoriesVC.swift */,
 				549B828924C2755D000EBC3B /* JokeCategoriesPageBuilder.swift */,
+				5421913E24C3F5B3002D9800 /* JokeCategories.storyboard */,
 			);
 			path = JokeCategories;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				549B827B24C2752E000EBC3B /* JokeInteractor.swift */,
 				549B827C24C2752E000EBC3B /* JokeViewController.swift */,
 				549B827D24C2752E000EBC3B /* JokePageBuilder.swift */,
+				5421913C24C3F03E002D9800 /* RandomJoke.storyboard */,
 			);
 			path = RandomJoke;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C47FC824C26E560029D386 /* LaunchScreen.storyboard in Resources */,
+				5421913D24C3F03E002D9800 /* RandomJoke.storyboard in Resources */,
+				5421913F24C3F5B3002D9800 /* JokeCategories.storyboard in Resources */,
 				54C47FC524C26E560029D386 /* Assets.xcassets in Resources */,
 				54C47FC024C26E450029D386 /* Main.storyboard in Resources */,
 			);
