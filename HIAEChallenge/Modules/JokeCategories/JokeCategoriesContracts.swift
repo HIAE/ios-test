@@ -28,7 +28,7 @@ protocol JokeCategoriesInteractorDelegate: class  {
 
 enum JokeCategoriesInteractorOutputs {
     case sendError(String)
-    case sendData
+    case sendData(categories: [String])
 }
 
 

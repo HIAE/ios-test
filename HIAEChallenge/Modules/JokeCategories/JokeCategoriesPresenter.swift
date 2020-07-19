@@ -23,6 +23,10 @@ final class JokeCategoriesPresenter: JokeCategoriesPresenterProtocol {
 
 extension JokeCategoriesPresenter: JokeCategoriesInteractorDelegate {
     func handle(_ output: JokeCategoriesInteractorOutputs) {
-        
+        switch output {
+        case .sendData(let categories):
+            view.handle()
+            
+        case .sendError(let error):
     }
 }

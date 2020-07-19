@@ -12,4 +12,5 @@ class CategoriesRequest: APIRequest {
     var method = RequestType.GET
     var path = "/jokes/categories"
     var parameters = [String: String]()
+
 }
