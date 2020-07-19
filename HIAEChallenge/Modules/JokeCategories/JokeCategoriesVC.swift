@@ -11,6 +11,8 @@ import UIKit
 class JokeCategoriesViewController: UIViewController, JokeCategoriesViewProtocol {
     var presenter: JokeCategoriesPresenterProtocol!
     
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
