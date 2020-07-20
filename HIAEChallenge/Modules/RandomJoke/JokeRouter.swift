@@ -18,4 +18,8 @@ final class JokeRouter: JokeRouterProtocol {
     func navigate(_ route: JokeRoutes) {
         
     }
+
+    func openURL(_ url: URL) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 }

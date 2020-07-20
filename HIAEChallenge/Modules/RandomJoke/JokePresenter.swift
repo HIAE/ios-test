@@ -6,8 +6,12 @@
 //  Copyright © 2020 Vinicius Custodio. All rights reserved.
 //
 
+import Foundation
+
 final class JokePresenter: JokePresenterProtocol {
-    
+    var category: String?
+    var joke: Joke?
+
     private let interactor: JokeInteractorProtocol!
     private let router: JokeRouterProtocol!
     private let view: JokeViewProtocol!
@@ -19,10 +23,28 @@ final class JokePresenter: JokePresenterProtocol {
         
         interactor.delegate = self
     }
+
+    func retrieveJoke() {
+        interactor.getJoke(category: category ?? "")
+    }
+
+    func openJokeUrl() {
+        if let url = joke?.url {
+            router.openURL(url)
+        }
+    }
 }
 
 extension JokePresenter: JokeInteractorDelegate {
-    func handle(_ output: JokeInteractorOutputs) {
-        
+    func handleJokeRetrieve(_ output: JokeInteractorOutputs) {
+        switch output {
+        case .sendData(let joke):
+            self.joke = joke
+            DispatchQueue.main.async {
+                self.view.showJoke(JokePresenterOutputs.showData(joke: joke))
+            }
+        case .sendError(let error):
+            self.view.showJoke(JokePresenterOutputs.showError(error))
+        }
     }
 }

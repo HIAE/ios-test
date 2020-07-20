@@ -10,10 +10,10 @@ import UIKit
 
 struct JokeCategoriesPageBuilder {
     static func make() -> JokeCategoriesViewController {
-        let destinationVC = JokeCategoriesViewController()
+        let destinationVC = UIStoryboard.init(name: "JokeCategories", bundle: nil).instantiateViewController(withIdentifier: "JokeCategoriesViewController") as! JokeCategoriesViewController
         let router = JokeCategoriesRouter(destinationVC)
         let interactor = JokeCategoriesInteractor()
-        let presenter = JokeCategoriesPresenter(destinationVC,router,interactor)
+        let presenter = JokeCategoriesPresenter(destinationVC, router, interactor)
         destinationVC.presenter = presenter
         return destinationVC
     }

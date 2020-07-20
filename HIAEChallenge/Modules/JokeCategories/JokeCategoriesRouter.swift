@@ -16,6 +16,11 @@ final class JokeCategoriesRouter: JokeCategoriesRouterProtocol {
     }
     
     func navigate(_ route: JokeCategoriesRoutes) {
-        
+        switch route {
+        case .getJoke(let category):
+            let jokeView = JokePageBuilder.make(category: category)
+            
+            vc.navigationController?.pushViewController(jokeView, animated: true)
+        }
     }
 }

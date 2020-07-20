@@ -7,10 +7,16 @@
 //
 
 final class JokeCategoriesPresenter: JokeCategoriesPresenterProtocol {
-    
+
     private let interactor: JokeCategoriesInteractorProtocol!
     private let router: JokeCategoriesRouterProtocol!
     private let view: JokeCategoriesViewProtocol!
+
+    var categories: [String] = [] {
+        didSet {
+            self.view.loadCategories()
+        }
+    }
     
     init(_ view: JokeCategoriesViewProtocol, _ router: JokeCategoriesRouterProtocol, _ interactor: JokeCategoriesInteractorProtocol) {
         self.view = view
@@ -19,14 +25,24 @@ final class JokeCategoriesPresenter: JokeCategoriesPresenterProtocol {
         
         interactor.delegate = self
     }
+
+    func loadCategories() {
+        interactor.loadCategories()
+    }
+
+    func openJokeVC(for category: String) {
+        router.navigate(JokeCategoriesRoutes.getJoke(category: category))
+    }
 }
 
 extension JokeCategoriesPresenter: JokeCategoriesInteractorDelegate {
     func handle(_ output: JokeCategoriesInteractorOutputs) {
         switch output {
         case .sendData(let categories):
-            view.handle()
+            self.categories = categories
             
         case .sendError(let error):
+            self.view.errorLoadingCategories(error: error)
+        }
     }
 }

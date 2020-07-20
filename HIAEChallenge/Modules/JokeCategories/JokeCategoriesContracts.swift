@@ -8,7 +8,10 @@
 
 //PRESENTER
 protocol JokeCategoriesPresenterProtocol: class  {
-    
+    var categories:[String] { get }
+
+    func loadCategories()
+    func openJokeVC(for category: String) 
 }
 
 enum JokeCategoriesPresenterOutputs {
@@ -20,6 +23,8 @@ enum JokeCategoriesPresenterOutputs {
 //INTERACTOR
 protocol JokeCategoriesInteractorProtocol: class  {
     var delegate: JokeCategoriesInteractorDelegate! {get set}
+
+    func loadCategories()
 }
 
 protocol JokeCategoriesInteractorDelegate: class  {
@@ -39,14 +44,15 @@ protocol JokeCategoriesRouterProtocol: class {
 }
 
 enum JokeCategoriesRoutes {
-    
+    case getJoke(category: String)
 }
 
 /*------------------------*/
 //VIEW
 
 protocol JokeCategoriesViewProtocol: class {
-    func handle(_ output: JokeCategoriesPresenterOutputs)
+    func loadCategories()
+    func errorLoadingCategories(error: String)
 }
 
 

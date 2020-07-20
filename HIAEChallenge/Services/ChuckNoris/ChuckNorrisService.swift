@@ -8,12 +8,11 @@
 
 import Foundation
 import RxSwift
-import RxCocoa
 
 class ChuckNorisService {
     private let baseURL = URL(string: "https://api.chucknorris.io/")!
 
-    func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
+    func send<T: Decodable>(apiRequest: APIRequest) -> Observable<T> {
         return Observable<T>.create { observer in
             let request = apiRequest.request(with: self.baseURL)
 

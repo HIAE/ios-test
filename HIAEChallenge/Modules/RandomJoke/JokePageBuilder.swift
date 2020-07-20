@@ -9,12 +9,16 @@
 import UIKit
 
 struct JokePageBuilder {
-    static func make() -> JokeViewController {
-        let destinationVC = JokeViewController()
+    static func make(category: String) -> JokeViewController {
+        let destinationVC = UIStoryboard(name: "RandomJoke", bundle: nil).instantiateViewController(withIdentifier: "JokeViewController") as! JokeViewController
         let router = JokeRouter(destinationVC)
         let interactor = JokeInteractor()
-        let presenter = JokePresenter(destinationVC,router,interactor)
+
+        let presenter = JokePresenter(destinationVC, router, interactor)
+        presenter.category = category
+
         destinationVC.presenter = presenter
+
         return destinationVC
     }
 }

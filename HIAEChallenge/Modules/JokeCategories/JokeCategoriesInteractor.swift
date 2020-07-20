@@ -15,7 +15,7 @@ final class JokeCategoriesInteractor: JokeCategoriesInteractorProtocol {
     let chuckNorisService = ChuckNorisService()
     let disposeBag = DisposeBag()
 
-    func getCategories() {
+    func loadCategories() {
         let observable: Observable<[String]> = chuckNorisService.send(apiRequest: CategoriesRequest())
 
         observable.observeOn(MainScheduler.instance)
