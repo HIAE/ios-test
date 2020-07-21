@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541BEF8A24C548730097DC1F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541BEF8924C548730097DC1F /* String+Extension.swift */; };
+		5421913D24C3F03E002D9800 /* RandomJoke.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5421913C24C3F03E002D9800 /* RandomJoke.storyboard */; };
+		5421913F24C3F5B3002D9800 /* JokeCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5421913E24C3F5B3002D9800 /* JokeCategories.storyboard */; };
+		542AACBF24C36C6100D2C2C3 /* ChuckNorrisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */; };
+		542AACC124C36F9700D2C2C3 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC024C36F9700D2C2C3 /* APIRequest.swift */; };
+		542AACC524C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */; };
+		542AACC724C3751100D2C2C3 /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */; };
+		546C49E724C5C4EC00FC0CED /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C49E624C5C4EC00FC0CED /* LoadingView.swift */; };
+		5487501024C6716F0003BBAB /* JokeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487500C24C6716F0003BBAB /* JokeInteractorTests.swift */; };
+		549B827E24C2752E000EBC3B /* JokePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827824C2752E000EBC3B /* JokePresenter.swift */; };
+		549B827F24C2752E000EBC3B /* JokeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827924C2752E000EBC3B /* JokeRouter.swift */; };
+		549B828024C2752E000EBC3B /* JokeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827A24C2752E000EBC3B /* JokeContracts.swift */; };
+		549B828124C2752E000EBC3B /* JokeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827B24C2752E000EBC3B /* JokeInteractor.swift */; };
+		549B828224C2752E000EBC3B /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827C24C2752E000EBC3B /* JokeViewController.swift */; };
+		549B828324C2752E000EBC3B /* JokePageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827D24C2752E000EBC3B /* JokePageBuilder.swift */; };
+		549B828A24C2755D000EBC3B /* JokeCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828424C2755D000EBC3B /* JokeCategoriesPresenter.swift */; };
+		549B828B24C2755D000EBC3B /* JokeCategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828524C2755D000EBC3B /* JokeCategoriesRouter.swift */; };
+		549B828C24C2755D000EBC3B /* JokeCategoriesContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828624C2755D000EBC3B /* JokeCategoriesContracts.swift */; };
+		549B828D24C2755D000EBC3B /* JokeCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828724C2755D000EBC3B /* JokeCategoriesInteractor.swift */; };
+		549B828E24C2755D000EBC3B /* JokeCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828824C2755D000EBC3B /* JokeCategoriesVC.swift */; };
+		549B828F24C2755D000EBC3B /* JokeCategoriesPageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B828924C2755D000EBC3B /* JokeCategoriesPageBuilder.swift */; };
+		54C47FB924C26E450029D386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C47FB824C26E450029D386 /* AppDelegate.swift */; };
+		54C47FC024C26E450029D386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C47FBE24C26E450029D386 /* Main.storyboard */; };
+		54C47FC324C26E450029D386 /* HIAEChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C47FC124C26E450029D386 /* HIAEChallenge.xcdatamodeld */; };
+		54C47FC524C26E560029D386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C47FC424C26E560029D386 /* Assets.xcassets */; };
+		54C47FC824C26E560029D386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C47FC624C26E560029D386 /* LaunchScreen.storyboard */; };
+		54F0739D24C51D7F0028D97D /* FavoriteJoke+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0739B24C51D7E0028D97D /* FavoriteJoke+CoreDataClass.swift */; };
+		54F0739E24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0739C24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift */; };
+		54F073A124C524060028D97D /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F073A024C524060028D97D /* Joke.swift */; };
+		70DDCD47C07B639CE8E00361 /* Pods_HIAEChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF807B420B1F51F7218F0C6 /* Pods_HIAEChallengeTests.framework */; };
+		AE71ACF490BCFE8DDC918259 /* Pods_HIAEChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54874FFC24C670E20003BBAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C47FAD24C26E450029D386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C47FB424C26E450029D386;
+			remoteInfo = HIAEChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		541BEF8924C548730097DC1F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5421913C24C3F03E002D9800 /* RandomJoke.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomJoke.storyboard; sourceTree = "<group>"; };
+		5421913E24C3F5B3002D9800 /* JokeCategories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JokeCategories.storyboard; sourceTree = "<group>"; };
+		542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisService.swift; sourceTree = "<group>"; };
+		542AACC024C36F9700D2C2C3 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRandomJokeRequest.swift; sourceTree = "<group>"; };
+		542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
+		546C49E624C5C4EC00FC0CED /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		54874FF724C670E20003BBAB /* HIAEChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIAEChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54874FFB24C670E20003BBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5487500C24C6716F0003BBAB /* JokeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractorTests.swift; sourceTree = "<group>"; };
+		549B827824C2752E000EBC3B /* JokePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenter.swift; sourceTree = "<group>"; };
+		549B827924C2752E000EBC3B /* JokeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRouter.swift; sourceTree = "<group>"; };
+		549B827A24C2752E000EBC3B /* JokeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeContracts.swift; sourceTree = "<group>"; };
+		549B827B24C2752E000EBC3B /* JokeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractor.swift; sourceTree = "<group>"; };
+		549B827C24C2752E000EBC3B /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		549B827D24C2752E000EBC3B /* JokePageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePageBuilder.swift; sourceTree = "<group>"; };
+		549B828424C2755D000EBC3B /* JokeCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesPresenter.swift; sourceTree = "<group>"; };
+		549B828524C2755D000EBC3B /* JokeCategoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesRouter.swift; sourceTree = "<group>"; };
+		549B828624C2755D000EBC3B /* JokeCategoriesContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesContracts.swift; sourceTree = "<group>"; };
+		549B828724C2755D000EBC3B /* JokeCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesInteractor.swift; sourceTree = "<group>"; };
+		549B828824C2755D000EBC3B /* JokeCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesVC.swift; sourceTree = "<group>"; };
+		549B828924C2755D000EBC3B /* JokeCategoriesPageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesPageBuilder.swift; sourceTree = "<group>"; };
+		54C47FB524C26E450029D386 /* HIAEChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIAEChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C47FB824C26E450029D386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54C47FBF24C26E450029D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54C47FC224C26E450029D386 /* HIAEChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HIAEChallenge.xcdatamodel; sourceTree = "<group>"; };
+		54C47FC424C26E560029D386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54C47FC724C26E560029D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54C47FC924C26E560029D386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F0739B24C51D7E0028D97D /* FavoriteJoke+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteJoke+CoreDataClass.swift"; sourceTree = "<group>"; };
+		54F0739C24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteJoke+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		54F073A024C524060028D97D /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.release.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B36364DF01326728C508F49A /* Pods-HIAEChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCF807B420B1F51F7218F0C6 /* Pods_HIAEChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIAEChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3606C8B9AE6144A4ABFEBA3 /* Pods-HIAEChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIAEChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54874FF424C670E20003BBAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70DDCD47C07B639CE8E00361 /* Pods_HIAEChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C47FB224C26E450029D386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE71ACF490BCFE8DDC918259 /* Pods_HIAEChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541BEF8B24C5487F0097DC1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				541BEF8924C548730097DC1F /* String+Extension.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		542AACBC24C36C4600D2C2C3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				549B827724C274BB000EBC3B /* Joke */,
+				549B827624C274AF000EBC3B /* JokeCategories */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		542AACBD24C36C5100D2C2C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				542AACC224C3745F00D2C2C3 /* ChuckNoris */,
+				542AACC024C36F9700D2C2C3 /* APIRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		542AACC224C3745F00D2C2C3 /* ChuckNoris */ = {
+			isa = PBXGroup;
+			children = (
+				54F0739F24C523EC0028D97D /* Entities */,
+				542AACC324C3747300D2C2C3 /* Requests */,
+				542AACBE24C36C6100D2C2C3 /* ChuckNorrisService.swift */,
+			);
+			path = ChuckNoris;
+			sourceTree = "<group>";
+		};
+		542AACC324C3747300D2C2C3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */,
+				542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		546C49E524C5C4C600FC0CED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				546C49E624C5C4EC00FC0CED /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54874FF824C670E20003BBAB /* HIAEChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5487500A24C6713B0003BBAB /* JokeCategoriesModule */,
+				5487500924C671340003BBAB /* JokeModule */,
+				54874FFB24C670E20003BBAB /* Info.plist */,
+			);
+			path = HIAEChallengeTests;
+			sourceTree = "<group>";
+		};
+		5487500924C671340003BBAB /* JokeModule */ = {
+			isa = PBXGroup;
+			children = (
+				5487500C24C6716F0003BBAB /* JokeInteractorTests.swift */,
+			);
+			path = JokeModule;
+			sourceTree = "<group>";
+		};
+		5487500A24C6713B0003BBAB /* JokeCategoriesModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JokeCategoriesModule;
+			sourceTree = "<group>";
+		};
+		549B827624C274AF000EBC3B /* JokeCategories */ = {
+			isa = PBXGroup;
+			children = (
+				549B828424C2755D000EBC3B /* JokeCategoriesPresenter.swift */,
+				549B828524C2755D000EBC3B /* JokeCategoriesRouter.swift */,
+				549B828624C2755D000EBC3B /* JokeCategoriesContracts.swift */,
+				549B828724C2755D000EBC3B /* JokeCategoriesInteractor.swift */,
+				549B828824C2755D000EBC3B /* JokeCategoriesVC.swift */,
+				549B828924C2755D000EBC3B /* JokeCategoriesPageBuilder.swift */,
+				5421913E24C3F5B3002D9800 /* JokeCategories.storyboard */,
+			);
+			path = JokeCategories;
+			sourceTree = "<group>";
+		};
+		549B827724C274BB000EBC3B /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				549B827824C2752E000EBC3B /* JokePresenter.swift */,
+				549B827924C2752E000EBC3B /* JokeRouter.swift */,
+				549B827A24C2752E000EBC3B /* JokeContracts.swift */,
+				549B827B24C2752E000EBC3B /* JokeInteractor.swift */,
+				549B827C24C2752E000EBC3B /* JokeViewController.swift */,
+				549B827D24C2752E000EBC3B /* JokePageBuilder.swift */,
+				5421913C24C3F03E002D9800 /* RandomJoke.storyboard */,
+			);
+			path = Joke;
+			sourceTree = "<group>";
+		};
+		54C47FAC24C26E450029D386 = {
+			isa = PBXGroup;
+			children = (
+				54C47FB724C26E450029D386 /* HIAEChallenge */,
+				54874FF824C670E20003BBAB /* HIAEChallengeTests */,
+				54C47FB624C26E450029D386 /* Products */,
+				BAD47F7801AA8A1C2809BC74 /* Pods */,
+				E32FF13F9152DF11C48AE580 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54C47FB624C26E450029D386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54C47FB524C26E450029D386 /* HIAEChallenge.app */,
+				54874FF724C670E20003BBAB /* HIAEChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C47FB724C26E450029D386 /* HIAEChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				546C49E524C5C4C600FC0CED /* Views */,
+				541BEF8B24C5487F0097DC1F /* Supporting Files */,
+				54F0739A24C51D530028D97D /* Models */,
+				542AACBD24C36C5100D2C2C3 /* Services */,
+				542AACBC24C36C4600D2C2C3 /* Modules */,
+				54C47FB824C26E450029D386 /* AppDelegate.swift */,
+				54C47FBE24C26E450029D386 /* Main.storyboard */,
+				54C47FC424C26E560029D386 /* Assets.xcassets */,
+				54C47FC624C26E560029D386 /* LaunchScreen.storyboard */,
+				54C47FC924C26E560029D386 /* Info.plist */,
+				54C47FC124C26E450029D386 /* HIAEChallenge.xcdatamodeld */,
+			);
+			path = HIAEChallenge;
+			sourceTree = "<group>";
+		};
+		54F0739A24C51D530028D97D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54F0739C24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift */,
+				54F0739B24C51D7E0028D97D /* FavoriteJoke+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54F0739F24C523EC0028D97D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				54F073A024C524060028D97D /* Joke.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BAD47F7801AA8A1C2809BC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */,
+				751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */,
+				C3606C8B9AE6144A4ABFEBA3 /* Pods-HIAEChallengeTests.debug.xcconfig */,
+				B36364DF01326728C508F49A /* Pods-HIAEChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E32FF13F9152DF11C48AE580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */,
+				BCF807B420B1F51F7218F0C6 /* Pods_HIAEChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54874FF624C670E20003BBAB /* HIAEChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5487500024C670E20003BBAB /* Build configuration list for PBXNativeTarget "HIAEChallengeTests" */;
+			buildPhases = (
+				A1BA5909E6B07E7E6B838800 /* [CP] Check Pods Manifest.lock */,
+				54874FF324C670E20003BBAB /* Sources */,
+				54874FF424C670E20003BBAB /* Frameworks */,
+				54874FF524C670E20003BBAB /* Resources */,
+				B5FB1A53D5E2D413B2ABF846 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54874FFD24C670E20003BBAB /* PBXTargetDependency */,
+			);
+			name = HIAEChallengeTests;
+			productName = HIAEChallengeTests;
+			productReference = 54874FF724C670E20003BBAB /* HIAEChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54C47FB424C26E450029D386 /* HIAEChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C47FCC24C26E560029D386 /* Build configuration list for PBXNativeTarget "HIAEChallenge" */;
+			buildPhases = (
+				BE8413F0180A42F66AEFDC10 /* [CP] Check Pods Manifest.lock */,
+				54C47FB124C26E450029D386 /* Sources */,
+				54C47FB224C26E450029D386 /* Frameworks */,
+				54C47FB324C26E450029D386 /* Resources */,
+				A20F8AA25A6F102EF8C7D417 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HIAEChallenge;
+			productName = HIAEChallenge;
+			productReference = 54C47FB524C26E450029D386 /* HIAEChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54C47FAD24C26E450029D386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Vinicius Custodio";
+				TargetAttributes = {
+					54874FF624C670E20003BBAB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 54C47FB424C26E450029D386;
+					};
+					54C47FB424C26E450029D386 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 54C47FB024C26E450029D386 /* Build configuration list for PBXProject "HIAEChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54C47FAC24C26E450029D386;
+			productRefGroup = 54C47FB624C26E450029D386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54C47FB424C26E450029D386 /* HIAEChallenge */,
+				54874FF624C670E20003BBAB /* HIAEChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54874FF524C670E20003BBAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C47FB324C26E450029D386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C47FC824C26E560029D386 /* LaunchScreen.storyboard in Resources */,
+				5421913D24C3F03E002D9800 /* RandomJoke.storyboard in Resources */,
+				5421913F24C3F5B3002D9800 /* JokeCategories.storyboard in Resources */,
+				54C47FC524C26E560029D386 /* Assets.xcassets in Resources */,
+				54C47FC024C26E450029D386 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1BA5909E6B07E7E6B838800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HIAEChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20F8AA25A6F102EF8C7D417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FB1A53D5E2D413B2ABF846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8413F0180A42F66AEFDC10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HIAEChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54874FF324C670E20003BBAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5487501024C6716F0003BBAB /* JokeInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C47FB124C26E450029D386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F073A124C524060028D97D /* Joke.swift in Sources */,
+				542AACC124C36F9700D2C2C3 /* APIRequest.swift in Sources */,
+				549B827E24C2752E000EBC3B /* JokePresenter.swift in Sources */,
+				549B828B24C2755D000EBC3B /* JokeCategoriesRouter.swift in Sources */,
+				542AACC524C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift in Sources */,
+				546C49E724C5C4EC00FC0CED /* LoadingView.swift in Sources */,
+				549B828C24C2755D000EBC3B /* JokeCategoriesContracts.swift in Sources */,
+				549B828A24C2755D000EBC3B /* JokeCategoriesPresenter.swift in Sources */,
+				542AACBF24C36C6100D2C2C3 /* ChuckNorrisService.swift in Sources */,
+				549B828224C2752E000EBC3B /* JokeViewController.swift in Sources */,
+				54C47FC324C26E450029D386 /* HIAEChallenge.xcdatamodeld in Sources */,
+				54F0739E24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift in Sources */,
+				541BEF8A24C548730097DC1F /* String+Extension.swift in Sources */,
+				549B828124C2752E000EBC3B /* JokeInteractor.swift in Sources */,
+				549B828024C2752E000EBC3B /* JokeContracts.swift in Sources */,
+				54F0739D24C51D7F0028D97D /* FavoriteJoke+CoreDataClass.swift in Sources */,
+				549B828D24C2755D000EBC3B /* JokeCategoriesInteractor.swift in Sources */,
+				54C47FB924C26E450029D386 /* AppDelegate.swift in Sources */,
+				542AACC724C3751100D2C2C3 /* CategoriesRequest.swift in Sources */,
+				549B828324C2752E000EBC3B /* JokePageBuilder.swift in Sources */,
+				549B828E24C2755D000EBC3B /* JokeCategoriesVC.swift in Sources */,
+				549B828F24C2755D000EBC3B /* JokeCategoriesPageBuilder.swift in Sources */,
+				549B827F24C2752E000EBC3B /* JokeRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54874FFD24C670E20003BBAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C47FB424C26E450029D386 /* HIAEChallenge */;
+			targetProxy = 54874FFC24C670E20003BBAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54C47FBE24C26E450029D386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54C47FBF24C26E450029D386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54C47FC624C26E560029D386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54C47FC724C26E560029D386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54874FFE24C670E20003BBAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3606C8B9AE6144A4ABFEBA3 /* Pods-HIAEChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78WY25467;
+				INFOPLIST_FILE = HIAEChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vc.challenges.HIAEChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIAEChallenge.app/HIAEChallenge";
+			};
+			name = Debug;
+		};
+		54874FFF24C670E20003BBAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36364DF01326728C508F49A /* Pods-HIAEChallengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78WY25467;
+				INFOPLIST_FILE = HIAEChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vc.challenges.HIAEChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIAEChallenge.app/HIAEChallenge";
+			};
+			name = Release;
+		};
+		54C47FCA24C26E560029D386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54C47FCB24C26E560029D386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C47FCD24C26E560029D386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78WY25467;
+				INFOPLIST_FILE = HIAEChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vc.challenges.HIAEChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54C47FCE24C26E560029D386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78WY25467;
+				INFOPLIST_FILE = HIAEChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vc.challenges.HIAEChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5487500024C670E20003BBAB /* Build configuration list for PBXNativeTarget "HIAEChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54874FFE24C670E20003BBAB /* Debug */,
+				54874FFF24C670E20003BBAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C47FB024C26E450029D386 /* Build configuration list for PBXProject "HIAEChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C47FCA24C26E560029D386 /* Debug */,
+				54C47FCB24C26E560029D386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C47FCC24C26E560029D386 /* Build configuration list for PBXNativeTarget "HIAEChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C47FCD24C26E560029D386 /* Debug */,
+				54C47FCE24C26E560029D386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54C47FC124C26E450029D386 /* HIAEChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54C47FC224C26E450029D386 /* HIAEChallenge.xcdatamodel */,
+			);
+			currentVersion = 54C47FC224C26E450029D386 /* HIAEChallenge.xcdatamodel */;
+			path = HIAEChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54C47FAD24C26E450029D386 /* Project object */;
+}
