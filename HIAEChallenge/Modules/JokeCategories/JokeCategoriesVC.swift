@@ -46,6 +46,8 @@ class JokeCategoriesViewController: UIViewController, JokeCategoriesViewProtocol
     fileprivate func setUI() {
         loadingView.startSpinner()
         presenter.loadCategories()
+        
+        self.navigationItem.title = "Categorias"
     }
 }
 
@@ -81,6 +83,8 @@ extension JokeCategoriesViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
         let category = presenter.categories[indexPath.row]
         presenter.openJokeVC(for: category)
     }

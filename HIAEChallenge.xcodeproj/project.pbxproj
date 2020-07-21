@@ -15,6 +15,7 @@
 		542AACC524C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */; };
 		542AACC724C3751100D2C2C3 /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */; };
 		546C49E724C5C4EC00FC0CED /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C49E624C5C4EC00FC0CED /* LoadingView.swift */; };
+		5487501024C6716F0003BBAB /* JokeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487500C24C6716F0003BBAB /* JokeInteractorTests.swift */; };
 		549B827E24C2752E000EBC3B /* JokePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827824C2752E000EBC3B /* JokePresenter.swift */; };
 		549B827F24C2752E000EBC3B /* JokeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827924C2752E000EBC3B /* JokeRouter.swift */; };
 		549B828024C2752E000EBC3B /* JokeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B827A24C2752E000EBC3B /* JokeContracts.swift */; };
@@ -35,8 +36,19 @@
 		54F0739D24C51D7F0028D97D /* FavoriteJoke+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0739B24C51D7E0028D97D /* FavoriteJoke+CoreDataClass.swift */; };
 		54F0739E24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0739C24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift */; };
 		54F073A124C524060028D97D /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F073A024C524060028D97D /* Joke.swift */; };
+		70DDCD47C07B639CE8E00361 /* Pods_HIAEChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF807B420B1F51F7218F0C6 /* Pods_HIAEChallengeTests.framework */; };
 		AE71ACF490BCFE8DDC918259 /* Pods_HIAEChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54874FFC24C670E20003BBAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C47FAD24C26E450029D386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C47FB424C26E450029D386;
+			remoteInfo = HIAEChallenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +60,9 @@
 		542AACC424C3747F00D2C2C3 /* CategoryRandomJokeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRandomJokeRequest.swift; sourceTree = "<group>"; };
 		542AACC624C3751100D2C2C3 /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
 		546C49E624C5C4EC00FC0CED /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		54874FF724C670E20003BBAB /* HIAEChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIAEChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54874FFB24C670E20003BBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5487500C24C6716F0003BBAB /* JokeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractorTests.swift; sourceTree = "<group>"; };
 		549B827824C2752E000EBC3B /* JokePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenter.swift; sourceTree = "<group>"; };
 		549B827924C2752E000EBC3B /* JokeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRouter.swift; sourceTree = "<group>"; };
 		549B827A24C2752E000EBC3B /* JokeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeContracts.swift; sourceTree = "<group>"; };
@@ -71,10 +86,21 @@
 		54F0739C24C51D7F0028D97D /* FavoriteJoke+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteJoke+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		54F073A024C524060028D97D /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallenge.release.xcconfig"; path = "Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B36364DF01326728C508F49A /* Pods-HIAEChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCF807B420B1F51F7218F0C6 /* Pods_HIAEChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIAEChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3606C8B9AE6144A4ABFEBA3 /* Pods-HIAEChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIAEChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIAEChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		54874FF424C670E20003BBAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70DDCD47C07B639CE8E00361 /* Pods_HIAEChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54C47FB224C26E450029D386 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,7 +123,7 @@
 		542AACBC24C36C4600D2C2C3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				549B827724C274BB000EBC3B /* RandomJoke */,
+				549B827724C274BB000EBC3B /* Joke */,
 				549B827624C274AF000EBC3B /* JokeCategories */,
 			);
 			path = Modules;
@@ -139,6 +165,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		54874FF824C670E20003BBAB /* HIAEChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5487500A24C6713B0003BBAB /* JokeCategoriesModule */,
+				5487500924C671340003BBAB /* JokeModule */,
+				54874FFB24C670E20003BBAB /* Info.plist */,
+			);
+			path = HIAEChallengeTests;
+			sourceTree = "<group>";
+		};
+		5487500924C671340003BBAB /* JokeModule */ = {
+			isa = PBXGroup;
+			children = (
+				5487500C24C6716F0003BBAB /* JokeInteractorTests.swift */,
+			);
+			path = JokeModule;
+			sourceTree = "<group>";
+		};
+		5487500A24C6713B0003BBAB /* JokeCategoriesModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JokeCategoriesModule;
+			sourceTree = "<group>";
+		};
 		549B827624C274AF000EBC3B /* JokeCategories */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +204,7 @@
 			path = JokeCategories;
 			sourceTree = "<group>";
 		};
-		549B827724C274BB000EBC3B /* RandomJoke */ = {
+		549B827724C274BB000EBC3B /* Joke */ = {
 			isa = PBXGroup;
 			children = (
 				549B827824C2752E000EBC3B /* JokePresenter.swift */,
@@ -164,13 +215,14 @@
 				549B827D24C2752E000EBC3B /* JokePageBuilder.swift */,
 				5421913C24C3F03E002D9800 /* RandomJoke.storyboard */,
 			);
-			path = RandomJoke;
+			path = Joke;
 			sourceTree = "<group>";
 		};
 		54C47FAC24C26E450029D386 = {
 			isa = PBXGroup;
 			children = (
 				54C47FB724C26E450029D386 /* HIAEChallenge */,
+				54874FF824C670E20003BBAB /* HIAEChallengeTests */,
 				54C47FB624C26E450029D386 /* Products */,
 				BAD47F7801AA8A1C2809BC74 /* Pods */,
 				E32FF13F9152DF11C48AE580 /* Frameworks */,
@@ -181,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				54C47FB524C26E450029D386 /* HIAEChallenge.app */,
+				54874FF724C670E20003BBAB /* HIAEChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +278,8 @@
 			children = (
 				01F672791210AAF1E62DE502 /* Pods-HIAEChallenge.debug.xcconfig */,
 				751D5028A92F1DAF6F94266B /* Pods-HIAEChallenge.release.xcconfig */,
+				C3606C8B9AE6144A4ABFEBA3 /* Pods-HIAEChallengeTests.debug.xcconfig */,
+				B36364DF01326728C508F49A /* Pods-HIAEChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -233,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				EF672E1399142DDB423DF426 /* Pods_HIAEChallenge.framework */,
+				BCF807B420B1F51F7218F0C6 /* Pods_HIAEChallengeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +296,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		54874FF624C670E20003BBAB /* HIAEChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5487500024C670E20003BBAB /* Build configuration list for PBXNativeTarget "HIAEChallengeTests" */;
+			buildPhases = (
+				A1BA5909E6B07E7E6B838800 /* [CP] Check Pods Manifest.lock */,
+				54874FF324C670E20003BBAB /* Sources */,
+				54874FF424C670E20003BBAB /* Frameworks */,
+				54874FF524C670E20003BBAB /* Resources */,
+				B5FB1A53D5E2D413B2ABF846 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54874FFD24C670E20003BBAB /* PBXTargetDependency */,
+			);
+			name = HIAEChallengeTests;
+			productName = HIAEChallengeTests;
+			productReference = 54874FF724C670E20003BBAB /* HIAEChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		54C47FB424C26E450029D386 /* HIAEChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54C47FCC24C26E560029D386 /* Build configuration list for PBXNativeTarget "HIAEChallenge" */;
@@ -269,6 +345,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Vinicius Custodio";
 				TargetAttributes = {
+					54874FF624C670E20003BBAB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 54C47FB424C26E450029D386;
+					};
 					54C47FB424C26E450029D386 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -288,11 +368,19 @@
 			projectRoot = "";
 			targets = (
 				54C47FB424C26E450029D386 /* HIAEChallenge */,
+				54874FF624C670E20003BBAB /* HIAEChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54874FF524C670E20003BBAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54C47FB324C26E450029D386 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +396,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A1BA5909E6B07E7E6B838800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HIAEChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A20F8AA25A6F102EF8C7D417 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +433,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIAEChallenge/Pods-HIAEChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FB1A53D5E2D413B2ABF846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIAEChallengeTests/Pods-HIAEChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE8413F0180A42F66AEFDC10 /* [CP] Check Pods Manifest.lock */ = {
@@ -350,6 +477,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		54874FF324C670E20003BBAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5487501024C6716F0003BBAB /* JokeInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54C47FB124C26E450029D386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +517,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		54874FFD24C670E20003BBAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C47FB424C26E450029D386 /* HIAEChallenge */;
+			targetProxy = 54874FFC24C670E20003BBAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		54C47FBE24C26E450029D386 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -402,6 +545,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54874FFE24C670E20003BBAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3606C8B9AE6144A4ABFEBA3 /* Pods-HIAEChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78WY25467;
+				INFOPLIST_FILE = HIAEChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vc.challenges.HIAEChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIAEChallenge.app/HIAEChallenge";
+			};
+			name = Debug;
+		};
+		54874FFF24C670E20003BBAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36364DF01326728C508F49A /* Pods-HIAEChallengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78WY25467;
+				INFOPLIST_FILE = HIAEChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vc.challenges.HIAEChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIAEChallenge.app/HIAEChallenge";
+			};
+			name = Release;
+		};
 		54C47FCA24C26E560029D386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -559,6 +746,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5487500024C670E20003BBAB /* Build configuration list for PBXNativeTarget "HIAEChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54874FFE24C670E20003BBAB /* Debug */,
+				54874FFF24C670E20003BBAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54C47FB024C26E450029D386 /* Build configuration list for PBXProject "HIAEChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

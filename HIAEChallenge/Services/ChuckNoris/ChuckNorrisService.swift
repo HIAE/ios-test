@@ -23,7 +23,11 @@ enum ChuckNorrisError: Error {
     }
 }
 
-class ChuckNorisService {
+protocol ServiceInterface: AnyObject {
+    func send<T: Decodable>(apiRequest: APIRequest) -> Observable<T>
+}
+
+class ChuckNorisService: ServiceInterface {
     private let baseURL = URL(string: "https://api.chucknorris.io/")!
 
     func send<T: Decodable>(apiRequest: APIRequest) -> Observable<T> {

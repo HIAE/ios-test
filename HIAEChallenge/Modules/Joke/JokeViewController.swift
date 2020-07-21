@@ -39,6 +39,8 @@ class JokeViewController: UIViewController, JokeViewProtocol {
     
     fileprivate func setUI() {
         retrieveJoke()
+        
+        self.navigationItem.title = self.presenter.category?.capitalizingFirstLetter()
     }
 
     @objc func retrieveJoke() {
@@ -77,16 +79,11 @@ extension JokeViewController {
             self.presentJoke(joke: joke)
 
         case .showError(let error):
-            DispatchQueue.main.async {
-                self.showErrorMessage(error: error)
-            }
+            self.showErrorMessage(error: error)
             
         }
         
-        DispatchQueue.main.async {
-            self.loadingView.stopSpinner()
-        }
-        
+        self.loadingView.stopSpinner()
     }
 
     func presentJoke(joke: Joke) {

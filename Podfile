@@ -9,7 +9,7 @@ target 'HIAEChallenge' do
 end
 
 # RxTest and RxBlocking make the most sense in the context of unit/integration tests
-# target 'YOUR_TESTING_TARGET' do
-#     pod 'RxBlocking', '~> 5'
-#     pod 'RxTest', '~> 5'
-# end
+target 'HIAEChallengeTests' do
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
+end

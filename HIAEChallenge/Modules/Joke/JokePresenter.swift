@@ -83,7 +83,9 @@ extension JokePresenter: JokeInteractorDelegate {
             self.displayJoke()
             
         case .sendError(let error):
-            self.view.showJoke(JokePresenterOutputs.showError(error))
+            DispatchQueue.main.async {
+                self.view.showJoke(JokePresenterOutputs.showError(error))
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ import RxSwift
 final class JokeInteractor: JokeInteractorProtocol {
     weak var delegate: JokeInteractorDelegate!
 
-    let chuckNorrisService = ChuckNorisService()
+    var chuckNorrisService:ServiceInterface = ChuckNorisService()
     let disposeBag = DisposeBag()
 
     func getJoke(category: String) {
