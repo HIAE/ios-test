@@ -11,11 +11,12 @@ protocol JokeCategoriesPresenterProtocol: class  {
     var categories:[String] { get }
 
     func loadCategories()
-    func openJokeVC(for category: String) 
+    func openJokeVC(for category: String)
+    func dismiss()
 }
 
 enum JokeCategoriesPresenterOutputs {
-    case showError(String)
+    case showError(ChuckNorrisError)
     case showData
 }
 
@@ -32,7 +33,7 @@ protocol JokeCategoriesInteractorDelegate: class  {
 }
 
 enum JokeCategoriesInteractorOutputs {
-    case sendError(String)
+    case sendError(ChuckNorrisError)
     case sendData(categories: [String])
 }
 
@@ -41,6 +42,7 @@ enum JokeCategoriesInteractorOutputs {
 //ROUTER
 protocol JokeCategoriesRouterProtocol: class {
     func navigate(_ route: JokeCategoriesRoutes)
+    func dismiss()
 }
 
 enum JokeCategoriesRoutes {
@@ -52,7 +54,7 @@ enum JokeCategoriesRoutes {
 
 protocol JokeCategoriesViewProtocol: class {
     func loadCategories()
-    func errorLoadingCategories(error: String)
+    func errorLoadingCategories(error: ChuckNorrisError)
 }
 
 

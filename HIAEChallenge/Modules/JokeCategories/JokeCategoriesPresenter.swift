@@ -6,6 +6,8 @@
 //  Copyright © 2020 Vinicius Custodio. All rights reserved.
 //
 
+import Foundation
+
 final class JokeCategoriesPresenter: JokeCategoriesPresenterProtocol {
 
     private let interactor: JokeCategoriesInteractorProtocol!
@@ -14,7 +16,9 @@ final class JokeCategoriesPresenter: JokeCategoriesPresenterProtocol {
 
     var categories: [String] = [] {
         didSet {
-            self.view.loadCategories()
+            DispatchQueue.main.async {
+                self.view.loadCategories()
+            }
         }
     }
     
@@ -33,6 +37,10 @@ final class JokeCategoriesPresenter: JokeCategoriesPresenterProtocol {
     func openJokeVC(for category: String) {
         router.navigate(JokeCategoriesRoutes.getJoke(category: category))
     }
+    
+    func dismiss() {
+        
+    }
 }
 
 extension JokeCategoriesPresenter: JokeCategoriesInteractorDelegate {
@@ -42,7 +50,9 @@ extension JokeCategoriesPresenter: JokeCategoriesInteractorDelegate {
             self.categories = categories
             
         case .sendError(let error):
-            self.view.errorLoadingCategories(error: error)
+            DispatchQueue.main.async {
+                self.view.errorLoadingCategories(error: error)
+            }
         }
     }
 }

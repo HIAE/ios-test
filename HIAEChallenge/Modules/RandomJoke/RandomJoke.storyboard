@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -57,16 +57,35 @@
                                     <constraint firstAttribute="bottom" secondItem="n31-H0-f2e" secondAttribute="bottom" constant="32" id="uJM-Am-Oo0"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yn-7p-NS6">
+                                <rect key="frame" x="224.5" y="529" width="55" height="30"/>
+                                <state key="normal" title="Próxima"/>
+                                <connections>
+                                    <action selector="didPressedNext:" destination="5pn-CI-mKD" eventType="touchUpInside" id="grj-8P-9hy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-ja-cBU">
+                                <rect key="frame" x="134.5" y="529" width="55" height="30"/>
+                                <state key="normal" title="Anterior"/>
+                                <connections>
+                                    <action selector="didPressedBack:" destination="5pn-CI-mKD" eventType="touchUpInside" id="pMZ-WM-oxG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="cdq-ja-cBU" firstAttribute="top" secondItem="CNs-qw-dbX" secondAttribute="bottom" constant="5" id="QeC-xD-a8m"/>
+                            <constraint firstItem="0yn-7p-NS6" firstAttribute="centerX" secondItem="CNs-qw-dbX" secondAttribute="centerX" constant="45" id="b6F-pE-fLZ"/>
                             <constraint firstItem="CNs-qw-dbX" firstAttribute="centerY" secondItem="bkm-Ug-hHc" secondAttribute="centerY" id="fZW-op-IT3"/>
                             <constraint firstItem="bkm-Ug-hHc" firstAttribute="trailing" secondItem="CNs-qw-dbX" secondAttribute="trailing" id="hI5-Me-TYY"/>
+                            <constraint firstItem="0yn-7p-NS6" firstAttribute="top" secondItem="CNs-qw-dbX" secondAttribute="bottom" constant="5" id="jSv-Nj-W71"/>
+                            <constraint firstItem="cdq-ja-cBU" firstAttribute="centerX" secondItem="CNs-qw-dbX" secondAttribute="centerX" constant="-45" id="qny-fq-jXd"/>
                             <constraint firstItem="CNs-qw-dbX" firstAttribute="leading" secondItem="bkm-Ug-hHc" secondAttribute="leading" id="sJ1-pN-YCq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bkm-Ug-hHc"/>
                     </view>
                     <connections>
+                        <outlet property="backJokeButton" destination="cdq-ja-cBU" id="Mm1-eZ-RL5"/>
                         <outlet property="iconImage" destination="SrK-eV-FFa" id="b79-Dh-4SS"/>
                         <outlet property="jokeLabel" destination="n31-H0-f2e" id="6rx-4B-XXo"/>
                     </connections>

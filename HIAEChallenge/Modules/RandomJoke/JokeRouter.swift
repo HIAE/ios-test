@@ -18,6 +18,10 @@ final class JokeRouter: JokeRouterProtocol {
     func navigate(_ route: JokeRoutes) {
         
     }
+    
+    func dismiss() {
+        vc.navigationController?.popViewController(animated: true)
+    }
 
     func openURL(_ url: URL) {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)

@@ -21,7 +21,7 @@ final class JokeInteractor: JokeInteractorProtocol {
                 self?.delegate.handleJokeRetrieve(JokeInteractorOutputs.sendData(joke: object))
 
             }, onError: { [weak self] (error) in
-                self?.delegate.handleJokeRetrieve(JokeInteractorOutputs.sendError(error.localizedDescription))
+                self?.delegate.handleJokeRetrieve(JokeInteractorOutputs.sendError(ChuckNorrisError.jokeError))
                 
         }, onCompleted: nil, onDisposed: nil)
         .disposed(by: disposeBag)

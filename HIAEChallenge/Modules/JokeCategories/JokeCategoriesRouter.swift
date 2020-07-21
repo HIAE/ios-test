@@ -23,4 +23,8 @@ final class JokeCategoriesRouter: JokeCategoriesRouterProtocol {
             vc.navigationController?.pushViewController(jokeView, animated: true)
         }
     }
+    
+    func dismiss() {
+        vc.navigationController?.popViewController(animated: true)
+    }
 }

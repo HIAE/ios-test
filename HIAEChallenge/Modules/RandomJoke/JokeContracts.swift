@@ -9,15 +9,19 @@
 import Foundation
 
 //PRESENTER
-@objc protocol JokePresenterProtocol: class  {
+protocol JokePresenterProtocol: class  {
     var category:String? { get set }
-
-    @objc func retrieveJoke()
+    
+    func retrieveJoke()
     func openJokeUrl()
+    func nextJoke()
+    func backJoke()
+    
+    func dismiss()
 }
 
 enum JokePresenterOutputs {
-    case showError(String)
+    case showError(ChuckNorrisError)
     case showData(joke: Joke)
 }
 
@@ -34,7 +38,7 @@ protocol JokeInteractorDelegate: class  {
 }
 
 enum JokeInteractorOutputs {
-    case sendError(String)
+    case sendError(ChuckNorrisError)
     case sendData(joke: Joke)
 }
 
@@ -44,7 +48,8 @@ enum JokeInteractorOutputs {
 protocol JokeRouterProtocol: class {
     func navigate(_ route: JokeRoutes)
     func openURL(_ url: URL)
-
+    
+    func dismiss()
 }
 
 enum JokeRoutes {
@@ -56,6 +61,9 @@ enum JokeRoutes {
 
 protocol JokeViewProtocol: class {
     func showJoke(_ output: JokePresenterOutputs)
+    func backJokeButton(isEnabled: Bool)
+    func addLoadingView()
+    func removeLoadingView()
 }
 
 

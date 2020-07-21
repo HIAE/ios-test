@@ -23,7 +23,7 @@ final class JokeCategoriesInteractor: JokeCategoriesInteractorProtocol {
                     self?.delegate.handle(JokeCategoriesInteractorOutputs.sendData(categories: categories))
 
                 }, onError: { [weak self] (error) in
-                    self?.delegate.handle(JokeCategoriesInteractorOutputs.sendError("Error"))
+                    self?.delegate.handle(JokeCategoriesInteractorOutputs.sendError(ChuckNorrisError.categoriesError))
 
                 }, onCompleted: nil, onDisposed: nil)
         .disposed(by: disposeBag)

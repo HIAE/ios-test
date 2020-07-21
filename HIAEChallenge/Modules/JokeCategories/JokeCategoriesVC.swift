@@ -55,8 +55,15 @@ extension JokeCategoriesViewController {
         loadingView.stopSpinner()
     }
 
-    func errorLoadingCategories(error: String) {
-        //Create alert
+    func errorLoadingCategories(error: ChuckNorrisError) {
+        let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Tentar Novamente", style: .cancel, handler: { _ in
+            self.loadingView.startSpinner()
+            self.presenter.loadCategories()
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

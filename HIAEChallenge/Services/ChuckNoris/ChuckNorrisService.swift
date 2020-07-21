@@ -9,6 +9,20 @@
 import Foundation
 import RxSwift
 
+enum ChuckNorrisError: Error {
+    case jokeError
+    case categoriesError
+    
+    var localizedDescription: String {
+        switch self {
+        case .jokeError:
+            return "Não foi possível encontrar fatos sobre ChuckNoris no momento."
+        case .categoriesError:
+            return "Não foi possível comunicar com a API"
+        }
+    }
+}
+
 class ChuckNorisService {
     private let baseURL = URL(string: "https://api.chucknorris.io/")!
 
