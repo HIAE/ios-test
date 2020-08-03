@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C4C70F524D89E7B00171F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C70F424D89E7B00171F18 /* AppDelegate.swift */; };
-		2C4C70F724D89E7B00171F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C70F624D89E7B00171F18 /* SceneDelegate.swift */; };
 		2C4C70F924D89E7B00171F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C70F824D89E7B00171F18 /* ViewController.swift */; };
 		2C4C70FC24D89E7B00171F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4C70FA24D89E7B00171F18 /* Main.storyboard */; };
 		2C4C70FF24D89E7B00171F18 /* ChuckNorrisRxSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C70FD24D89E7B00171F18 /* ChuckNorrisRxSwift.xcdatamodeld */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		2C4C70F124D89E7B00171F18 /* ChuckNorrisRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4C70F424D89E7B00171F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C4C70F624D89E7B00171F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C4C70F824D89E7B00171F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C4C70FB24D89E7B00171F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C4C70FE24D89E7B00171F18 /* ChuckNorrisRxSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChuckNorrisRxSwift.xcdatamodel; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				2C4C70F424D89E7B00171F18 /* AppDelegate.swift */,
-				2C4C70F624D89E7B00171F18 /* SceneDelegate.swift */,
 				2C4C70F824D89E7B00171F18 /* ViewController.swift */,
 				2C4C70FA24D89E7B00171F18 /* Main.storyboard */,
 				2C4C710024D89E7D00171F18 /* Assets.xcassets */,
@@ -138,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C4C711E24D89E7D00171F18 /* Build configuration list for PBXNativeTarget "ChuckNorrisRxSwift" */;
 			buildPhases = (
+				2C4C712724D8A25000171F18 /* ShellScript */,
 				2C4C70ED24D89E7B00171F18 /* Sources */,
 				2C4C70EE24D89E7B00171F18 /* Frameworks */,
 				2C4C70EF24D89E7B00171F18 /* Resources */,
@@ -257,6 +255,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C4C712724D8A25000171F18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C4C70ED24D89E7B00171F18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,7 +283,6 @@
 				2C4C70F924D89E7B00171F18 /* ViewController.swift in Sources */,
 				2C4C70FF24D89E7B00171F18 /* ChuckNorrisRxSwift.xcdatamodeld in Sources */,
 				2C4C70F524D89E7B00171F18 /* AppDelegate.swift in Sources */,
-				2C4C70F724D89E7B00171F18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
