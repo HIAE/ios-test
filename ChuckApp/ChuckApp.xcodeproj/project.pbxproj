@@ -139,8 +139,8 @@
 		C521806B24DEF9AD00C4198C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C521807024DEF9F400C4198C /* ViewCodable.swift */,
 				C521807224DEFA1700C4198C /* UIView+Extension.swift */,
+				C521807024DEF9F400C4198C /* ViewCodable.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
