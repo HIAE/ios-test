@@ -20,6 +20,8 @@
 		C521807A24DEFAC700C4198C /* JokeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C521807924DEFAC700C4198C /* JokeDetailView.swift */; };
 		C521807C24DEFAD100C4198C /* JokeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C521807B24DEFAD100C4198C /* JokeDetailViewModel.swift */; };
 		C521807E24DEFADB00C4198C /* JokeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C521807D24DEFADB00C4198C /* JokeDetailViewController.swift */; };
+		C574D12324DFA8D600CE654E /* CategoriesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574D12224DFA8D600CE654E /* CategoriesCollectionCell.swift */; };
+		C574D12524DFA8EC00CE654E /* CategoriesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574D12424DFA8EC00CE654E /* CategoriesCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		C521807924DEFAC700C4198C /* JokeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailView.swift; sourceTree = "<group>"; };
 		C521807B24DEFAD100C4198C /* JokeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailViewModel.swift; sourceTree = "<group>"; };
 		C521807D24DEFADB00C4198C /* JokeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailViewController.swift; sourceTree = "<group>"; };
+		C574D12224DFA8D600CE654E /* CategoriesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionCell.swift; sourceTree = "<group>"; };
+		C574D12424DFA8EC00CE654E /* CategoriesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		C521807824DEFA7E00C4198C /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				C574D12224DFA8D600CE654E /* CategoriesCollectionCell.swift */,
+				C574D12424DFA8EC00CE654E /* CategoriesCollectionViewModel.swift */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -244,9 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C574D12524DFA8EC00CE654E /* CategoriesCollectionViewModel.swift in Sources */,
 				C521807A24DEFAC700C4198C /* JokeDetailView.swift in Sources */,
 				C521807724DEFA4600C4198C /* CategoriesView.swift in Sources */,
 				C521807324DEFA1700C4198C /* UIView+Extension.swift in Sources */,
+				C574D12324DFA8D600CE654E /* CategoriesCollectionCell.swift in Sources */,
 				C521807124DEF9F400C4198C /* ViewCodable.swift in Sources */,
 				C521806A24DEF99400C4198C /* JokeServices.swift in Sources */,
 				C521806D24DEF9C000C4198C /* URL+Extension.swift in Sources */,

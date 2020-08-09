@@ -34,7 +34,7 @@ class CategoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Last week photos"
+        self.title = "Joke Categories"
 
         let categoryViewModel = CategoriesViewModel(viewDelegate: myView,
                                                     service: JokeServices(),

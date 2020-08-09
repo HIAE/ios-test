@@ -15,7 +15,7 @@ protocol CategoriesViewModelDelegate: class {
 
 /// This helps us to unit test
 protocol CategoriesViewModelProtocol {
-    var categories: [String] { get set }
+    var categories: [Int: String] { get set }
     var navigationDelegate: CategoriesNavigationDelegate? { get set }
 }
 
@@ -23,7 +23,7 @@ class CategoriesViewModel: CategoriesViewModelProtocol {
 
     // MARK: - Properties
 
-    var categories: [String]
+    var categories: [Int: String]
 
     var services: JokeServicesProtocol
     weak var delegate: CategoriesViewModelDelegate?
@@ -32,7 +32,7 @@ class CategoriesViewModel: CategoriesViewModelProtocol {
     // MARK: - Init
 
     init(viewDelegate: CategoriesViewModelDelegate, service: JokeServicesProtocol, navigation: CategoriesNavigationDelegate) {
-        categories = []
+        categories = [:]
 
         services = service
         delegate = viewDelegate
@@ -48,7 +48,9 @@ class CategoriesViewModel: CategoriesViewModelProtocol {
 
         services.fetchAllJokeCategories { (categories) in
             if let categoryArray = categories {
-                self.categories = categoryArray
+                for (index, category) in categoryArray.enumerated() {
+                    self.categories[index] = category
+                }
                 self.delegate?.reloadCollectionData()
             } else {
                 // Treat error in a frendlier way

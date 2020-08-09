@@ -13,14 +13,16 @@ class CategoriesView: UIView {
     // MARK: - Properties
 
     var collectionView: UICollectionView
-    var cellId: String
+    var categoryCellId: String
+    var collectionCellId: String
 
     var viewModel: CategoriesViewModelProtocol?
 
     // MARK: - Init
 
     override init(frame: CGRect) {
-        cellId = "categoryCollection"
+        categoryCellId = "categoryCollectionCell"
+        collectionCellId = "collectionCell"
 
         // Initialize CollectionView
         let layout = UICollectionViewFlowLayout()
@@ -55,9 +57,17 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellId, for: indexPath)
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.backgroundColor = .red
+        guard let viewModel = viewModel else { return cell }
+
+        if let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: categoryCellId, for: indexPath) as? CategoriesCollectionCell,
+            let category = viewModel.categories[indexPath.row] {
+
+            categoryCell.viewModel = CategoriesCollectionViewModel(categoryName: category)
+
+            cell = categoryCell
+        }
 
         return cell
     }
@@ -67,7 +77,7 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let viewModel = viewModel else { return }
 
-//         let category = viewModel.categories[indexPath.row]
+//        let category = viewModel.categories[indexPath.row]
 
         viewModel.navigationDelegate?.goToJokeDetail()
     }
@@ -78,10 +88,9 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        // Cells are a square with side = Screen width / 4
-        let side = collectionView.bounds.width/4.0
-
-        return CGSize(width: side, height: side)
+        // Adjusts cell width to fill whole collection view frame
+        let cellWidth = Int(self.frame.width / 2) - 35
+        return CGSize(width: cellWidth, height: 50)
     }
 
 }
@@ -125,7 +134,8 @@ extension CategoriesView: ViewCodable {
     func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(CategoriesCollectionCell.self, forCellWithReuseIdentifier: categoryCellId)
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: collectionCellId)
         collectionView.isPagingEnabled = true
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
