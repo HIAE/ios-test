@@ -9,7 +9,7 @@
 import Foundation
 
 protocol JokeServicesProtocol {
-
+    func fetchAllJokeCategories(completion: @escaping ([String]?) -> Void)
 }
 
 class JokeServices: JokeServicesProtocol {

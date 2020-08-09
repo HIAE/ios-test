@@ -8,10 +8,15 @@
 
 import UIKit
 
+/// ViewModel's Delegate is the View
+protocol CategoriesViewModelDelegate: class {
+    func reloadCollectionData()
+}
+
+/// This helps us to unit test
 protocol CategoriesViewModelProtocol {
     var categories: [String] { get set }
     var navigationDelegate: CategoriesNavigationDelegate? { get set }
-
 }
 
 class CategoriesViewModel: CategoriesViewModelProtocol {
@@ -19,12 +24,38 @@ class CategoriesViewModel: CategoriesViewModelProtocol {
     // MARK: - Properties
 
     var categories: [String]
-    var navigationDelegate: CategoriesNavigationDelegate?
+
+    var services: JokeServicesProtocol
+    weak var delegate: CategoriesViewModelDelegate?
+    weak var navigationDelegate: CategoriesNavigationDelegate?
 
     // MARK: - Init
 
-    init(navigation: CategoriesNavigationDelegate) {
+    init(viewDelegate: CategoriesViewModelDelegate, service: JokeServicesProtocol, navigation: CategoriesNavigationDelegate) {
         categories = []
+
+        services = service
+        delegate = viewDelegate
         navigationDelegate = navigation
+
+        // Get categories
+        getAllJokeCategories()
     }
+
+    // MARK: - Get all joke categories
+
+    func getAllJokeCategories() {
+
+        services.fetchAllJokeCategories { (categories) in
+            if let categoryArray = categories {
+                self.categories = categoryArray
+                self.delegate?.reloadCollectionData()
+            } else {
+                // Treat error in a frendlier way
+                print("Could not load data")
+            }
+
+        }
+    }
+
 }

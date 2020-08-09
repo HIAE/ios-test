@@ -24,7 +24,7 @@ class CategoriesView: UIView {
 
         // Initialize CollectionView
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 8
+        layout.minimumLineSpacing = 24
         layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
 
@@ -46,8 +46,12 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
     var numberOfSections: Int { return 1 }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // viewModel.count
-        return 3
+        guard let viewModel = viewModel else { return 0 }
+
+        // Add number of cells according to the correct amount of categories, or show 7 as placeholders to the user
+        let count = (viewModel.categories.count > 0 ) ? viewModel.categories.count : 7
+        
+        return count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -78,6 +82,19 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
         let side = collectionView.bounds.width/4.0
 
         return CGSize(width: side, height: side)
+    }
+
+}
+
+    // MARK: - Delegate
+
+extension CategoriesView: CategoriesViewModelDelegate {
+
+    /// Reload Table View on the main Thread
+    func reloadCollectionData() {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 
 }

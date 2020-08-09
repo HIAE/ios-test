@@ -36,10 +36,12 @@ class CategoriesViewController: UIViewController {
         
         self.title = "Last week photos"
 
-        let photoViewModel = CategoriesViewModel(navigation: self)
+        let categoryViewModel = CategoriesViewModel(viewDelegate: myView,
+                                                    service: JokeServices(),
+                                                    navigation: self)
 
-        viewModel = photoViewModel
-        myView.viewModel = viewModel
+        viewModel = categoryViewModel
+        myView.viewModel = categoryViewModel
     }
 
 }
