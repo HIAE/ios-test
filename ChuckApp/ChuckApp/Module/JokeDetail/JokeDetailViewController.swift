@@ -6,4 +6,12 @@
 //  Copyright © 2020 Ivo Dutra. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class JokeDetailViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .purple
+    }
+}

@@ -36,10 +36,10 @@ class CategoriesViewController: UIViewController {
         
         self.title = "Last week photos"
 
-        let photoViewModel = CategoriesViewModel()
+        let photoViewModel = CategoriesViewModel(navigation: self)
 
         viewModel = photoViewModel
-//        myView.viewModel = viewModel
+        myView.viewModel = viewModel
     }
 
 }
@@ -49,7 +49,8 @@ class CategoriesViewController: UIViewController {
 extension CategoriesViewController: CategoriesNavigationDelegate {
 
     func goToJokeDetail() {
-
+        let detailController = JokeDetailViewController()
+        self.navigationController?.pushViewController(detailController, animated: true)
     }
 
 }

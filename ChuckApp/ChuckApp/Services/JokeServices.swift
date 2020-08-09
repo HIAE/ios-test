@@ -7,3 +7,62 @@
 //
 
 import Foundation
+
+protocol JokeServicesProtocol {
+
+}
+
+class JokeServices: JokeServicesProtocol {
+
+    // MARK: - Properties
+    var categoriesURL: URL
+
+    // MARK: - Init
+
+    init() {
+        categoriesURL = URL(string: "https://api.chucknorris.io/jokes/categories")!
+    }
+
+    // MARK: - Fetch Categories
+
+    func fetchAllJokeCategories(completion: @escaping ([String]?) -> Void) {
+
+        let task = URLSession.shared.dataTask(with: categoriesURL) { (data, response, error) in
+
+            // Handle Errors
+            if let error = error {
+                self.handleClientError(error)
+                return
+            }
+
+            // Handle Response
+            // 200-299 status codes are Successful responses
+            guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
+                self.handleServerError(response)
+                return
+            }
+
+            // Decode data
+            let jsonDecoder = JSONDecoder()
+            if let data = data, let categories = try? jsonDecoder.decode([String].self, from: data) {
+                completion(categories)
+            } else {
+                print("No data returned")
+                completion(nil)
+            }
+
+        }
+
+        task.resume()
+    }
+
+    // MARK: - Errors
+
+    func handleClientError(_ error: Error) {
+        // Todo
+    }
+
+    func handleServerError(_ response: URLResponse?) {
+        // Todo
+    }
+}

@@ -9,9 +9,22 @@
 import UIKit
 
 protocol CategoriesViewModelProtocol {
+    var categories: [String] { get set }
+    var navigationDelegate: CategoriesNavigationDelegate? { get set }
 
 }
 
 class CategoriesViewModel: CategoriesViewModelProtocol {
 
+    // MARK: - Properties
+
+    var categories: [String]
+    var navigationDelegate: CategoriesNavigationDelegate?
+
+    // MARK: - Init
+
+    init(navigation: CategoriesNavigationDelegate) {
+        categories = []
+        navigationDelegate = navigation
+    }
 }

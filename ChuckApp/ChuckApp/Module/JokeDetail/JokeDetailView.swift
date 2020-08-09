@@ -6,4 +6,8 @@
 //  Copyright © 2020 Ivo Dutra. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class JokeDetailView: UIView {
+
+}

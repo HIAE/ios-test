@@ -58,6 +58,18 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
         return cell
     }
 
+    // MARK: - Navigation
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let viewModel = viewModel else { return }
+
+//         let category = viewModel.categories[indexPath.row]
+
+        viewModel.navigationDelegate?.goToJokeDetail()
+    }
+
+    // MARK: - Layout
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -88,7 +100,7 @@ extension CategoriesView: ViewCodable {
 
     func render() {
 
-
+        
     }
 
     // MARK: - ViewCodable Helpers

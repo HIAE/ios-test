@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol JokeDetailViewModelProtocol {
+
+}
+
+class JokeDetailViewModel: JokeDetailViewModelProtocol {
+
+}
