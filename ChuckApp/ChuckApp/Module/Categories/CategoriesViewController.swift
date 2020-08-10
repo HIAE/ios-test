@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CategoriesNavigationDelegate: class {
-    func goToJokeDetail()
+    func goToJokeDetail(fromCategory: String)
 }
 
 class CategoriesViewController: UIViewController {
@@ -50,8 +50,8 @@ class CategoriesViewController: UIViewController {
 
 extension CategoriesViewController: CategoriesNavigationDelegate {
 
-    func goToJokeDetail() {
-        let detailController = JokeDetailViewController()
+    func goToJokeDetail(fromCategory category: String) {
+        let detailController = JokeDetailViewController(categoryName: category)
         self.navigationController?.pushViewController(detailController, animated: true)
     }
 

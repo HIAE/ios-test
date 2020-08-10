@@ -16,6 +16,8 @@ protocol CategoriesViewModelDelegate: class {
 /// This helps us to unit test
 protocol CategoriesViewModelProtocol {
     var categories: [Int: String] { get set }
+    var services: JokeServicesProtocol { get set }
+    var delegate: CategoriesViewModelDelegate? { get set }
     var navigationDelegate: CategoriesNavigationDelegate? { get set }
 }
 

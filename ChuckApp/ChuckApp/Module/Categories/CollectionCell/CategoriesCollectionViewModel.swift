@@ -13,7 +13,7 @@ class CategoriesCollectionViewModel {
     // MARK: - Properties
 
     let categoryName: String
-
+  
     // MARK: - Init
 
     init(categoryName: String) {

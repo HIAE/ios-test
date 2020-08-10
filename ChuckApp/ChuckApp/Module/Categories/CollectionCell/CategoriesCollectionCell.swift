@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class CategoriesCollectionCell: UICollectionViewCell {
 
      // MARK: - Properties

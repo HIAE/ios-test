@@ -49,11 +49,8 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let viewModel = viewModel else { return 0 }
-
-        // Add number of cells according to the correct amount of categories, or show 7 as placeholders to the user
-        let count = (viewModel.categories.count > 0 ) ? viewModel.categories.count : 7
         
-        return count
+        return viewModel.categories.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -75,11 +72,10 @@ extension CategoriesView: UICollectionViewDataSource, UICollectionViewDelegateFl
     // MARK: - Navigation
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let viewModel = viewModel else { return }
+        guard let viewModel = viewModel,
+              let category = viewModel.categories[indexPath.row] else { return }
 
-//        let category = viewModel.categories[indexPath.row]
-
-        viewModel.navigationDelegate?.goToJokeDetail()
+        viewModel.navigationDelegate?.goToJokeDetail(fromCategory: category)
     }
 
     // MARK: - Layout

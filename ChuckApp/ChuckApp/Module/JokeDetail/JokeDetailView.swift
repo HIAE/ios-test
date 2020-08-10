@@ -10,4 +10,5 @@ import UIKit
 
 class JokeDetailView: UIView {
 
+    var viewModel: JokeDetailViewModel?
 }
