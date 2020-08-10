@@ -55,7 +55,9 @@ extension CategoriesCollectionCell: ViewCodable {
 
     func render() {
         categoryLabel.font = UIFont.systemFont(ofSize: 20)
-        self.backgroundColor = .green
+        // Colors according to ChuckNorrisAPI
+        self.backgroundColor = .orange
+        self.layer.cornerRadius = 10
     }
 
      // MARK: - ViewCodable Helpers

@@ -11,4 +11,13 @@ import UIKit
 class JokeDetailView: UIView {
 
     var viewModel: JokeDetailViewModel?
+
+
+    
+
+//
+//     PEGAR A COISA EM UMA STRING
+//     E PEGAR O ICONE DELE. e cabou
+//
+//    PLACEHOLDER 
 }

@@ -121,8 +121,9 @@ extension CategoriesView: ViewCodable {
     }
 
     func render() {
-
-        
+        // Colors according to ChuckNorrisAPI
+        self.backgroundColor = .white
+        collectionView.backgroundColor = .white
     }
 
     // MARK: - ViewCodable Helpers
@@ -140,7 +141,7 @@ extension CategoriesView: ViewCodable {
     func setCollectionViewContraints() {
 
         collectionView.setConstraints { (view) in
-                   view.topAnchor.constraint(equalTo: self.topAnchor, constant: 24).isActive = true
+                   view.topAnchor.constraint(equalTo: self.layoutMarginsGuide.topAnchor, constant: 16).isActive = true
                    view.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
                    // Apple Default tableView Spacing
                    view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true

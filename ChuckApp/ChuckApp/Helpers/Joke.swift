@@ -8,12 +8,13 @@
 
 import Foundation
 
-/// Struct based on the ChuckAPI
+/// Struct based on the ChuckNorrisAPI
 struct Joke: Codable {
     // TODO: categories array
     var createDate: String
     var iconURL: URL
     var updateDate: String
+    // URL to this specific joke, once it was retrived randomly
     var url: URL
     var joke: String
 
