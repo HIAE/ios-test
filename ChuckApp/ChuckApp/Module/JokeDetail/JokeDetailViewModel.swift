@@ -6,11 +6,12 @@
 //  Copyright © 2020 Ivo Dutra. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// ViewModel's Delegate is the View
 protocol JokeDetailViewModelDelegate: class {
     func reloadLabel()
+    func reloadIcon(withImage: UIImage)
 }
 
 protocol JokeDetailViewModelProtocol {
@@ -39,18 +40,34 @@ class JokeDetailViewModel: JokeDetailViewModelProtocol {
         self.jokeURL = createJokeURL(fromCategory: categoryName)
 
         // Fetch Joke
-        self.getJoke()
+        self.getJoke { [weak self] (image) in
+            self?.delegate?.reloadIcon(withImage: image)
+        }
+
     }
 
     // MARK: - get joke
 
-    func getJoke() {
+    func getJoke(_ completion: @escaping (UIImage) -> Void) {
 
         guard let url = self.jokeURL else { return }
 
         services.fetchJoke(at: url) { [weak self] (joke) in
             self?.joke = joke
             self?.delegate?.reloadLabel()
+
+            guard let url = self?.joke?.iconURL else { return }
+
+            // Request the image
+            let imageTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
+
+                guard let data = data, let image = UIImage(data: data) else { return }
+
+                // The image should be saved at the correct position from the images array
+                completion(image)
+            }
+
+            imageTask.resume()
         }
     }
 
