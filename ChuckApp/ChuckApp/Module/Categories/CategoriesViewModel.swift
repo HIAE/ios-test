@@ -48,12 +48,12 @@ class CategoriesViewModel: CategoriesViewModelProtocol {
 
     func getAllJokeCategories() {
 
-        services.fetchAllJokeCategories { (categories) in
+        services.fetchAllJokeCategories { [weak self] (categories) in
             if let categoryArray = categories {
                 for (index, category) in categoryArray.enumerated() {
-                    self.categories[index] = category
+                    self?.categories[index] = category
                 }
-                self.delegate?.reloadCollectionData()
+                self?.delegate?.reloadCollectionData()
             } else {
                 // Treat error in a frendlier way
                 print("Could not load data")

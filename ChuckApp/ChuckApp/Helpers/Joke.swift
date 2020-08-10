@@ -16,14 +16,14 @@ struct Joke: Codable {
     var updateDate: String
     // URL to this specific joke, once it was retrived randomly
     var url: URL
-    var joke: String
+    var jokeText: String
 
     enum CodingKeys: String, CodingKey {
         case createDate = "created_at"
         case iconURL = "icon_url"
         case updateDate = "updated_at"
         case url
-        case joke = "value"
+        case jokeText = "value"
     }
 
     // Init is called so that we can ignore the extraneous key/value pairs in the data that Struct Joke will not include
@@ -35,6 +35,6 @@ struct Joke: Codable {
         self.iconURL = try valueContainer.decode(URL.self, forKey: CodingKeys.iconURL)
         self.updateDate = try valueContainer.decode(String.self, forKey: CodingKeys.updateDate)
         self.url = try valueContainer.decode(URL.self, forKey: CodingKeys.url)
-        self.joke = try valueContainer.decode(String.self, forKey: CodingKeys.joke)
+        self.jokeText = try valueContainer.decode(String.self, forKey: CodingKeys.jokeText)
     }
 }

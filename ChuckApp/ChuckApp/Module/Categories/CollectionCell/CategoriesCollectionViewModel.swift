@@ -17,7 +17,7 @@ class CategoriesCollectionViewModel {
     // MARK: - Init
 
     init(categoryName: String) {
-        self.categoryName = categoryName
+        self.categoryName = categoryName.capitalizingFirstLetter()
     }
 
 }

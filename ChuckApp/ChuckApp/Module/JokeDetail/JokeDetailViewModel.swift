@@ -8,10 +8,16 @@
 
 import Foundation
 
+/// ViewModel's Delegate is the View
+protocol JokeDetailViewModelDelegate: class {
+    func reloadLabel()
+}
+
 protocol JokeDetailViewModelProtocol {
     var jokeURL: URL? { get set }
     var joke: Joke? { get set }
     var services: JokeServicesProtocol { get set }
+    var delegate: JokeDetailViewModelDelegate? { get set }
 }
 
 class JokeDetailViewModel: JokeDetailViewModelProtocol {
@@ -21,11 +27,13 @@ class JokeDetailViewModel: JokeDetailViewModelProtocol {
     var jokeURL: URL?
     var joke: Joke?
     var services: JokeServicesProtocol
+    weak var delegate: JokeDetailViewModelDelegate?
 
     // MARK: - Init
 
-    init(categoryName: String, services: JokeServicesProtocol) {
+    init(categoryName: String, services: JokeServicesProtocol, delegate: JokeDetailViewModelDelegate) {
         self.services = services
+        self.delegate = delegate
 
         // Create the URL for random joke at a category
         self.jokeURL = createJokeURL(fromCategory: categoryName)
@@ -40,9 +48,9 @@ class JokeDetailViewModel: JokeDetailViewModelProtocol {
 
         guard let url = self.jokeURL else { return }
 
-        services.fetchJoke(at: url) { (joke) in
-            self.joke = joke
-            print(joke)
+        services.fetchJoke(at: url) { [weak self] (joke) in
+            self?.joke = joke
+            self?.delegate?.reloadLabel()
         }
     }
 

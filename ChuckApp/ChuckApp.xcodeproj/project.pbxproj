@@ -23,6 +23,8 @@
 		C574D12324DFA8D600CE654E /* CategoriesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574D12224DFA8D600CE654E /* CategoriesCollectionCell.swift */; };
 		C574D12524DFA8EC00CE654E /* CategoriesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574D12424DFA8EC00CE654E /* CategoriesCollectionViewModel.swift */; };
 		C5B950F224E0BFC900967771 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B950F124E0BFC900967771 /* Joke.swift */; };
+		C5B950F424E0F40A00967771 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B950F324E0F40A00967771 /* UIImage+Extension.swift */; };
+		C5B950F624E0FC5C00967771 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B950F524E0FC5C00967771 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		C574D12224DFA8D600CE654E /* CategoriesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionCell.swift; sourceTree = "<group>"; };
 		C574D12424DFA8EC00CE654E /* CategoriesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewModel.swift; sourceTree = "<group>"; };
 		C5B950F124E0BFC900967771 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		C5B950F324E0F40A00967771 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		C5B950F524E0FC5C00967771 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			children = (
 				C521806B24DEF9AD00C4198C /* UI */,
 				C521806C24DEF9C000C4198C /* URL+Extension.swift */,
+				C5B950F524E0FC5C00967771 /* String+Extension.swift */,
 				C5B950F124E0BFC900967771 /* Joke.swift */,
 			);
 			path = Helpers;
@@ -148,6 +153,7 @@
 			children = (
 				C521807224DEFA1700C4198C /* UIView+Extension.swift */,
 				C521807024DEF9F400C4198C /* ViewCodable.swift */,
+				C5B950F324E0F40A00967771 /* UIImage+Extension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B950F624E0FC5C00967771 /* String+Extension.swift in Sources */,
 				C574D12524DFA8EC00CE654E /* CategoriesCollectionViewModel.swift in Sources */,
 				C521807A24DEFAC700C4198C /* JokeDetailView.swift in Sources */,
 				C521807724DEFA4600C4198C /* CategoriesView.swift in Sources */,
@@ -265,6 +272,7 @@
 				C521805424DEF6A300C4198C /* CategoriesViewController.swift in Sources */,
 				C521805024DEF6A300C4198C /* AppDelegate.swift in Sources */,
 				C521807E24DEFADB00C4198C /* JokeDetailViewController.swift in Sources */,
+				C5B950F424E0F40A00967771 /* UIImage+Extension.swift in Sources */,
 				C521807C24DEFAD100C4198C /* JokeDetailViewModel.swift in Sources */,
 				C521807524DEFA3D00C4198C /* CategoriesViewModel.swift in Sources */,
 			);

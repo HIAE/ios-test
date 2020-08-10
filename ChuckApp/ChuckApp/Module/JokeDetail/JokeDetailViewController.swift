@@ -42,10 +42,11 @@ class JokeDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Joke"
+        self.title = self.categoryName.capitalizingFirstLetter()
 
         let categoryViewModel = JokeDetailViewModel(categoryName: self.categoryName,
-                                                    services: JokeServices())
+                                                    services: JokeServices(),
+                                                    delegate: myView)
 
         viewModel = categoryViewModel
         myView.viewModel = categoryViewModel
